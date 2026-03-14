@@ -99,8 +99,8 @@ export default function App() {
       {/* Mobile Header */}
       <header className="lg:hidden sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-orange-100 px-4 py-3 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <div className="w-8 h-8 bg-orange-600 rounded-lg flex items-center justify-center text-white font-bold">H</div>
-          <h1 className="font-serif italic text-lg font-semibold text-orange-900">Hinduism Resources</h1>
+          <img src="/logo.png" alt="Dharmic Views Logo" className="w-8 h-8 object-contain" />
+          <h1 className="font-serif italic text-lg font-semibold text-orange-900">Dharmic Views</h1>
         </div>
         <button 
           onClick={() => setIsSidebarOpen(!isSidebarOpen)}
@@ -118,10 +118,10 @@ export default function App() {
         `}>
           <div className="h-full flex flex-col p-6">
             <div className="hidden lg:flex items-center gap-3 mb-10">
-              <div className="w-10 h-10 bg-orange-600 rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-orange-200">H</div>
+              <img src="/logo.png" alt="Dharmic Views Logo" className="w-12 h-12 object-contain" />
               <div>
-                <h1 className="font-serif italic text-xl font-bold text-orange-900 leading-tight">Hinduism</h1>
-                <p className="text-[10px] uppercase tracking-widest text-orange-600 font-bold">Resources Directory</p>
+                <h1 className="font-serif italic text-xl font-bold text-orange-900 leading-tight">Dharmic Views</h1>
+                <p className="text-[10px] uppercase tracking-widest text-orange-600 font-bold">Wisdom & Culture</p>
               </div>
             </div>
 
@@ -155,7 +155,7 @@ export default function App() {
 
             <div className="mt-auto pt-6 border-t border-orange-50">
               <a 
-                href="mailto:hinduismresources@gmail.com"
+                href="mailto:dharmicviews@gmail.com"
                 className="flex items-center gap-3 px-4 py-3 rounded-xl bg-stone-900 text-white text-sm font-medium hover:bg-black transition-colors"
               >
                 <Mail className="w-4 h-4" />
@@ -281,14 +281,14 @@ export default function App() {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
                 <div className="col-span-1 lg:col-span-2">
                   <div className="flex items-center gap-3 mb-6">
-                    <div className="w-10 h-10 bg-orange-600 rounded-xl flex items-center justify-center text-white font-bold text-xl">H</div>
-                    <h2 className="font-serif italic text-2xl font-bold">Hinduism Resources</h2>
+                    <img src="/logo.png" alt="Dharmic Views Logo" className="w-10 h-10 object-contain" />
+                    <h2 className="font-serif italic text-2xl font-bold">Dharmic Views</h2>
                   </div>
                   <p className="text-stone-400 text-lg max-w-md mb-8">
                     Preserving and promoting the rich heritage of Vedic wisdom for the global community.
                   </p>
                   <div className="flex items-center gap-4">
-                    <a href="mailto:hinduismresources@gmail.com" className="p-3 bg-stone-800 rounded-full hover:bg-orange-600 transition-colors">
+                    <a href="mailto:dharmicviews@gmail.com" className="p-3 bg-stone-800 rounded-full hover:bg-orange-600 transition-colors">
                       <Mail className="w-5 h-5" />
                     </a>
                   </div>
@@ -314,7 +314,7 @@ export default function App() {
               </div>
 
               <div className="pt-8 border-t border-stone-800 flex flex-col md:flex-row justify-between items-center gap-4 text-stone-500 text-sm">
-                <p>© {new Date().getFullYear()} Hinduism Resources. All rights reserved.</p>
+                <p>© {new Date().getFullYear()} Dharmic Views. All rights reserved.</p>
                 <p>Designed for Sanatan Dharma Preservation.</p>
               </div>
             </div>
