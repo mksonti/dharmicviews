@@ -1,13 +1,84 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dharmic Views</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
-</html>
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Dharmic Views - A Comprehensive Registry of Vedic & Dharmic Resources</title>
+  <meta name="description"
+    content="Dharmic Views is a curated collection of authentic resources on Vedic wisdom, Advaita Vedanta, Hinduism, and Sanskrit documents. Explore local and international Vedic culture." />
+  <meta name="keywords"
+    content="Vedic Wisdom, Hinduism, Advaita Vedanta, Sanskrit Documents, Dharmic Culture, Bhagavad Gita, Upanishads, Vedic Universities" />
+  <meta name="author" content="Dharmic Views" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://github.com/mksonti/dharmicviews" />
+  <meta property="og:title" content="Dharmic Views - Vedic & Dharmic Resource Hub" />
+  <meta property="og:description"
+    content="Explore a curated library of authentic Vedic and Dharmic resources. From ancient scriptures to modern intellectuals." />
+  <meta property="og:image" content="https://github.com/mksonti/dharmicviews/logo.png" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://mksonti.github.io/dharmicviews/" />
+  <meta property="twitter:title" content="Dharmic Views - Vedic & Dharmic Resource Hub" />
+  <meta property="twitter:description"
+    content="A curated collection of authentic resources on Vedic wisdom and Dharmic culture." />
+  <meta property="twitter:image" content="https://mksonti.github.io/dharmicviews/logo.png" />
+
+  <!-- Canonical Link -->
+  <link rel="canonical" href="https://mksonti.github.io/dharmicviews/" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/logo.png" />
+
+  <!-- JSON-LD Structured Data for LLMs and SEO -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Dharmic Views",
+      "url": "https://mksonti.github.io/dharmicviews/",
+      "description": "A curated registry of Vedic and Dharmic resources including scriptures, intellectuals, and organizations.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://mksonti.github.io/dharmicviews/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Dharmic Resource Library",
+      "description": "Comprehensive index of Vedic wisdom, intellectuals, universities, and communities.",
+      "mainEntity": {
+        "@type": "ItemList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Vedic Wisdom",
+            "description": "Scriptures and primary texts of the Vedic tradition."
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Vedic Intellectuals",
+            "description": "Guidance and works from renowned Indian and Western scholars."
+          }
+        ]
+      }
+    }
+    </script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
+</html>
