@@ -225,7 +225,7 @@ export default function App() {
                         {categoryIcons[category.id] || <BookOpen className="w-6 h-6" />}
                       </div>
                       <div>
-                        <h3 className="text-2xl font-bold text-stone-900">{category.title}</h3>
+                        <h2 className="text-2xl font-bold text-stone-900">{category.title}</h2>
                         <div className="h-1 w-12 bg-orange-500 rounded-full mt-1" />
                       </div>
                     </div>
@@ -245,12 +245,17 @@ export default function App() {
                         >
                           <div>
                             <div className="flex items-start justify-between mb-2">
-                              <h4 className="font-semibold text-stone-800 group-hover:text-orange-700 transition-colors line-clamp-2">
+                              <h3 className="font-semibold text-stone-800 group-hover:text-orange-700 transition-colors line-clamp-2">
                                 {link.title}
-                              </h4>
+                              </h3>
                               <ExternalLink className="w-4 h-4 text-stone-300 group-hover:text-orange-400 transition-colors flex-shrink-0 mt-1" />
                             </div>
-                            <p className="text-xs text-stone-400 truncate font-mono">
+                            {link.description && (
+                              <p className="text-sm text-stone-500 mb-3 line-clamp-2 group-hover:text-stone-600 transition-colors">
+                                {link.description}
+                              </p>
+                            )}
+                            <p className="text-[10px] text-stone-400 truncate font-mono">
                               {new URL(link.url).hostname}
                             </p>
                           </div>
