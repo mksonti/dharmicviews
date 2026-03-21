@@ -99,7 +99,7 @@ export default function App() {
       {/* Mobile Header */}
       <header className="lg:hidden sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-orange-100 px-4 py-3 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <img src="/logo.png" alt="Dharmic Views Logo" className="w-8 h-8 object-contain" />
+          <img src={`${import.meta.env.BASE_URL}logo.png`} alt="Dharmic Views Logo" className="w-8 h-8 object-contain" />
           <h1 className="font-serif italic text-lg font-semibold text-orange-900">Dharmic Views</h1>
         </div>
         <button 
@@ -118,7 +118,7 @@ export default function App() {
         `}>
           <div className="h-full flex flex-col p-6">
             <div className="hidden lg:flex items-center gap-3 mb-10">
-              <img src="/logo.png" alt="Dharmic Views Logo" className="w-12 h-12 object-contain" />
+              <img src={`${import.meta.env.BASE_URL}logo.png`} alt="Dharmic Views Logo" className="w-12 h-12 object-contain" />
               <div>
                 <h1 className="font-serif italic text-xl font-bold text-orange-900 leading-tight">Dharmic Views</h1>
                 <p className="text-[10px] uppercase tracking-widest text-orange-600 font-bold">Wisdom & Culture</p>
@@ -286,7 +286,7 @@ export default function App() {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
                 <div className="col-span-1 lg:col-span-2">
                   <div className="flex items-center gap-3 mb-6">
-                    <img src="/logo.png" alt="Dharmic Views Logo" className="w-10 h-10 object-contain" />
+                    <img src={`${import.meta.env.BASE_URL}logo.png`} alt="Dharmic Views Logo" className="w-10 h-10 object-contain" />
                     <h2 className="font-serif italic text-2xl font-bold">Dharmic Views</h2>
                   </div>
                   <p className="text-stone-400 text-lg max-w-md mb-8">
