@@ -48,17 +48,41 @@ export default function App() {
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
-  const filteredData = useMemo(() => {
-    if (!searchQuery) return resourceData;
+  const [showInactive, setShowInactive] = useState(() => typeof window !== 'undefined' && 
+    (window.location.pathname.includes('showInactive') || window.location.hash.includes('showInactive'))
+  );
+
+  useEffect(() => {
+    const handleLocationChange = () => {
+      setShowInactive(
+        window.location.pathname.includes('showInactive') || window.location.hash.includes('showInactive')
+      );
+    };
+
+    window.addEventListener('hashchange', handleLocationChange);
+    window.addEventListener('popstate', handleLocationChange);
     
+    return () => {
+      window.removeEventListener('hashchange', handleLocationChange);
+      window.removeEventListener('popstate', handleLocationChange);
+    };
+  }, []);
+
+  const filteredData = useMemo(() => {
     return resourceData.map(category => ({
       ...category,
-      links: category.links.filter(link => 
-        link.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        link.url.toLowerCase().includes(searchQuery.toLowerCase())
-      )
+      links: category.links.filter(link => {
+        const isActiveLink = link.isActive !== false;
+        const isStatusMatch = showInactive ? !isActiveLink : isActiveLink;
+        
+        if (!isStatusMatch) return false;
+        if (!searchQuery) return true;
+        
+        return link.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+               link.url.toLowerCase().includes(searchQuery.toLowerCase());
+      })
     })).filter(category => category.links.length > 0);
-  }, [searchQuery]);
+  }, [searchQuery, showInactive]);
 
   const scrollToCategory = (id: string) => {
     const element = document.getElementById(id);
@@ -187,10 +211,16 @@ export default function App() {
                 transition={{ duration: 0.6 }}
               >
                 <h2 className="font-serif italic text-4xl lg:text-6xl text-orange-950 mb-6 leading-tight">
-                  Discover the vast wisdom of <span className="text-orange-600">Sanatan Dharma</span>.
+                  {showInactive ? (
+                    <>Archived <span className="text-orange-600">Resources</span>.</>
+                  ) : (
+                    <>Discover the vast wisdom of <span className="text-orange-600">Sanatan Dharma</span>.</>
+                  )}
                 </h2>
                 <p className="text-stone-500 text-lg lg:text-xl max-w-2xl mb-10 leading-relaxed">
-                  A curated collection of digital resources, scriptures, and organizations dedicated to Vedic culture and heritage.
+                  {showInactive 
+                    ? "A historical collection of digital resources and websites that are currently offline or unavailable."
+                    : "A curated collection of digital resources, scriptures, and organizations dedicated to Vedic culture and heritage."}
                 </p>
 
                 <div className="relative max-w-xl">
