@@ -32,3 +32,15 @@ To run the script:
    ```
 3. The script will output which links are `ACTIVE` and `INACTIVE`, and seamlessly rewrite the TypeScript array in `src/data.ts`.
 4. You can review the changes and commit them to keep the directory healthy. If you want to see the inactive links in the UI, navigate to the route `dharmicviews.com/#showInactive`.
+
+### Flagging Squatted & Spam Domains
+
+Some domains may still be technically online, but their content has been replaced by domain squatters or inappropriate content (like gambling or casinos). 
+
+To automatically scan the fetched descriptions and flag these domains:
+1. Run the spam-flagging script:
+   ```bash
+   node flag_spam.cjs
+   ```
+2. The script will search for keywords like "for sale", "casino", "poker", etc., and inject a `tags` array (e.g. `["gambling"]`) into the link object.
+3. These tagged links are immediately marked as `isActive: false`, automatically moving them to the archived `/#showInactive` section with a red tag badge.

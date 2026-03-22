@@ -280,6 +280,15 @@ export default function App() {
                               </h3>
                               <ExternalLink className="w-4 h-4 text-stone-300 group-hover:text-orange-400 transition-colors flex-shrink-0 mt-1" />
                             </div>
+                            {link.tags && link.tags.length > 0 && (
+                              <div className="flex gap-2 flex-wrap mb-2">
+                                {link.tags.map(tag => (
+                                  <span key={tag} className="px-2 py-0.5 bg-red-50 border border-red-100 text-red-600 text-[10px] font-bold uppercase tracking-wider rounded">
+                                    {tag}
+                                  </span>
+                                ))}
+                              </div>
+                            )}
                             {link.description && (
                               <p className="text-sm text-stone-500 mb-3 line-clamp-2 group-hover:text-stone-600 transition-colors">
                                 {link.description}
