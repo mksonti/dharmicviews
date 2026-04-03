@@ -1,0 +1,11 @@
+[
+  {
+    "videoId": "dQw4w9WgXcQ",
+    "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "title": "Example Video",
+    "description": "This is an example video.",
+    "duration": "PT3M33S",
+    "thumbnail": "https://picsum.photos/seed/video1/1200/630",
+    "publishDate": "2026-04-01T12:00:00Z"
+  }
+]
