@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 import { 
   Menu, 
   X, 
@@ -97,7 +98,7 @@ export default function Navigation({ children }: { children: React.ReactNode }) 
         <div className="h-full flex flex-col p-6">
           <div className="flex items-center gap-3 mb-10">
             <Link href="/" className="flex items-center gap-3" onClick={() => setIsSidebarOpen(false)}>
-              <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center text-orange-600 font-serif italic font-bold text-xl">DV</div>
+              <Image src="/logo.png" alt="Dharmic Views Logo" width={48} height={48} className="rounded-full" priority />
               <div>
                 <h1 className="font-serif italic text-xl font-bold text-orange-900 leading-tight">Dharmic Views</h1>
                 <p className="text-[10px] uppercase tracking-widest text-orange-600 font-bold">Wisdom & Culture</p>
@@ -196,7 +197,7 @@ export default function Navigation({ children }: { children: React.ReactNode }) 
         {/* Mobile Header */}
         <header className="lg:hidden sticky top-0 z-30 bg-white/80 backdrop-blur-md border-b border-orange-100 px-4 py-3 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center text-orange-600 font-serif italic font-bold text-sm">DV</div>
+            <Image src="/logo.png" alt="Dharmic Views Logo" width={32} height={32} className="rounded-full" priority />
             <h1 className="font-serif italic text-lg font-semibold text-orange-900">Dharmic Views</h1>
           </Link>
           <button 
