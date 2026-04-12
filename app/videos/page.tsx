@@ -22,7 +22,7 @@ export default function VideosPage() {
               <div className="bg-white rounded-2xl border border-orange-100 overflow-hidden shadow-sm hover:shadow-md transition-all h-full flex flex-col">
                 <div className="relative w-full aspect-video bg-stone-100">
                   <Image 
-                    src={video.thumbnail} 
+                    src={video.thumbnailSrc} 
                     alt={video.title} 
                     fill 
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
