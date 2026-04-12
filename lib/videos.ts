@@ -13,6 +13,9 @@ export interface VideoData {
   /** The stored thumbnail value from the JSON (may be a placeholder or real URL). */
   thumbnail: string;
   publishDate: string;
+  publisher: string;
+  channelName: string;
+  tags: string[];
   /** Resolved at load time: local file if available, otherwise live YouTube CDN URL. */
   thumbnailSrc: string;
 }
