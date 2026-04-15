@@ -3,6 +3,9 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import { MDXRemote } from 'next-mdx-remote/rsc';
 import remarkGfm from 'remark-gfm';
+import Callout from '@/components/Callout';
+
+const mdxComponents = { Callout };
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
@@ -81,7 +84,7 @@ export default async function Article({ params }: { params: Promise<{ slug: stri
             </div>
           </header>
           <div className="prose prose-orange prose-lg max-w-none text-stone-700">
-            <MDXRemote source={articleData.content} options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }} />
+            <MDXRemote source={articleData.content} options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }} components={mdxComponents} />
           </div>
         </div>
       </article>
