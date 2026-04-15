@@ -32,9 +32,13 @@ function validateArticles() {
       console.log(`\u2705 Validated ${file}`);
     } catch (error) {
       console.error(`\u274C Validation failed for ${file}:`);
-      error.errors.forEach(err => {
-        console.error(`  - ${err.path.join('.')}: ${err.message}`);
-      });
+      if (error.errors) {
+        error.errors.forEach(err => {
+          console.error(`  - ${err.path.join('.')}: ${err.message}`);
+        });
+      } else {
+        console.error(`  - ${error.message}`);
+      }
       hasErrors = true;
     }
   }
