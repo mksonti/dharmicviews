@@ -5,7 +5,6 @@ date: "2025-09-25"
 author: "Mohan Sonti"
 ---
 
-## Politics Is NOT Skin Deep
 
 &emsp;&emsp;&emsp;I must admit that there is a part of me (the *unreasonable 'emotional' side*) that is happy to see an **'Indian origin' lady rise up to be the VP candidate of USA** — proud, very proud of her. But once the **'frailties of heart'** are sufficiently pampered and celebrated — the *so called 'Honeymoon period'* — the mind gets control of the situation and starts churning and analysing the realities, which are the **'realities of intellect'**!
 
