@@ -3,7 +3,7 @@ title: "Politics Is NOT Skin Deep"
 date: "2025-09-25"
 description: "Politics Is NOT Skin Deep - Race and Country of Origin can go only so far"
 author: "Mohan Sonti"
-heroImage:
+heroImage: 
 ---
 
 ### Politics Is NOT Skin Deep:

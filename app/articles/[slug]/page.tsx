@@ -14,7 +14,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     openGraph: {
       title: articleData.title,
       description: articleData.description,
-      images: [articleData.heroImage],
+      ...(articleData.heroImage && { images: [articleData.heroImage] }),
       type: 'article',
       publishedTime: articleData.date,
       authors: [articleData.author],
@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       card: 'summary_large_image',
       title: articleData.title,
       description: articleData.description,
-      images: [articleData.heroImage],
+      ...(articleData.heroImage && { images: [articleData.heroImage] }),
     }
   };
 }
@@ -43,7 +43,7 @@ export default async function Article({ params }: { params: Promise<{ slug: stri
     '@context': 'https://schema.org',
     '@type': 'NewsArticle',
     headline: articleData.title,
-    image: [articleData.heroImage],
+    ...(articleData.heroImage && { image: [articleData.heroImage] }),
     datePublished: articleData.date,
     dateModified: articleData.date,
     author: [{
@@ -59,16 +59,18 @@ export default async function Article({ params }: { params: Promise<{ slug: stri
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <article className="max-w-3xl mx-auto bg-white rounded-3xl border border-orange-100 overflow-hidden shadow-sm">
-        <div className="relative w-full h-64 md:h-96">
-          <Image 
-            src={articleData.heroImage} 
-            alt={articleData.title} 
-            fill 
-            className="object-cover"
-            referrerPolicy="no-referrer"
-            priority
-          />
-        </div>
+        {articleData.heroImage && (
+          <div className="relative w-full h-64 md:h-96">
+            <Image
+              src={articleData.heroImage}
+              alt={articleData.title}
+              fill
+              className="object-cover"
+              referrerPolicy="no-referrer"
+              priority
+            />
+          </div>
+        )}
         <div className="p-8 md:p-12">
           <header className="mb-8">
             <h1 className="font-serif italic text-3xl md:text-5xl text-stone-900 mb-4 leading-tight">{articleData.title}</h1>

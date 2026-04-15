@@ -18,16 +18,18 @@ export default function ArticlesPage() {
         <div className="grid gap-8">
           {articles.map(({ slug, date, title, description, heroImage }) => (
             <article key={slug} className="bg-white rounded-2xl border border-orange-100 overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col md:flex-row">
-              <div className="md:w-1/3 relative h-48 md:h-auto">
-                <Image 
-                  src={heroImage} 
-                  alt={title} 
-                  fill 
-                  className="object-cover"
-                  referrerPolicy="no-referrer"
-                />
-              </div>
-              <div className="p-6 md:w-2/3 flex flex-col justify-center">
+              {heroImage && (
+                <div className="md:w-1/3 relative h-48 md:h-auto">
+                  <Image
+                    src={heroImage}
+                    alt={title}
+                    fill
+                    className="object-cover"
+                    referrerPolicy="no-referrer"
+                  />
+                </div>
+              )}
+              <div className={`p-6 flex flex-col justify-center ${heroImage ? 'md:w-2/3' : 'w-full'}`}>
                 <p className="text-sm text-stone-500 mb-2">{new Date(date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
                 <Link href={`/articles/${slug}`}>
                   <h2 className="text-2xl font-bold text-stone-900 mb-3 hover:text-orange-600 transition-colors">{title}</h2>
