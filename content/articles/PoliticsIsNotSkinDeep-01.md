@@ -1,7 +1,7 @@
 ---
 title: "Politics Is NOT Skin Deep"
 description: "Hindus should reject purely 'skin deep' ethnic representation and instead grant their 'vote of approval' only to leaders who genuinely identify with and act in accordance with Dharmic principles and cultural value"
-date: "2025-09-20"
+date: "2020-09-20"
 author: "Mohan Sonti"
 ---
 
@@ -21,6 +21,7 @@ author: "Mohan Sonti"
 
 &emsp;&emsp;&emsp;The message should be clear and loud — **we aren't petty or 'sell outs' like them** and they can't take us for granted! We'll work with them with genuine love and compassion till they learn — but learn they must before they get our approval!
 
+&emsp; \
 **For Dharma … NOW and FOREVER!!**
 
 Published: https://www.newsbharati.com/Encyc/2020/10/20/Indian-origin-.html
