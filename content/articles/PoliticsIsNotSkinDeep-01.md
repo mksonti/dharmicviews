@@ -1,6 +1,6 @@
 ---
 title: "Politics Is NOT Skin Deep"
-description: "Hindus should reject purely **"skin deep"** ethnic representation and instead grant their **"vote of approval"** only to leaders who genuinely identify with and act in accordance with **Dharmic principles** and cultural value"
+description: "Hindus should reject purely 'skin deep'** ethnic representation and instead grant their **'vote of approval'** only to leaders who genuinely identify with and act in accordance with **Dharmic principles** and cultural value"
 date: "2025-09-20"
 author: "Mohan Sonti"
 ---
