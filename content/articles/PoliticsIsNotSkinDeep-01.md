@@ -1,10 +1,9 @@
 ---
 title: "Politics Is NOT Skin Deep"
-description: "Why ethnic or racial origin alone should not determine political support — a call for Hindus and Indians to back leaders who genuinely represent their culture and values."
-date: "2025-09-25"
+description: "Hindus should reject purely **"skin deep"** ethnic representation and instead grant their **"vote of approval"** only to leaders who genuinely identify with and act in accordance with **Dharmic principles** and cultural value"
+date: "2025-09-20"
 author: "Mohan Sonti"
 ---
-
 
 &emsp;&emsp;&emsp;I must admit that there is a part of me (the *unreasonable 'emotional' side*) that is happy to see an **'Indian origin' lady rise up to be the VP candidate of USA** — proud, very proud of her. But once the **'frailties of heart'** are sufficiently pampered and celebrated — the *so called 'Honeymoon period'* — the mind gets control of the situation and starts churning and analysing the realities, which are the **'realities of intellect'**!
 
@@ -23,3 +22,6 @@ author: "Mohan Sonti"
 &emsp;&emsp;&emsp;The message should be clear and loud — **we aren't petty or 'sell outs' like them** and they can't take us for granted! We'll work with them with genuine love and compassion till they learn — but learn they must before they get our approval!
 
 **For Dharma … NOW and FOREVER!!**
+
+Published: https://www.newsbharati.com/Encyc/2020/10/20/Indian-origin-.html
+Date: 20th Oct 2020
