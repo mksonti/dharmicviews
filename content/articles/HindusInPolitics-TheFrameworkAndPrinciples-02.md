@@ -1,7 +1,7 @@
 ---
 title: "Hindus in Politics: The Framework and Principles"
 description: "I propose a framework for Hindus to engage in politics as 'independent colorful thinkers' who prioritize Dharmic principles and a common vision over the restrictive and exclusionary 'Abrahamic Binary' of existing political parties"
-date: "2025-09-20"
+date: "2020-09-20"
 author: "Mohan Sonti"
 ---
 
