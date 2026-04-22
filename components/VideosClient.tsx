@@ -1,16 +1,26 @@
 'use client';
 
 import React, { useState, useMemo } from 'react';
-import { Search, PlayCircle, Filter, Calendar, User, ChevronDown } from 'lucide-react';
+import { Search, PlayCircle, Calendar, User, ChevronDown, ArrowUpDown } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import Link from 'next/link';
 import Image from 'next/image';
 import type { VideoData } from '@/lib/videos';
 
+type SortKey = 'date-desc' | 'date-asc' | 'title-asc' | 'title-desc';
+
+const SORT_OPTIONS: { value: SortKey; label: string }[] = [
+  { value: 'date-desc',  label: 'Newest first' },
+  { value: 'date-asc',   label: 'Oldest first' },
+  { value: 'title-asc',  label: 'Title A → Z' },
+  { value: 'title-desc', label: 'Title Z → A' },
+];
+
 export default function VideosClient({ initialVideos }: { initialVideos: VideoData[] }) {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
   const [collapsedChannels, setCollapsedChannels] = useState<Set<string>>(new Set());
+  const [sort, setSort] = useState<SortKey>('date-desc');
 
   const allTags = useMemo(() => {
     const tags = new Set<string>();
@@ -42,12 +52,21 @@ export default function VideosClient({ initialVideos }: { initialVideos: VideoDa
       byChannel[key].videos.push(video);
     }
 
+    const compareFn = (a: VideoData, b: VideoData) => {
+      switch (sort) {
+        case 'date-desc': return b.publishDate.localeCompare(a.publishDate);
+        case 'date-asc':  return a.publishDate.localeCompare(b.publishDate);
+        case 'title-asc': return a.title.localeCompare(b.title);
+        case 'title-desc': return b.title.localeCompare(a.title);
+      }
+    };
+
     for (const key of Object.keys(byChannel)) {
-      byChannel[key].videos.sort((a, b) => a.title.localeCompare(b.title));
+      byChannel[key].videos.sort(compareFn);
     }
 
     return Object.values(byChannel).sort((a, b) => a.channelName.localeCompare(b.channelName));
-  }, [initialVideos, searchQuery, selectedTag]);
+  }, [initialVideos, searchQuery, selectedTag, sort]);
 
   const totalCount = videosByChannel.reduce((sum, ch) => sum + ch.videos.length, 0);
 
@@ -68,7 +87,7 @@ export default function VideosClient({ initialVideos }: { initialVideos: VideoDa
           <p className="text-stone-500">Explore talks, interviews, and deep dives into Vedic thought.</p>
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-4">
+        <div className="flex flex-col sm:flex-row gap-3">
           <div className="relative">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-stone-400 w-4 h-4" />
             <input
@@ -78,6 +97,18 @@ export default function VideosClient({ initialVideos }: { initialVideos: VideoDa
               onChange={(e) => setSearchQuery(e.target.value)}
               className="w-full sm:w-64 pl-10 pr-4 py-2 bg-white border border-stone-200 rounded-xl shadow-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none transition-all text-stone-800 text-sm"
             />
+          </div>
+          <div className="relative flex items-center gap-2">
+            <ArrowUpDown className="absolute left-3 top-1/2 -translate-y-1/2 text-stone-400 w-4 h-4 pointer-events-none" />
+            <select
+              value={sort}
+              onChange={e => setSort(e.target.value as SortKey)}
+              className="pl-10 pr-4 py-2 bg-white border border-stone-200 rounded-xl shadow-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none text-stone-700 text-sm cursor-pointer"
+            >
+              {SORT_OPTIONS.map(o => (
+                <option key={o.value} value={o.value}>{o.label}</option>
+              ))}
+            </select>
           </div>
         </div>
       </div>

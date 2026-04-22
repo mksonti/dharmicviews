@@ -1,15 +1,25 @@
 'use client';
 
 import React, { useState, useMemo } from 'react';
-import { Search, PlayCircle, Calendar, User, ArrowLeft } from 'lucide-react';
+import { Search, PlayCircle, Calendar, User, ArrowLeft, ArrowUpDown } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import Link from 'next/link';
 import Image from 'next/image';
 import type { VideoData } from '@/lib/videos';
 
+type SortKey = 'date-desc' | 'date-asc' | 'title-asc' | 'title-desc';
+
+const SORT_OPTIONS: { value: SortKey; label: string }[] = [
+  { value: 'date-desc',  label: 'Newest first' },
+  { value: 'date-asc',   label: 'Oldest first' },
+  { value: 'title-asc',  label: 'Title A → Z' },
+  { value: 'title-desc', label: 'Title Z → A' },
+];
+
 export default function ChannelVideosClient({ channelName, channelId, videos }: { channelName: string; channelId: string; videos: VideoData[] }) {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
+  const [sort, setSort] = useState<SortKey>('date-desc');
 
   const allTags = useMemo(() => {
     const tags = new Set<string>();
@@ -29,8 +39,15 @@ export default function ChannelVideosClient({ channelName, channelId, videos }: 
     if (selectedTag) {
       result = result.filter(v => v.tags?.includes(selectedTag));
     }
-    return result.sort((a, b) => a.title.localeCompare(b.title));
-  }, [videos, searchQuery, selectedTag]);
+    return result.sort((a, b) => {
+      switch (sort) {
+        case 'date-desc':  return b.publishDate.localeCompare(a.publishDate);
+        case 'date-asc':   return a.publishDate.localeCompare(b.publishDate);
+        case 'title-asc':  return a.title.localeCompare(b.title);
+        case 'title-desc': return b.title.localeCompare(a.title);
+      }
+    });
+  }, [videos, searchQuery, selectedTag, sort]);
 
   return (
     <div className="max-w-6xl mx-auto">
@@ -48,15 +65,29 @@ export default function ChannelVideosClient({ channelName, channelId, videos }: 
           <p className="text-stone-500">{videos.length} video{videos.length !== 1 ? 's' : ''}</p>
         </div>
 
-        <div className="relative">
-          <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-stone-400 w-4 h-4" />
-          <input
-            type="text"
-            placeholder="Search videos..."
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full sm:w-64 pl-10 pr-4 py-2 bg-white border border-stone-200 rounded-xl shadow-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none transition-all text-stone-800 text-sm"
-          />
+        <div className="flex flex-col sm:flex-row gap-3">
+          <div className="relative">
+            <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-stone-400 w-4 h-4" />
+            <input
+              type="text"
+              placeholder="Search videos..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="w-full sm:w-64 pl-10 pr-4 py-2 bg-white border border-stone-200 rounded-xl shadow-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none transition-all text-stone-800 text-sm"
+            />
+          </div>
+          <div className="relative">
+            <ArrowUpDown className="absolute left-3 top-1/2 -translate-y-1/2 text-stone-400 w-4 h-4 pointer-events-none" />
+            <select
+              value={sort}
+              onChange={e => setSort(e.target.value as SortKey)}
+              className="pl-10 pr-4 py-2 bg-white border border-stone-200 rounded-xl shadow-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none text-stone-700 text-sm cursor-pointer"
+            >
+              {SORT_OPTIONS.map(o => (
+                <option key={o.value} value={o.value}>{o.label}</option>
+              ))}
+            </select>
+          </div>
         </div>
       </div>
 
