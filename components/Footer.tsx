@@ -69,7 +69,7 @@ export default function Footer() {
 
         <div className="pt-8 border-t border-stone-800 flex flex-col md:flex-row justify-between items-center gap-4 text-stone-500 text-sm">
           <p>© {new Date().getFullYear()} Dharmic Views. All rights reserved.</p>
-          <p>Designed for Sanatan Dharma Preservation.</p>
+          <p>Designed for Sanatana Dharma Preservation.</p>
         </div>
       </div>
     </footer>
