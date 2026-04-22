@@ -11,9 +11,12 @@ import SectionHeading from '@/components/SectionHeading';
 import Definition from '@/components/Definition';
 import Question from '@/components/Question';
 import EpicCompare from '@/components/EpicCompare';
+import BinaryList, { BinaryItem } from '@/components/BinaryList';
+import ForceCard from '@/components/ForceCard';
+import SourceNote from '@/components/SourceNote';
 import { ChevronRight, Clock } from 'lucide-react';
 
-const mdxComponents = { Callout, Pullquote, Divider, SectionHeading, Definition, Question, EpicCompare };
+const mdxComponents = { Callout, Pullquote, Divider, SectionHeading, Definition, Question, EpicCompare, BinaryList, BinaryItem, ForceCard, SourceNote };
 
 const baseUrl = process.env.APP_URL || 'https://dharmicviews.com';
 

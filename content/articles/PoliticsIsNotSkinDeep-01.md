@@ -27,6 +27,5 @@ A teacher teaches their pupil till they 'Pass', but doesn't 'Pass' them before t
 The message should be clear and loud — **we aren't petty or 'sell outs' like them** and they can't take us for granted! We'll work with them with genuine love and compassion till they learn — but learn they must before they get our approval!
 <br />
 **For Dharma … NOW and FOREVER!!**
-<br />
-Published: https://www.newsbharati.com/Encyc/2020/10/20/Indian-origin-.html<br />
-Date: 20th Oct 2020
+
+<SourceNote href="https://www.newsbharati.com/Encyc/2020/10/20/Indian-origin-.html" label="NewsBharati" date="20th Oct 2020" />

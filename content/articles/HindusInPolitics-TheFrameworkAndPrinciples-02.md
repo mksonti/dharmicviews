@@ -14,20 +14,18 @@ There is an ardent debate and furor in the Indian-American community that I've b
 <SectionHeading>A) Common Vision</SectionHeading>
 
 *Dharmics (Hindus) are 'Colorful Thinkers'* — which is unique and sets us apart and often at loggerheads with Abrahamic 'Binary Thinking' ideas. For example, we don't subscribe to the 'Black & White' type of Binary Abrahamic thought process and system like -
-<br />
-Faithful/Monin — Heathen/Kafir<br />
-Theist — Atheist<br />
-Capitalism — Communism<br />
-Right Wing - Left Wing<br />
-Conservative - Liberal<br />
-Republican — Democrat<br />
-With me — Against me<br />
-Etc.<br />
-<br />
-Each one of those Binary systems has 2 universal Abrahamic features -
-<br />
-*1) 'Convert'* people to 'their side'<br />
-*2) 'Eliminate'* people on 'other side'
+
+<BinaryList>
+  <BinaryItem left="Faithful/Momin" right="Heathen/Kafir" />
+  <BinaryItem left="Theist" right="Atheist" />
+  <BinaryItem left="Capitalism" right="Communism" />
+  <BinaryItem left="Right Wing" right="Left Wing" />
+  <BinaryItem left="Conservative" right="Liberal" />
+  <BinaryItem left="Republican" right="Democrat" />
+  <BinaryItem left="With me" right="Against me" />
+</BinaryList>
+
+Each one of those Binary systems has 2 universal Abrahamic features — *1) 'Convert'* people to 'their side' and *2) 'Eliminate'* people on the 'other side'.
 
 <br />
 The **Totalitarianism and Exclusivism** is inherent to everything they build and do. The propaganda glorifying one side and demonizing the other is atleast several 1000 year old art for them. *Each of the Binaries above consider the 'other side'* to be **'Evil or Stupid'** and proceed to **Convert or Eliminate** them.
