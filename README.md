@@ -288,6 +288,77 @@ A footer-style publication credit with a styled external link, a bullet separato
 
 ---
 
+## Claude Code Skills
+
+This project includes a Claude Code skill that automates article formatting. Skills require the **Claude Code CLI or IDE extension** — they do not work on claude.ai or the API.
+
+> **Prerequisite:** Clone this repo. The `.claude/` folder is committed, so skills are available automatically to anyone using Claude Code in this directory.
+
+---
+
+### `/format-article` — Auto-format an article
+
+Reads a `.md` article, analyzes its structure, applies the correct MDX components, and fixes the hero image path — all in one step.
+
+**Usage — with a file path:**
+```
+/format-article content/articles/PoliticsIsNotSkinDeep-01.md
+```
+
+**Usage — with the file open in the IDE:**
+
+Open the article in VS Code or your IDE, then run the skill with no argument. It picks up the open file automatically:
+```
+/format-article
+```
+
+**What it does:**
+
+1. **Reads** the full article and its current component usage
+2. **Audits the hero image** — checks the `heroImage` frontmatter path resolves to a real file in `public/content/articles/`, prefers `.webp` over `.png`, and corrects the path if wrong
+3. **Analyzes structure** — scans every paragraph for the 10 content patterns the components are designed for (section headings, definitions, questions, binary lists, force cards, Ramayana/Mahabharata comparisons, callouts, pull-quotes, dividers, source credits)
+4. **Applies components** — rewrites the file with the right components in the right places, preserving all `<br />` tags and the author's original prose exactly
+5. **Reports** — tells you what was changed, what was left as prose and why, and anything that needs manual attention
+
+**What it will NOT do:**
+
+- Rewrite or summarise the author's text
+- Remove intentional `<br />` spacing tags
+- Apply a component just because the content vaguely fits — only applies where the pattern clearly matches
+- Fabricate a hero image path if the file doesn't exist on disk
+
+**Example output after running:**
+
+```
+Applied components:
+- <SectionHeading> × 3  (A) Common Vision, B) Challenges, C) American Politics)
+- <BinaryList>/<BinaryItem> × 1  (the 7 binary opposition pairs)
+- <Question> × 3  (the three reader-directed questions)
+- <Divider /> × 3  (replaced — — separators)
+- <Pullquote> × 1  (most quotable line in section A)
+
+Hero image: /content/articles/HindusInPolitics-TheFrameworkAndPrinciples-02.webp ✓ correct
+
+Left as prose: the numbered list in "Ground Realities" — inline numbered points,
+not a sequence of named definitions, so no <Definition> applied.
+```
+
+---
+
+### Availability
+
+| Environment | Works? |
+|---|---|
+| Claude Code CLI (`claude` command) | ✅ Yes — `/format-article` |
+| Claude Code VS Code extension | ✅ Yes — `/format-article` |
+| Claude Code JetBrains extension | ✅ Yes — `/format-article` |
+| claude.ai web (Projects / chat) | ✗ No — skills are CLI/IDE only |
+| Claude API | ✗ Not directly — would need the Agent SDK |
+
+Skills are shared automatically via git — anyone who clones this repo and opens it in Claude Code has access to `/format-article` with no setup.
+
+---
+
 ## SEO
 
 Each article and video page generates:
