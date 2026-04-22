@@ -19,10 +19,14 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: articleData.title,
     description: articleData.description,
+    alternates: {
+      canonical: `${baseUrl}/articles/${slug}`,
+    },
     openGraph: {
       title: articleData.title,
       description: articleData.description,
-      images: [ogImage],
+      url: `${baseUrl}/articles/${slug}`,
+      images: [{ url: ogImage, width: 1200, height: 630, alt: articleData.title }],
       type: 'article',
       publishedTime: articleData.date,
       authors: [articleData.author],

@@ -17,12 +17,15 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: videoData.title,
     description: videoData.description,
+    alternates: {
+      canonical: `${baseUrl}/videos/${slug}`,
+    },
     openGraph: {
       title: videoData.title,
       description: videoData.description,
-      images: [videoData.thumbnail],
+      url: `${baseUrl}/videos/${slug}`,
+      images: [{ url: videoData.thumbnail, width: 1280, height: 720, alt: videoData.title }],
       type: 'video.other',
-      url: videoData.url,
     },
     twitter: {
       card: 'summary_large_image',

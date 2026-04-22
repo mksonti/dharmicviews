@@ -1,6 +1,6 @@
 import { MetadataRoute } from 'next';
 import { getSortedArticlesData } from '@/lib/articles';
-import { getAllVideos } from '@/lib/videos';
+import { getAllVideos, getChannels } from '@/lib/videos';
 
 export const dynamic = 'force-static';
 
@@ -9,6 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const articles = getSortedArticlesData();
   const videos = getAllVideos();
+  const channels = getChannels();
 
   const articleUrls = articles.map((article) => ({
     url: `${baseUrl}/articles/${article.slug}`,
@@ -22,6 +23,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date(video.publishDate),
     changeFrequency: 'monthly' as const,
     priority: 0.7,
+  }));
+
+  const channelUrls = channels.map((channel) => ({
+    url: `${baseUrl}/videos/channel/${channel.channelId}`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly' as const,
+    priority: 0.75,
   }));
 
   return [
@@ -43,6 +51,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly',
       priority: 0.9,
     },
+    ...channelUrls,
     ...articleUrls,
     ...videoUrls,
   ];
