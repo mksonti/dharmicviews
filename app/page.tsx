@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 import HomeClient from '@/components/HomeClient';
 import { resourceData } from '@/lib/data';
-import { getAllVideos } from '@/lib/videos';
-import { getSortedArticlesData } from '@/lib/articles';
+import { getFeaturedVideos } from '@/lib/videos';
+import { getFeaturedArticles } from '@/lib/articles';
 
 export const metadata: Metadata = {
   title: 'Dharmic Views — Vedic Wisdom for the Hindu Diaspora',
@@ -15,8 +15,8 @@ export const metadata: Metadata = {
 };
 
 export default function HomePage() {
-  const videos = getAllVideos().slice(0, 3);
-  const articles = getSortedArticlesData().slice(0, 3);
+  const videos = getFeaturedVideos(3);
+  const articles = getFeaturedArticles(3);
 
   return (
     <main>

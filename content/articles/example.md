@@ -4,6 +4,7 @@ date: "2026-04-02"
 description: "An introduction to the core concepts of Vedic philosophy and its relevance today."
 author: "Admin"
 heroImage: "https://picsum.photos/seed/vedic/1200/630"
+draft: true
 ---
 
 # The Essence of Vedic Wisdom

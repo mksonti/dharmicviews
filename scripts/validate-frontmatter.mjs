@@ -13,7 +13,9 @@ const frontmatterSchema = z.object({
   heroImage: z.union([
     z.string().url(),
     z.string().startsWith("/", "Hero image must be a valid URL or local path starting with /")
-  ]).optional()
+  ]).optional(),
+  featured: z.boolean().optional(),
+  draft: z.boolean().optional()
 });
 
 function validateArticles() {

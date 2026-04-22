@@ -17,6 +17,7 @@ export interface VideoData {
   channelName: string;
   channelId: string;
   tags: string[];
+  featured?: boolean;
   /** Resolved at load time: local file if available, otherwise live YouTube CDN URL. */
   thumbnailSrc: string;
 }
@@ -91,4 +92,12 @@ export function getVideosByChannelId(channelId: string): VideoData[] {
   return getAllVideos()
     .filter(v => v.channelId === channelId)
     .sort((a, b) => a.title.localeCompare(b.title));
+}
+
+export function getFeaturedVideos(limit = 3): VideoData[] {
+  const all = getAllVideos();
+  const featured = all.filter(v => v.featured);
+  if (featured.length >= limit) return featured.slice(0, limit);
+  const rest = all.filter(v => !v.featured);
+  return [...featured, ...rest].slice(0, limit);
 }
