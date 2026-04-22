@@ -121,7 +121,8 @@ export default function HomeClient({ initialData, featuredVideos = [], featuredA
               {showInactive ? (
                 <>Archived <span className="text-orange-600">Resources</span>.</>
               ) : (
-                <>Discover the vast wisdom of <span className="text-orange-600">Sanatan Dharma</span>.</>
+                <>For <span className="text-orange-600">Dharma...</span> Now and Forever.</>
+
               )}
             </h2>
             <p className="text-stone-500 text-lg lg:text-xl max-w-2xl mb-10 leading-relaxed">
