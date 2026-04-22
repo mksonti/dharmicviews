@@ -1,6 +1,6 @@
 ---
 title: "Hindus in Politics: Battle Of Will And Survival"
-description: "Hindus in the US should transcend the 'Abrahamic Binary' of the Republican and Democratic parties, as both sides represent exclusivist ideologies that are fundamentally poorly compatible with pluralistic Dharmic principles. To avoid 'slow enslavement,' the community is urged to support 'independent' forces and hold Indian-American politicians accountable, ensuring they do not compromise their cultural identity for political gain."
+description: "Hindus in the US must move beyond the Republican-Democrat divide and hold Indian-American politicians accountable to Dharmic principles."
 date: "2020-10-11"
 author: "Mohan Sonti"
 heroImage: "/content/articles/HindusInPolitics-BattleOfWillAndSurvival-03.webp"

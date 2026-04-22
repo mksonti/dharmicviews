@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     type: 'website',
   },
   twitter: {
-    card: 'summary',
+    card: 'summary_large_image',
     title: 'Dharmic Views',
     description: 'A curated collection of digital resources, scriptures, and organizations dedicated to Vedic culture and heritage.',
     images: [`${process.env.APP_URL || 'https://dharmicviews.com'}/logo.png`],

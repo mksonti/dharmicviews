@@ -1,6 +1,6 @@
 ---
 title: "Mahabharata and Ramayana: Practical Application"
-description: "The Ramayana provides guidance for individuals facing moral dilemmas between right and wrong, emphasizing system preservation and tactical crisis management against external threats. In contrast, the Mahabharata offers a framework for navigating complex ethical dilemmas, advocating for systemic change and long-term strategic problem-solving to address internal or self-generated troubles."
+description: "Ramayana guides moral dilemmas; Mahabharata guides ethical ones. A practical framework for applying these epics to real-life decisions."
 date: "2020-12-03"
 author: "Mohan Sonti"
 heroImage: "/content/articles/PracticalApplication-MahabharataAndRamayana-05.webp"

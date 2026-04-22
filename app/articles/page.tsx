@@ -4,8 +4,8 @@ import { getSortedArticlesData } from '@/lib/articles';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Articles',
-  description: 'Read the latest articles on Vedic wisdom and culture.',
+  title: 'Articles on Dharmic Living & Hindu Identity',
+  description: 'Essays on Vedic wisdom, Hindu political identity, and dharmic principles for the diaspora — by Mohan Sonti.',
 };
 
 export default function ArticlesPage() {

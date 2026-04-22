@@ -1,6 +1,6 @@
 ---
 title: "Politics Is NOT Skin Deep"
-description: "Hindus should reject purely 'skin deep' ethnic representation and instead grant their 'vote of approval' only to leaders who genuinely identify with and act in accordance with Dharmic principles and cultural value. Word of caution for Hindus against supporting 'skin deep' Indian-origin politicians who distance themselves from their heritage or act against Dharmic interests, characterizing such support as an emotional mistake rather than an intellectual reality. Instead, the community is urged to treat their vote as a 'vote of approval' earned only by leaders who genuinely identify with and represent their cultural roots, regardless of the time it takes to cultivate such true representation."
+description: "Why Hindus must demand genuine Dharmic values from leaders, not just ethnic origin — the vote is a 'vote of approval,' not blind loyalty."
 date: "2020-09-20"
 author: "Mohan Sonti"
 heroImage: "/content/articles/PoliticsIsNotSkinDeep-01.webp"

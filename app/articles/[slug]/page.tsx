@@ -7,17 +7,20 @@ import Callout from '@/components/Callout';
 
 const mdxComponents = { Callout };
 
+const baseUrl = process.env.APP_URL || 'https://dharmicviews.com';
+
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const articleData = getArticleData(slug);
-  
+  const ogImage = articleData.heroImage || `${baseUrl}/logo.png`;
+
   return {
     title: articleData.title,
     description: articleData.description,
     openGraph: {
       title: articleData.title,
       description: articleData.description,
-      ...(articleData.heroImage && { images: [articleData.heroImage] }),
+      images: [ogImage],
       type: 'article',
       publishedTime: articleData.date,
       authors: [articleData.author],
@@ -26,8 +29,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       card: 'summary_large_image',
       title: articleData.title,
       description: articleData.description,
-      ...(articleData.heroImage && { images: [articleData.heroImage] }),
-    }
+      images: [ogImage],
+    },
   };
 }
 
@@ -46,13 +49,20 @@ export default async function Article({ params }: { params: Promise<{ slug: stri
     '@context': 'https://schema.org',
     '@type': 'NewsArticle',
     headline: articleData.title,
-    ...(articleData.heroImage && { image: [articleData.heroImage] }),
+    description: articleData.description,
+    url: `${baseUrl}/articles/${slug}`,
+    image: [articleData.heroImage || `${baseUrl}/logo.png`],
     datePublished: articleData.date,
     dateModified: articleData.date,
     author: [{
       '@type': 'Person',
       name: articleData.author,
-    }]
+    }],
+    publisher: {
+      '@type': 'Organization',
+      name: 'Dharmic Views',
+      logo: { '@type': 'ImageObject', url: `${baseUrl}/logo.png` },
+    },
   };
 
   return (
