@@ -89,6 +89,100 @@ Videos live in `content/videos.json` as an array of objects.
 
 **Featured videos:** Same logic as articles — mark up to 3 videos with `"featured": true` to pin them to the homepage featured section.
 
+## Article MDX Components
+
+Articles support a set of custom components that can be used directly inside `.md` files alongside regular markdown. Each component targets a specific content pattern — use them only where the content genuinely fits.
+
+---
+
+### `<Callout type="info">`
+
+A highlighted aside box. Use for important caveats, editorial notes, or key insights that sit outside the main flow of prose. Supported types: `info` (orange), `warning` (yellow), `tip` (green), `note` (stone).
+
+```mdx
+<Callout type="info">
+  **"Treachery is the easiest ascending path of a Scoundrel"** — the market is large
+  and the enemies purchase such scoundrels with glee.
+</Callout>
+```
+
+---
+
+### `<Pullquote>`
+
+A large italic serif pull-quote with an orange left border. Use for the single most quotable sentence or argument in a section — one per major section at most.
+
+```mdx
+<Pullquote>
+  The 'vote' is really the 'vote of approval' — and we certainly shouldn't approve
+  a Hindu/Indian hater on the grounds of just being 'Hindu/Indian'.
+</Pullquote>
+```
+
+---
+
+### `<Divider />`
+
+A decorative `✦` section break. Use between major sections to give the reader a visual pause — replaces the raw `— —` or `---` separators.
+
+```mdx
+<Divider />
+```
+
+---
+
+### `<SectionHeading>`
+
+An orange-accented serif heading for named sections within an article. Use when the article has clearly titled sections that are written as bold inline text (e.g. `**A) Common Vision:**`). Renders more prominently than a bold paragraph.
+
+```mdx
+<SectionHeading>A) Common Vision</SectionHeading>
+```
+
+---
+
+### `<Definition term="...">`
+
+A styled term-definition row with the term in orange and a subtle left border. Use for vocabulary blocks where a word is introduced and explained — especially when several definitions appear in sequence.
+
+```mdx
+<Definition term="Moral dilemma">
+  A choice between 'right and wrong' — where the 'wrong' has a personal benefit
+  and the 'right' has a feared punishment.
+</Definition>
+
+<Definition term="Ethical dilemma">
+  A choice between 'wrong and wrong' — where one has to choose the lesser evil.
+</Definition>
+```
+
+---
+
+### `<Question>`
+
+An orange `?` marker with bold question text. Use for questions posed directly to the reader — especially numbered discussion questions or rhetorical challenges that punctuate an argument.
+
+```mdx
+<Question>Are you Politically an 'Independent' to begin with?</Question>
+```
+
+---
+
+### `<EpicCompare ramayana="..." mahabharata="...">`
+
+A two-column amber/orange card layout for comparing Ramayana and Mahabharata guidance side by side. Use only in contexts where both epics are being contrasted on the same dimension. Pass the full explanation for each epic as a prop string.
+
+```mdx
+<EpicCompare
+  ramayana="Guides people when faced with a Moral Dilemma — the choice between right
+    and wrong. Shri Rama chose the difficult righteous path relentlessly and with patience."
+  mahabharata="Guides people when faced with an Ethical Dilemma — the choice between
+    wrong and wrong. Arjuna's dilemma before Kurukshetra, resolved through the Bhagavad Gita."
+/>
+```
+
+---
+
 ## SEO
 
 Each article and video page generates:
