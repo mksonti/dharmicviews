@@ -12,6 +12,7 @@ interface ArticleData {
   description: string;
   author: string;
   heroImage?: string;
+  readingTime?: number;
 }
 
 type SortKey = 'date-desc' | 'date-asc' | 'title-asc' | 'title-desc';
@@ -56,7 +57,7 @@ export default function ArticlesClient({ articles }: { articles: ArticleData[] }
       </div>
 
       <div className="grid gap-8">
-        {sorted.map(({ slug, date, title, description, heroImage }) => (
+        {sorted.map(({ slug, date, title, description, heroImage, readingTime }) => (
           <article key={slug} className="bg-white rounded-2xl border border-orange-100 overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col md:flex-row">
             {heroImage && (
               <div className="md:w-2/5 relative h-56 md:h-auto shrink-0">
@@ -70,9 +71,15 @@ export default function ArticlesClient({ articles }: { articles: ArticleData[] }
               </div>
             )}
             <div className={`p-8 flex flex-col justify-center ${heroImage ? 'md:w-3/5' : 'w-full'}`}>
-              <p className="text-sm text-stone-500 mb-2">
-                {new Date(date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
-              </p>
+              <div className="flex items-center gap-3 text-sm text-stone-500 mb-2">
+                <span>{new Date(date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
+                {readingTime && (
+                  <>
+                    <span>&bull;</span>
+                    <span>{readingTime} min read</span>
+                  </>
+                )}
+              </div>
               <Link href={`/articles/${slug}`}>
                 <h2 className="text-2xl font-bold text-stone-900 mb-3 hover:text-orange-600 transition-colors">{title}</h2>
               </Link>

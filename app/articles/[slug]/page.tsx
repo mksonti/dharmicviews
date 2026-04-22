@@ -5,9 +5,11 @@ import Link from 'next/link';
 import { MDXRemote } from 'next-mdx-remote/rsc';
 import remarkGfm from 'remark-gfm';
 import Callout from '@/components/Callout';
-import { ChevronRight } from 'lucide-react';
+import Pullquote from '@/components/Pullquote';
+import Divider from '@/components/Divider';
+import { ChevronRight, Clock } from 'lucide-react';
 
-const mdxComponents = { Callout };
+const mdxComponents = { Callout, Pullquote, Divider };
 
 const baseUrl = process.env.APP_URL || 'https://dharmicviews.com';
 
@@ -115,10 +117,15 @@ export default async function Article({ params }: { params: Promise<{ slug: stri
         <div className="p-8 md:p-12">
           <header className="mb-8">
             <h1 className="font-serif italic text-3xl md:text-5xl text-stone-900 mb-4 leading-tight">{articleData.title}</h1>
-            <div className="flex items-center text-stone-500 text-sm gap-4">
+            <div className="flex flex-wrap items-center text-stone-500 text-sm gap-3">
               <span>{new Date(articleData.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
               <span>&bull;</span>
               <span>By {articleData.author}</span>
+              <span>&bull;</span>
+              <span className="flex items-center gap-1">
+                <Clock className="w-3.5 h-3.5" />
+                {articleData.readingTime} min read
+              </span>
             </div>
           </header>
           <div className="prose prose-orange prose-lg max-w-none text-stone-700">

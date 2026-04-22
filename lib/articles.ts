@@ -2,13 +2,18 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 
+function calcReadingTime(content: string): number {
+  const words = content.trim().split(/\s+/).length;
+  return Math.max(1, Math.round(words / 200));
+}
+
 const articlesDirectory = path.join(process.cwd(), 'content', 'articles');
 
 export function getSortedArticlesData() {
   if (!fs.existsSync(articlesDirectory)) {
     return [];
   }
-  
+
   const fileNames = fs.readdirSync(articlesDirectory);
   const allArticlesData = fileNames.filter(fileName => fileName.endsWith('.md')).map((fileName) => {
     const slug = fileName.replace(/\.md$/, '');
@@ -18,6 +23,7 @@ export function getSortedArticlesData() {
 
     return {
       slug,
+      readingTime: calcReadingTime(matterResult.content),
       ...(matterResult.data as { title: string; date: string; description: string; author: string; heroImage: string; featured?: boolean; draft?: boolean }),
     };
   }).filter(a => !a.draft);
@@ -61,6 +67,7 @@ export function getArticleData(slug: string) {
   return {
     slug,
     content: matterResult.content,
+    readingTime: calcReadingTime(matterResult.content),
     ...(matterResult.data as { title: string; date: string; description: string; author: string; heroImage: string }),
   };
 }
