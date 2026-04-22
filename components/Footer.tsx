@@ -51,16 +51,9 @@ export default function Footer() {
               <li><Link href="/videos" className="hover:text-white transition-colors">Videos</Link></li>
               <li>
                 {isHomePage ? (
-                  <button onClick={() => scrollToCategory('vedic-wisdom')} className="hover:text-white transition-colors">Vedic Wisdom</button>
+                  <button onClick={() => scrollToCategory('vedic-wisdom')} className="hover:text-white transition-colors">Hinduism Resources</button>
                 ) : (
-                  <Link href="/#vedic-wisdom" className="hover:text-white transition-colors">Vedic Wisdom</Link>
-                )}
-              </li>
-              <li>
-                {isHomePage ? (
-                  <button onClick={() => scrollToCategory('sustaining-vedic-culture')} className="hover:text-white transition-colors">Culture & Festivals</button>
-                ) : (
-                  <Link href="/#sustaining-vedic-culture" className="hover:text-white transition-colors">Culture & Festivals</Link>
+                  <Link href="/#vedic-wisdom" className="hover:text-white transition-colors">Hinduism Resources</Link>
                 )}
               </li>
             </ul>
