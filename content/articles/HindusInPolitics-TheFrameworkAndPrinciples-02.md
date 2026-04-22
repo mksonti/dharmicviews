@@ -11,8 +11,8 @@ There is an ardent debate and furor in the Indian-American community that I've b
 
 <Divider />
 
-**A) Common Vision:**
-<br />
+<SectionHeading>A) Common Vision</SectionHeading>
+
 *Dharmics (Hindus) are 'Colorful Thinkers'* — which is unique and sets us apart and often at loggerheads with Abrahamic 'Binary Thinking' ideas. For example, we don't subscribe to the 'Black & White' type of Binary Abrahamic thought process and system like -
 <br />
 Faithful/Monin — Heathen/Kafir<br />
@@ -39,21 +39,22 @@ The least we can do as **'Dharmic Colorful Thinkers'** is to first acknowledge t
 In theory and practice, we can agree that say a conniving and opportunist Karyakarta in BJP is worse than a Dharmic culturally grounded Karyakarta in Congress. More so is the case with Republican and Democrat supporters (neither of their ideas truly belong to us) — meaning we must penetrate both to bring about the 'Dharmic Change'!
 <br />
 So while addressing people who support either Binary parties of America, we must seek 2 answers about them -
-<br />
-**1. Question: Is there malice in their conduct and intent for supporting a specific party?**
-<br />
+
+<Question>Is there malice in their conduct and intent for supporting a specific party?</Question>
+
 Such as ideological alignment with Leftists, Christians or Islamists, deliberately distancing themselves from their cultural roots (like calling themselves 'South Asian' instead of Indian), ignoring our interests while supporting the cause of Islamists, Missionaries and other Leftist divisive ideas etc.
 <br />
-**2. Question: Is there a conflict of interest in supporting a specific party?**
-<br />
+
+<Question>Is there a conflict of interest in supporting a specific party?</Question>
+
 Such as Children and relatives working in them or one is given/promoted to great honor and positions.
 <br />
 If the answer is yes to either of the above 2 questions, then it must be called out clearly for the same. Because there is no such thing as 'unbiased mind' that can overlook 'self interests' and 'ideological alignments' and pretend to be Dharmic and balanced. Such people must at least have the honor of stepping down from leading our Dharmic community, or at least not give opinion on our subjects without honestly declaring their 'baggage'!
 
 <Divider />
 
-**B) Challenges:**
-<br />
+<SectionHeading>B) Challenges</SectionHeading>
+
 The challenges that the Dharmics have is not any of those aforementioned Binaries, but the entire gamut lies in the Abrahamic thought process. If we find it necessary to fight the Democrats or Republicans, then we're already in a precarious situation. The key is then to prioritize and choose what to neutralize first.
 <br />
 <Callout type="info">While the *Abrahamic Binary Exclusivist and Totalitarian Thinking* **'Right Wing' Christian Missionaries, Islamists etc are known threats** to us and humanity for a long time, at the moment the **bigger challenge in USA, Bharat and across the world,** comes from ideology of the **'Left Wing' Socialists/Leftists/Communists**. That surely must be tackled on a priority.</Callout>
@@ -64,26 +65,24 @@ What we see in USA with the **current breed of Democrats is a 'Domestic Variant'
 <br />
 Given the **potential threat to Bharat from China-Pak alliance**, we must recognize the domestic USA variant to be just as threatening to us — they are certainly not our benefactors. How we deal with it is an individual matter (from 'opposing them' to 'joining them' to change from within etc are all options) — but direct and open approval of vote to their policies and ideas is most certainly detrimental in the current form.
 <br />
-On this subject one question that must be answered in the discussions is -
-<br />
-**Question: What Challenge to society do you think should be addressed on a higher priority?**
-<br />
+
+<Question>What Challenge to society do you think should be addressed on a higher priority?</Question>
+
 The choice and their reasons must be layed out clearly to people.
 
 <Divider />
 
-**C) American Politics:**
-<br />
+<SectionHeading>C) American Politics</SectionHeading>
+
 Being the oldest Democracy, the American public must first be commended for their maturity and Political acumen. For long the **American Political system has been a Binary tussle** owing to it's Abrahamic origins.
 <br />
 But since 2008, the **'Independents' have gained strength enough to cross over the critical threshold** and started pushing forward candidates who fall outside the deeply entrenched and often 'pre-crowned' Political candidates of either party. The *first time Junior Senator Barack Obama, Independent Senator Bernie Sanders and the Businessman Donald Trump* being case in point.
 <br />
 While we can't be sure of what tricks the 2 dominant parties might pull in future to prevent an 'outsider' from becoming the President, we can certainly see the paradigm shift in the role the 'Independents' play in American polity. **These are the people who are closest to our Dharmic ideas** — of being relatively 'Colorful' and Independent.
 <br />
-On this subject the quintessential question is -
-<br />
-**Question: Are you Politically an 'Independent' to begin with?**
-<br />
+
+<Question>Are you Politically an 'Independent' to begin with?</Question>
+
 This is not withstanding what one is 'registered' or one is working with. If one is not an independent thinker and has completely aligned to one of two Binary sides — then that's a regressive step and must be treated as anathema!
 <br />
 **For Dharma … NOW and FOREVER!!**

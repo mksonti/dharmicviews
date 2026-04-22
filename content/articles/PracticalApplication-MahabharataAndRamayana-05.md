@@ -10,74 +10,84 @@ The 'Itihasa' containing Ramayana and Mahabharata are the longest epics written 
 
 <Divider />
 
-**1) Moral Dilemma versus Ethical Dilemma**
-<br />
+<SectionHeading>1) Moral Dilemma versus Ethical Dilemma</SectionHeading>
+
 There are no clearly defined and strict definitions of the words 'Morals' and 'Ethics' that are widely accepted across the world. Using these English words in the context of other world cultures only makes it even more difficult to define and understand. For the purpose here, please accept the following definitions so we can move to the idea that is being presented.
 <br />
-**Moral** — Derived from 'moralitas', meaning a 'proper behavior', is generally an absolute code of 'right conduct' that hasn't been codified into a law and most often cuts across cultures around the world.
 
-**Ethical** — Derived from 'ethicos', meaning 'related to one's character', is more local to a culturally 'acceptable' way of doing things and often resolves any conflicts within the ideas of morals in implementation.
+<Definition term="Moral">Derived from 'moralitas', meaning a 'proper behavior', is generally an absolute code of 'right conduct' that hasn't been codified into a law and most often cuts across cultures around the world.</Definition>
 
-**Moral dilemma** — Can be understood as a choice presented to people between 'right and wrong' — where the 'wrong' has a personal benefit and/or an easy path while the 'right' has a feared punishment.
+<Definition term="Ethical">Derived from 'ethicos', meaning 'related to one's character', is more local to a culturally 'acceptable' way of doing things and often resolves any conflicts within the ideas of morals in implementation.</Definition>
 
-**Ethical dilemma** — Can be understood as a choice presented to people between 'wrong and wrong' — where one has to choose between the lesser evil!
+<Definition term="Moral dilemma">A choice presented to people between 'right and wrong' — where the 'wrong' has a personal benefit and/or an easy path while the 'right' has a feared punishment.</Definition>
+
+<Definition term="Ethical dilemma">A choice presented to people between 'wrong and wrong' — where one has to choose between the lesser evil!</Definition>
+
 <br />
 
-**Ramayana:** Guides people when faced with Moral Dilemma where the choice in life is between 'right and wrong'. Wherein the 'wrong' is an easy, rewarding and convenient path, while the 'right' is a difficult, punishing and inconvenient path. Shri Rama was an unchallenged prince to the throne, born with all the comforts of life. Yet, his entire life was filled with hardships and tragedy on the sole account of following what is Dharmic without making any compromises to that. At any point in his life, he could have just ignored the wrong and evil, or worse just take a similar path and lead a happy life. But instead he chose to stand the ground and do the 'right' while fighting the 'wrong' relentlessly and with patience!
-<br />
-**Mahabharata:** Guides people when faced with Ethical Dilemma where the choice in life is between 'wrong and wrong'. The decisive point of this dilemma in Mahabharata was expressed by Arjuna to Shri Krishna right before the Kurukshetra war — that's where Bhagavad Gita was revealed. Should Arjuna be responsible for the death of millions including bothers, progeny, extended relatives, elders of the family, his own Gurus etc, leaving several kingdoms perished — to establish Dharma — or let them just suffer through Adharmic rule leaving the problem for the subsequent generations to solve.
+<EpicCompare
+  ramayana="Guides people when faced with a Moral Dilemma — the choice between 'right and wrong'. Shri Rama was an unchallenged prince to the throne, born with all the comforts of life. Yet his entire life was filled with hardships on the sole account of following what is Dharmic. He chose to stand his ground and do the 'right' while fighting the 'wrong' relentlessly and with patience."
+  mahabharata="Guides people when faced with an Ethical Dilemma — the choice between 'wrong and wrong'. This was expressed by Arjuna to Shri Krishna right before the Kurukshetra war, where the Bhagavad Gita was revealed. Should Arjuna be responsible for the death of millions — to establish Dharma — or let them suffer through Adharmic rule, leaving the problem for subsequent generations?"
+/>
 
 <Pullquote>Ramayana is a guide for Moral Dilemmas — choosing between right and wrong. Mahabharata is a guide for Ethical Dilemmas — choosing between wrong and wrong.</Pullquote>
 
 <Divider />
 
-**2) System Preserver versus System Change Maker**
-<br />
-**Ramayana:** Guides people if one's conflict in life is about preserving their existing system and principles from things that come in to threaten those — it's about the System Preservation. From Ayodhya to the kingdoms around, were generally doing fine with no one disturbing their dharmic system of life and conduct. Then came Ravana who would disrupt the existing life and system of the kingdoms and people. Shri Rama's fight was a Dharmic one against Adharma to preserve what existed.
-<br />
-**Mahabharata:** Guides people if one's conflict in life arises because of a deep systemic failure and quite comprehensively broken beyond repair requiring revamping and changing the system — it's about the System Change Making. While we knew the general and broad distinction between Dharmic Pandavas and Adharmic Kauravas, the lines were indeed quite blurred. Both sides had people of all flavors and did questionable acts — just that one side was a lot more Dharmic than the other. It was a comprehensive and systemic failure at every level. Shri Krishna had to carefully manage the warring sides to revamp the existing system and usher in a new Yuga.
+<SectionHeading>2) System Preserver versus System Change Maker</SectionHeading>
+
+<EpicCompare
+  ramayana="Guides people whose conflict is about preserving their existing system and principles from threats — System Preservation. The kingdoms around Ayodhya were doing fine with no one disturbing their dharmic way of life. Then came Ravana who disrupted the existing system. Shri Rama's fight was a Dharmic one against Adharma to preserve what existed."
+  mahabharata="Guides people whose conflict arises from a deep systemic failure requiring revamping — System Change Making. The lines between Dharmic Pandavas and Adharmic Kauravas were blurred; both sides did questionable acts. It was a comprehensive systemic failure at every level. Shri Krishna carefully managed the warring sides to revamp the existing system and usher in a new Yuga."
+/>
 
 <Divider />
 
-**3) External Threat versus Internal Threat**
-<br />
-**Ramayana:** Guides people if the threat one faces to family/society/community is external to themselves or the system in question — the fight is against an External Threat. Ravana was an external threat to one and all, from individuals to Nations, who were otherwise leading a relatively peaceful and Dharmic life. The correction to the problem was done by Shri Rama.
-<br />
-**Mahabharata:** Guides people if the threat one faces to family/society/community is internal to themselves or the system in question — the fight is against an Internal Threat. From Duryodhana to Bhishma and even Karna and many others challenged the system from within — bordering a civil war!
+<SectionHeading>3) External Threat versus Internal Threat</SectionHeading>
+
+<EpicCompare
+  ramayana="Guides people if the threat to family/society/community is external to the system — the fight is against an External Threat. Ravana was an external threat to all, from individuals to Nations, who were otherwise leading a relatively peaceful and Dharmic life. The correction was made by Shri Rama."
+  mahabharata="Guides people if the threat to family/society/community is internal to the system — the fight is against an Internal Threat. From Duryodhana to Bhishma and even Karna, many challenged the system from within — bordering a civil war!"
+/>
 
 <Divider />
 
-**4) Imposed Trouble versus Self Generated Trouble**
-<br />
-**Ramayana:** Guides people if the trouble they are in is imposed upon them from external sources — resolving an Imposed Trouble. Like, Shri Rama and Mother Sita's peaceful life was blatantly meddled with by Ravana — they otherwise had nothing to do with him.
-<br />
-**Mahabharata:** Guides people if the trouble they are in is self generated due to bad choices and circumstances of life — resolving an Self Generated Trouble. Like, Yudhistara to Bhishma to Duryodhana — all made wrong choices and put themselves in bad circumstances.
+<SectionHeading>4) Imposed Trouble versus Self Generated Trouble</SectionHeading>
+
+<EpicCompare
+  ramayana="Guides people if the trouble is imposed upon them from external sources — resolving an Imposed Trouble. Shri Rama and Mother Sita's peaceful life was blatantly meddled with by Ravana — they otherwise had nothing to do with him."
+  mahabharata="Guides people if the trouble is self generated due to bad choices and circumstances — resolving Self Generated Trouble. Yudhistara, Bhishma, Duryodhana — all made wrong choices and put themselves in bad circumstances."
+/>
 
 <Divider />
 
-**5) Tactical Thinking versus Strategic Thinking**
-<br />
-**Tactical Thinking** — Meeting immediate, often single point and clear objectives, such as, 'Kill the enemy'!
+<SectionHeading>5) Tactical Thinking versus Strategic Thinking</SectionHeading>
 
-**Strategic Thinking** — Meeting long term, multi factored and often relatively abstract objectives, such as, 'Win the war'!
+<Definition term="Tactical Thinking">Meeting immediate, often single point and clear objectives — such as, 'Kill the enemy'!</Definition>
+
+<Definition term="Strategic Thinking">Meeting long term, multi-factored and often relatively abstract objectives — such as, 'Win the war'!</Definition>
+
 <br />
 
-**Ramayana:** Guides people to resolve issues in life that need Tactical Thinking. For example, Shri Rama needs to get Mother Sita back safe and sound, and never let such a thing repeat again for anyone — The battle was simply to eliminate Ravana.
-<br />
-**Mahabharata:** Guides people to resolve issues in life that need Strategic Thinking. For example, the build up to the Kurushetra war was long and progressive leading to an eventual victory of Dharma over Adharma and getting the society broadly back on course.
+<EpicCompare
+  ramayana="Guides people to resolve issues that need Tactical Thinking. Shri Rama needed to get Mother Sita back safe and sound, and never let such a thing repeat again for anyone — the battle was simply to eliminate Ravana."
+  mahabharata="Guides people to resolve issues that need Strategic Thinking. The build-up to the Kurukshetra war was long and progressive, leading to an eventual victory of Dharma over Adharma and getting society broadly back on course."
+/>
 
 <Divider />
 
-**6) Crisis Management versus Problem Solving**
-<br />
-**Crisis** — which can become existential, is a trouble that requires immediate resolution — else it alters the course of life effectively very soon.
+<SectionHeading>6) Crisis Management versus Problem Solving</SectionHeading>
 
-**Problem** — is a trouble that requires eventual resolution — else it shifts the course slowly but firmly.
+<Definition term="Crisis">A trouble that can become existential, requiring immediate resolution — else it alters the course of life effectively very soon.</Definition>
+
+<Definition term="Problem">A trouble that requires eventual resolution — else it shifts the course slowly but firmly.</Definition>
+
 <br />
 
-**Ramayana:** Guides people in need of a Crisis Management. Shri Rama's life was a sad one being perennially in crisis — and he resolved it on a Dharmic path with a resolute and stable mind — with no vengeance, frustration, anger or losing emotional control.
-<br />
-**Mahabharata:** Guides people in need of a Problem Solving. Shri Krishna had a nice beautiful and happy life on the whole, but was cognizant of the existing Adarmic situation of the administration and society that required a resolute and persistent effort to solve it.
+<EpicCompare
+  ramayana="Guides people in need of Crisis Management. Shri Rama's life was a sad one being perennially in crisis — and he resolved it on a Dharmic path with a resolute and stable mind — with no vengeance, frustration, anger or losing emotional control."
+  mahabharata="Guides people in need of Problem Solving. Shri Krishna had a beautiful and happy life on the whole, but was cognizant of the existing Adharmic situation of the administration and society that required a resolute and persistent effort to solve."
+/>
 
 <Divider />
 

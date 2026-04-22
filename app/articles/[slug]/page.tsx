@@ -7,9 +7,13 @@ import remarkGfm from 'remark-gfm';
 import Callout from '@/components/Callout';
 import Pullquote from '@/components/Pullquote';
 import Divider from '@/components/Divider';
+import SectionHeading from '@/components/SectionHeading';
+import Definition from '@/components/Definition';
+import Question from '@/components/Question';
+import EpicCompare from '@/components/EpicCompare';
 import { ChevronRight, Clock } from 'lucide-react';
 
-const mdxComponents = { Callout, Pullquote, Divider };
+const mdxComponents = { Callout, Pullquote, Divider, SectionHeading, Definition, Question, EpicCompare };
 
 const baseUrl = process.env.APP_URL || 'https://dharmicviews.com';
 

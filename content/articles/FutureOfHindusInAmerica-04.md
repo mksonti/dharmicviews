@@ -6,8 +6,8 @@ author: "Mohan Sonti"
 heroImage: "/content/articles/FutureOfHindusInAmerica-04.webp"
 ---
 
-**Hindu Investment:**
-<br />
+<SectionHeading>Hindu Investment</SectionHeading>
+
 We know that the people in our Community, for various reasons, have **'invested' on both Trump and Biden.** Given the close contest, I would say it was a wise investment from both parties — and a **congratulations are in order to everyone,** no matter what the outcome. Many see this as a sign of 'Divided Community', but I say **we're a 'Well Invested' Community with a stable diversified portfolio** … Yes, there is some truth to it!
 <br />
 Keeping the best interest of America in our hearts and minds, we've spread out to all 'power centers' to also secure the interests of our Community, Dharma and Bharat. So, whichever power center takes control, it **must be assumed and emphasized that the people on that 'supporting side' bear a higher burden of securing our interests.**
@@ -16,8 +16,8 @@ Keeping the best interest of America in our hearts and minds, we've spread out t
 
 <Divider />
 
-**Few Ground Realities we need to Acknowledge:**
-<br />
+<SectionHeading>Few Ground Realities we need to Acknowledge</SectionHeading>
+
 1) The battle of the Binary 'Left and Right', on the lines of their other Abrahamic Binary systems, is several centuries old. The **target of 'Left'** since eons had always been the **'White' (Supremacy) and 'Christian'** (besides 'Rich' as part of broader Socialist nemesis) — which they see as the 'problems of their Society'. Their **'unfinished business' will be eventually completed and we can't stop it.**
 <br />
 2) The **Leftist ideologies have always groomed the Muslims** (usually extreme elements) for their Anarchist/Street Battle plots to tear down existing structure. This is a **Global phenomena and is epitomized by China-Pak friendship,** described as *'Higher than Himalayas and Deeper than Ocean'!* It's just a **'marriage of convenience'** between polar opposite ideologies.
@@ -30,8 +30,8 @@ Keeping the best interest of America in our hearts and minds, we've spread out t
 
 <Divider />
 
-**Hindu Survival:**
-<br />
+<SectionHeading>Hindu Survival</SectionHeading>
+
 *The 'Game' isn't over till it's 'Really Over' … And it's really not 'Over' yet!*
 <br />
 Our focus at this point should not be to exclusively align with a 'side' for safety. It should be distributed across board/power centers to **ensure that we've no enemies targeting us** in case of hostilities breaking out in this Country. **Please note** that *we don't belong to any of the Binary sides of the Abrahamic systems — we Hindus are a Community of 'Colorful Culture and Thinkers'!*
