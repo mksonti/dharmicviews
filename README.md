@@ -91,18 +91,29 @@ Videos live in `content/videos.json` as an array of objects.
 
 ## Article MDX Components
 
-Articles support a set of custom components that can be used directly inside `.md` files alongside regular markdown. Each component targets a specific content pattern — use them only where the content genuinely fits.
+Articles are `.md` files but support a set of custom JSX components via `next-mdx-remote`. Use components inline alongside regular markdown. All props must be plain strings — do not pass JavaScript expressions like `{0}` or `{["a","b"]}` as prop values.
+
+> **Important:** All props must be plain strings (`prop="value"`). JavaScript expressions in props (`prop={value}`) will cause a runtime error.
 
 ---
 
-### `<Callout type="info">`
+### `<Callout type="...">`
 
-A highlighted aside box. Use for important caveats, editorial notes, or key insights that sit outside the main flow of prose. Supported types: `info` (orange), `warning` (yellow), `tip` (green), `note` (stone).
+A highlighted aside box that pulls content out of the main prose flow. Use for editorial asides, important caveats, or striking statements that deserve emphasis but aren't quite a pull-quote.
+
+**When to use:** A key argument, warning, or insight that stands alone — not a definition, not a question, not a heading.
+
+**Prop:** `type` — one of `info` (orange), `warning` (yellow), `tip` (green), `note` (stone/grey).
 
 ```mdx
 <Callout type="info">
   **"Treachery is the easiest ascending path of a Scoundrel"** — the market is large
   and the enemies purchase such scoundrels with glee.
+</Callout>
+
+<Callout type="warning">
+  Direct and open approval of vote to their policies is most certainly
+  detrimental in the current form.
 </Callout>
 ```
 
@@ -110,7 +121,9 @@ A highlighted aside box. Use for important caveats, editorial notes, or key insi
 
 ### `<Pullquote>`
 
-A large italic serif pull-quote with an orange left border. Use for the single most quotable sentence or argument in a section — one per major section at most.
+A large italic serif pull-quote with an orange left border. Renders as a visually dominant statement that breaks the reading flow intentionally.
+
+**When to use:** The single most quotable sentence from a section — the line you'd share on social media. Use at most once per major section. Do not use for definitions or questions.
 
 ```mdx
 <Pullquote>
@@ -123,7 +136,9 @@ A large italic serif pull-quote with an orange left border. Use for the single m
 
 ### `<Divider />`
 
-A decorative `✦` section break. Use between major sections to give the reader a visual pause — replaces the raw `— —` or `---` separators.
+A decorative `✦` section break with flanking lines. Self-closing, no props.
+
+**When to use:** Between major named sections of an article to give the reader a visual pause. Replaces the raw `— —` text separators the articles originally used.
 
 ```mdx
 <Divider />
@@ -133,26 +148,38 @@ A decorative `✦` section break. Use between major sections to give the reader 
 
 ### `<SectionHeading>`
 
-An orange-accented serif heading for named sections within an article. Use when the article has clearly titled sections that are written as bold inline text (e.g. `**A) Common Vision:**`). Renders more prominently than a bold paragraph.
+An orange accent-bar + serif heading for named sections within an article body. Renders more prominently than bold inline text.
+
+**When to use:** When an article has named sections that were written as `**A) Section Name:**` bold inline text. Do not use for the article's main title (that comes from frontmatter) or for minor in-paragraph labels.
 
 ```mdx
 <SectionHeading>A) Common Vision</SectionHeading>
+
+<SectionHeading>1) Moral Dilemma versus Ethical Dilemma</SectionHeading>
 ```
 
 ---
 
 ### `<Definition term="...">`
 
-A styled term-definition row with the term in orange and a subtle left border. Use for vocabulary blocks where a word is introduced and explained — especially when several definitions appear in sequence.
+A styled term-definition row — term in orange on the left, explanation text on the right, with a subtle left border.
+
+**When to use:** When introducing and explaining a specific word or concept, especially when several definitions appear in sequence (e.g. Moral / Ethical / Moral Dilemma / Ethical Dilemma). Do not use for general paragraphs.
+
+**Prop:** `term` — the word or phrase being defined (plain string, no markdown).
 
 ```mdx
 <Definition term="Moral dilemma">
-  A choice between 'right and wrong' — where the 'wrong' has a personal benefit
-  and the 'right' has a feared punishment.
+  A choice presented between 'right and wrong' — where the 'wrong' has a personal
+  benefit and the 'right' has a feared punishment.
 </Definition>
 
 <Definition term="Ethical dilemma">
-  A choice between 'wrong and wrong' — where one has to choose the lesser evil.
+  A choice presented between 'wrong and wrong' — where one has to choose the lesser evil.
+</Definition>
+
+<Definition term="Tactical Thinking">
+  Meeting immediate, often single-point and clear objectives — such as 'Kill the enemy'.
 </Definition>
 ```
 
@@ -160,24 +187,102 @@ A styled term-definition row with the term in orange and a subtle left border. U
 
 ### `<Question>`
 
-An orange `?` marker with bold question text. Use for questions posed directly to the reader — especially numbered discussion questions or rhetorical challenges that punctuate an argument.
+An orange `?` marker with bold question text. Visually separates a question from surrounding prose.
+
+**When to use:** Questions posed directly to the reader as part of the argument — rhetorical challenges, discussion prompts, or diagnostic tests the author asks the reader to apply. Not for general paragraph questions embedded in prose.
 
 ```mdx
 <Question>Are you Politically an 'Independent' to begin with?</Question>
+
+<Question>Is there malice in their conduct and intent for supporting a specific party?</Question>
+
+<Question>What Challenge to society do you think should be addressed on a higher priority?</Question>
 ```
 
 ---
 
 ### `<EpicCompare ramayana="..." mahabharata="...">`
 
-A two-column amber/orange card layout for comparing Ramayana and Mahabharata guidance side by side. Use only in contexts where both epics are being contrasted on the same dimension. Pass the full explanation for each epic as a prop string.
+A two-column amber/orange card layout comparing Ramayana and Mahabharata guidance side by side on the same dimension. Both columns render with their epic name as a label.
+
+**When to use:** Only in the Mahabharata & Ramayana article (or future articles) where both epics are being contrasted on the exact same axis (e.g. both addressing "Moral vs Ethical Dilemma"). Do not use for general two-column comparisons.
+
+**Props:** `ramayana` and `mahabharata` — full explanatory text for each epic as plain strings.
 
 ```mdx
 <EpicCompare
-  ramayana="Guides people when faced with a Moral Dilemma — the choice between right
-    and wrong. Shri Rama chose the difficult righteous path relentlessly and with patience."
-  mahabharata="Guides people when faced with an Ethical Dilemma — the choice between
-    wrong and wrong. Arjuna's dilemma before Kurukshetra, resolved through the Bhagavad Gita."
+  ramayana="Guides people when faced with a Moral Dilemma — the choice between right and wrong.
+    Shri Rama chose the difficult righteous path relentlessly and with patience."
+  mahabharata="Guides people when faced with an Ethical Dilemma — the choice between wrong and wrong.
+    Arjuna's dilemma before Kurukshetra was resolved through the Bhagavad Gita."
+/>
+```
+
+---
+
+### `<BinaryList>` + `<BinaryItem left="..." right="...">`
+
+A two-column striped table for listing opposed pairs side by side — amber on the left, orange on the right. `<BinaryItem>` rows are nested inside `<BinaryList>`.
+
+**When to use:** When the article lists ideological or conceptual binary pairs (e.g. the Abrahamic binary systems). Do not use for generic bullet lists or unrelated pairs.
+
+**Props on `<BinaryItem>`:** `left` and `right` — the two sides of the pair (plain strings).
+
+```mdx
+<BinaryList>
+  <BinaryItem left="Faithful/Momin" right="Heathen/Kafir" />
+  <BinaryItem left="Capitalism" right="Communism" />
+  <BinaryItem left="Right Wing" right="Left Wing" />
+  <BinaryItem left="Republican" right="Democrat" />
+  <BinaryItem left="With me" right="Against me" />
+</BinaryList>
+```
+
+---
+
+### `<ForceCard label="...">`
+
+A labelled neutral card for describing a named force, faction, or group. All cards render in the same stone/grey tone — no colour differentiation — so no visual bias is introduced between entities.
+
+**When to use:** When the article identifies 2–3 clearly named entities (forces, factions, groups) and devotes a paragraph to each. Use one `<ForceCard>` per entity.
+
+**Prop:** `label` — the card's heading (plain string).
+
+```mdx
+<ForceCard label="Force 1 — Right Wing Christianity (Republican Side)">
+  The 'Right Wing' Christianity with its army of Missionaries and Money is a threat
+  to our culture and civilization...
+</ForceCard>
+
+<ForceCard label="Force 2 — Left Wing Socialists (Democratic Side)">
+  The Left Wing Socialists have an obvious upper-hand, with generous support from
+  their powerful Communist 'Mother Ship' China...
+</ForceCard>
+
+<ForceCard label="Force 3 — The Independents (Our Natural Allies)">
+  The 'Independents' of America are slowly growing to be a force by themselves.
+  These people are truly our friends...
+</ForceCard>
+```
+
+---
+
+### `<SourceNote href="..." label="..." date="...">`
+
+A footer-style publication credit with a styled external link, a bullet separator, and a date. Sits below the closing line of the article.
+
+**When to use:** Only when the article was originally published on an external platform and a canonical source URL exists. Place it as the very last element in the file.
+
+**Props:**
+- `href` — the full URL of the original publication
+- `label` — the publication name shown as link text (plain string)
+- `date` — the original publication date as a readable string (e.g. `"20th Oct 2020"`)
+
+```mdx
+<SourceNote
+  href="https://www.newsbharati.com/Encyc/2020/10/20/Indian-origin-.html"
+  label="NewsBharati"
+  date="20th Oct 2020"
 />
 ```
 

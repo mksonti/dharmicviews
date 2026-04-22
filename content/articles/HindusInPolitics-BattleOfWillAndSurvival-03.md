@@ -13,12 +13,12 @@ While the discussion is about Republican/Democrat parties, and rightfully so due
 <Divider />
 
 There are generally speaking and broadly three forces in American 'Binary' Society that are of immediate relevance to Hindus/Dharmic people -
-<br />
-The first is the **'Right Wing' Christianity with its army of Missionaries and Money** who are indeed a threat to our culture and civilization (exemplified by their total annihilation of nearly all European Cultures/Civilizations and beyond), and they have always been that way — Yes, **they are now predominantly on Republican Side.**
-<br />
-The second is the **Left Wing Socialists** who at the moment seem to have an **obvious upper-hand here over the Christianity of Right Wing,** with generous support from their **powerful Communist 'Mother Ship' China** — which is threatening not just the polity of the USA but also directly threatening India — Yes, **they are predominantly on Democratic Side.** Communist China being India's neighbor and under the current cloud of imminent war — makes it to be the highest threat to us at the moment. Basic geo-political analysis shows that the Indo-China war is inevitable and will be sooner than later, with at stake are several $100s billion investment/business in CPEC (China-Pakistan Economic Corridor) threatening India inside POK (Pakistan Occupied Kashmir). Please let's not pretend or be wishful that it isn't happening.
-<br />
-The third is the **'Independents' of America,** who are slowly growing to be a force by itself. These people are truly our friends, who too like us, are annoyed in no less measure regarding the above two 'Binary' forces. **These are the people we need to nurture,** work with and rely on to make the real change in America towards a more peaceful and prosperous country.
+
+<ForceCard label="Force 1 — Right Wing Christianity (Republican Side)">The 'Right Wing' Christianity with its army of Missionaries and Money is indeed a threat to our culture and civilization — exemplified by their total annihilation of nearly all European Cultures/Civilizations and beyond. They have always been that way and are now predominantly on the Republican Side.</ForceCard>
+
+<ForceCard label="Force 2 — Left Wing Socialists (Democratic Side)">The Left Wing Socialists have an obvious upper-hand, with generous support from their powerful Communist 'Mother Ship' China — threatening not just the polity of the USA but also directly threatening India. Communist China being India's neighbor under the current cloud of imminent war makes it the highest threat to us at the moment. The Indo-China war is inevitable and will be sooner than later, with $100s billion in CPEC investment threatening India inside POK.</ForceCard>
+
+<ForceCard label="Force 3 — The Independents (Our Natural Allies)">The 'Independents' of America are slowly growing to be a force by themselves. These people are truly our friends — annoyed in no less measure by the above two 'Binary' forces. These are the people we need to nurture, work with, and rely on to make the real change in America towards a more peaceful and prosperous country.</ForceCard>
 <br />
 It's very important to understand what and who the friends and threats are in this Country. America is the most diverse Nation in the west and in the world it's second only to India. Like India for the world, America too is pluralistic and is an experiment in the west to see if people of diverse cultures, races and ethnicities can coexist. As Hindus/Dharmics it's imperative that we understand first and foremost that this experiment simply can not fail! **We must believe in the idea of America and work for it's success!!**
 
@@ -34,9 +34,15 @@ On a general note, I hope we all can be in agreement with this thought -
 
 If they feel that they've somehow and anyhow penetrated into the system through those gross and core compromises — they must certainly learn from our recent 1000 year history that it has always been the case in India starting from the many kings joining with Muslim invaders, to going all the way to Nehru mimicking Britishers — all of them did the same. That's just a slow enslavement of our community going in relatively little painless steps.
 
-<Callout type="info">There is a very fine and subtle line between -<br />
-**"Well Crafted Diplomacy and Well Compromised Surrender"**<br />
-**"Political Statecraft and Political Treachery"**</Callout>
+There is a very fine and subtle line between —
+
+<Definition term="Well Crafted Diplomacy">Engaging with the opposing side while preserving Dharmic identity and community interests intact.</Definition>
+
+<Definition term="Well Compromised Surrender">Appearing to engage while actually ceding ground on core principles — indistinguishable from betrayal over time.</Definition>
+
+<Definition term="Political Statecraft">Using political positioning as a tool to advance Dharmic goals from within the system.</Definition>
+
+<Definition term="Political Treachery">Using the community's trust as currency to purchase personal advancement in hostile systems.</Definition>
 
 To be able to differentiate between the above, is where lies our strategy in dealing with the threats that our community faces.
 <br />
