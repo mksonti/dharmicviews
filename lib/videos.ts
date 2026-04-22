@@ -15,6 +15,7 @@ export interface VideoData {
   publishDate: string;
   publisher: string;
   channelName: string;
+  channelId: string;
   tags: string[];
   /** Resolved at load time: local file if available, otherwise live YouTube CDN URL. */
   thumbnailSrc: string;
@@ -52,4 +53,42 @@ export function getAllVideos(): VideoData[] {
 export function getVideoData(videoId: string): VideoData | undefined {
   const videos = getAllVideos();
   return videos.find(v => v.videoId === videoId);
+}
+
+export interface ChannelInfo {
+  channelId: string;
+  channelName: string;
+}
+
+export function getChannels(): ChannelInfo[] {
+  const videos = getAllVideos();
+  const seen = new Map<string, string>();
+  for (const v of videos) {
+    if (v.channelId && !seen.has(v.channelId)) {
+      seen.set(v.channelId, v.channelName);
+    }
+  }
+  return Array.from(seen.entries())
+    .map(([channelId, channelName]) => ({ channelId, channelName }))
+    .sort((a, b) => a.channelName.localeCompare(b.channelName));
+}
+
+export function getVideosByChannel(): Record<string, VideoData[]> {
+  const videos = getAllVideos();
+  const byChannel: Record<string, VideoData[]> = {};
+  for (const video of videos) {
+    const key = video.channelId || 'other';
+    if (!byChannel[key]) byChannel[key] = [];
+    byChannel[key].push(video);
+  }
+  for (const key of Object.keys(byChannel)) {
+    byChannel[key].sort((a, b) => a.title.localeCompare(b.title));
+  }
+  return byChannel;
+}
+
+export function getVideosByChannelId(channelId: string): VideoData[] {
+  return getAllVideos()
+    .filter(v => v.channelId === channelId)
+    .sort((a, b) => a.title.localeCompare(b.title));
 }

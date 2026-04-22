@@ -43,12 +43,19 @@ const categoryIcons: Record<string, React.ReactNode> = {
 };
 
 import Footer from './Footer';
+import type { ChannelInfo } from '@/lib/videos';
 
-export default function Navigation({ children }: { children: React.ReactNode }) {
+export default function Navigation({ children, videoChannels = [] }: { children: React.ReactNode; videoChannels?: ChannelInfo[] }) {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
+  const [videosExpanded, setVideosExpanded] = useState(false);
   const pathname = usePathname();
   const isHomePage = pathname === '/';
+  const isVideosPage = pathname.startsWith('/videos');
+
+  useEffect(() => {
+    setVideosExpanded(isVideosPage);
+  }, [isVideosPage]);
 
   useEffect(() => {
     if (!isHomePage) return;
@@ -136,14 +143,45 @@ export default function Navigation({ children }: { children: React.ReactNode }) 
               Articles
             </Link>
 
-            <Link 
-              href="/videos" 
-              onClick={() => setIsSidebarOpen(false)}
-              className={`w-full flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-all ${pathname.startsWith('/videos') ? 'bg-orange-600 text-white shadow-md shadow-orange-100' : 'text-stone-500 hover:bg-orange-50 hover:text-orange-700'}`}
-            >
-              <Video className="w-5 h-5" />
-              Videos
-            </Link>
+            <div>
+              <div className="flex items-center">
+                <Link
+                  href="/videos"
+                  onClick={() => setIsSidebarOpen(false)}
+                  className={`flex-1 flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-all ${pathname.startsWith('/videos') ? 'bg-orange-600 text-white shadow-md shadow-orange-100' : 'text-stone-500 hover:bg-orange-50 hover:text-orange-700'}`}
+                >
+                  <Video className="w-5 h-5" />
+                  Videos
+                </Link>
+                {videoChannels.length > 0 && (
+                  <button
+                    onClick={() => setVideosExpanded(v => !v)}
+                    className={`p-2 ml-1 rounded-xl transition-all ${pathname.startsWith('/videos') ? 'text-orange-600 hover:bg-orange-50' : 'text-stone-400 hover:bg-orange-50 hover:text-orange-600'}`}
+                    aria-label="Toggle channel list"
+                  >
+                    <ChevronRight className={`w-4 h-4 transition-transform duration-200 ${videosExpanded ? 'rotate-90' : ''}`} />
+                  </button>
+                )}
+              </div>
+              {videosExpanded && videoChannels.length > 0 && (
+                <div className="ml-4 mt-1 space-y-0.5 border-l-2 border-orange-100 pl-3">
+                  {videoChannels.map(({ channelId, channelName }) => {
+                    const isActive = pathname === `/videos/channel/${channelId}`;
+                    return (
+                      <Link
+                        key={channelId}
+                        href={`/videos/channel/${channelId}`}
+                        onClick={() => setIsSidebarOpen(false)}
+                        className={`flex items-center gap-2 px-3 py-2 rounded-lg text-xs font-medium transition-all ${isActive ? 'bg-orange-100 text-orange-700' : 'text-stone-500 hover:bg-orange-50 hover:text-orange-700'}`}
+                      >
+                        <Video className="w-3.5 h-3.5 shrink-0" />
+                        <span className="truncate">{channelName}</span>
+                      </Link>
+                    );
+                  })}
+                </div>
+              )}
+            </div>
             
             <div className="py-4">
               <p className="px-4 text-[10px] uppercase tracking-[0.2em] text-stone-400 font-bold mb-2">Categories</p>

@@ -44,8 +44,10 @@ export const metadata: Metadata = {
 };
 
 import Navigation from '@/components/Navigation';
+import { getChannels } from '@/lib/videos';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const videoChannels = getChannels();
   const jsonLd = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -93,7 +95,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             gtag('config', 'G-M2BQ2XGPQ9');
           `}
         </Script>
-        <Navigation>
+        <Navigation videoChannels={videoChannels}>
           {children}
         </Navigation>
       </body>
