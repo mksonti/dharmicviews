@@ -3,6 +3,7 @@ import Script from 'next/script';
 import './globals.css';
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.APP_URL || 'https://dharmicviews.com'),
   title: {
     default: 'Dharmic Views',
     template: '%s | Dharmic Views',
