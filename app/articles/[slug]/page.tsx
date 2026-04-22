@@ -1,9 +1,11 @@
 import { getArticleData, getAllArticleSlugs } from '@/lib/articles';
 import { Metadata } from 'next';
 import Image from 'next/image';
+import Link from 'next/link';
 import { MDXRemote } from 'next-mdx-remote/rsc';
 import remarkGfm from 'remark-gfm';
 import Callout from '@/components/Callout';
+import { ChevronRight } from 'lucide-react';
 
 const mdxComponents = { Callout };
 
@@ -45,25 +47,36 @@ export default async function Article({ params }: { params: Promise<{ slug: stri
   const { slug } = await params;
   const articleData = getArticleData(slug);
 
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'NewsArticle',
-    headline: articleData.title,
-    description: articleData.description,
-    url: `${baseUrl}/articles/${slug}`,
-    image: [articleData.heroImage || `${baseUrl}/logo.png`],
-    datePublished: articleData.date,
-    dateModified: articleData.date,
-    author: [{
-      '@type': 'Person',
-      name: articleData.author,
-    }],
-    publisher: {
-      '@type': 'Organization',
-      name: 'Dharmic Views',
-      logo: { '@type': 'ImageObject', url: `${baseUrl}/logo.png` },
+  const jsonLd = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'NewsArticle',
+      headline: articleData.title,
+      description: articleData.description,
+      url: `${baseUrl}/articles/${slug}`,
+      image: [articleData.heroImage || `${baseUrl}/logo.png`],
+      datePublished: articleData.date,
+      dateModified: articleData.date,
+      author: [{
+        '@type': 'Person',
+        name: articleData.author,
+      }],
+      publisher: {
+        '@type': 'Organization',
+        name: 'Dharmic Views',
+        logo: { '@type': 'ImageObject', url: `${baseUrl}/logo.png` },
+      },
     },
-  };
+    {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: baseUrl },
+        { '@type': 'ListItem', position: 2, name: 'Articles', item: `${baseUrl}/articles` },
+        { '@type': 'ListItem', position: 3, name: articleData.title, item: `${baseUrl}/articles/${slug}` },
+      ],
+    },
+  ];
 
   return (
     <main className="py-12 px-6 lg:px-12">
@@ -71,6 +84,17 @@ export default async function Article({ params }: { params: Promise<{ slug: stri
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      <div className="max-w-3xl mx-auto mb-4">
+        <nav aria-label="Breadcrumb">
+          <ol className="flex items-center gap-1 text-sm text-stone-500">
+            <li><Link href="/" className="hover:text-orange-600 transition-colors">Home</Link></li>
+            <li><ChevronRight className="w-3.5 h-3.5 text-stone-300" /></li>
+            <li><Link href="/articles" className="hover:text-orange-600 transition-colors">Articles</Link></li>
+            <li><ChevronRight className="w-3.5 h-3.5 text-stone-300" /></li>
+            <li className="text-stone-400 truncate max-w-[200px] sm:max-w-xs" aria-current="page">{articleData.title}</li>
+          </ol>
+        </nav>
+      </div>
       <article className="max-w-3xl mx-auto bg-white rounded-3xl border border-orange-100 overflow-hidden shadow-sm">
         {articleData.heroImage && (
           <div className="relative w-full" style={{ aspectRatio: '16/9' }}>

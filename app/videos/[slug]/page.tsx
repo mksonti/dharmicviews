@@ -1,6 +1,10 @@
 import { getVideoData, getAllVideos } from '@/lib/videos';
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
+import Link from 'next/link';
+import { ChevronRight } from 'lucide-react';
+
+const baseUrl = process.env.APP_URL || 'https://dharmicviews.com';
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
@@ -44,17 +48,29 @@ export default async function VideoPage({ params }: { params: Promise<{ slug: st
     notFound();
   }
 
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'VideoObject',
-    name: videoData.title,
-    description: videoData.description,
-    thumbnailUrl: [videoData.thumbnail],
-    uploadDate: videoData.publishDate,
-    duration: videoData.duration,
-    contentUrl: videoData.url,
-    embedUrl: `https://www.youtube.com/embed/${videoData.videoId}`
-  };
+  const jsonLd = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'VideoObject',
+      name: videoData.title,
+      description: videoData.description,
+      thumbnailUrl: [videoData.thumbnail],
+      uploadDate: videoData.publishDate,
+      duration: videoData.duration,
+      contentUrl: videoData.url,
+      embedUrl: `https://www.youtube.com/embed/${videoData.videoId}`,
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: baseUrl },
+        { '@type': 'ListItem', position: 2, name: 'Videos', item: `${baseUrl}/videos` },
+        { '@type': 'ListItem', position: 3, name: videoData.channelName, item: `${baseUrl}/videos/channel/${videoData.channelId}` },
+        { '@type': 'ListItem', position: 4, name: videoData.title, item: `${baseUrl}/videos/${videoData.videoId}` },
+      ],
+    },
+  ];
 
   return (
     <main className="py-12 px-6 lg:px-12">
@@ -62,6 +78,19 @@ export default async function VideoPage({ params }: { params: Promise<{ slug: st
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      <div className="max-w-4xl mx-auto mb-4">
+        <nav aria-label="Breadcrumb">
+          <ol className="flex items-center gap-1 text-sm text-stone-500">
+            <li><Link href="/" className="hover:text-orange-600 transition-colors">Home</Link></li>
+            <li><ChevronRight className="w-3.5 h-3.5 text-stone-300" /></li>
+            <li><Link href="/videos" className="hover:text-orange-600 transition-colors">Videos</Link></li>
+            <li><ChevronRight className="w-3.5 h-3.5 text-stone-300" /></li>
+            <li><Link href={`/videos/channel/${videoData.channelId}`} className="hover:text-orange-600 transition-colors">{videoData.channelName}</Link></li>
+            <li><ChevronRight className="w-3.5 h-3.5 text-stone-300" /></li>
+            <li className="text-stone-400 truncate max-w-[200px] sm:max-w-xs" aria-current="page">{videoData.title}</li>
+          </ol>
+        </nav>
+      </div>
       <div className="max-w-4xl mx-auto">
         <div className="bg-white rounded-3xl border border-orange-100 overflow-hidden shadow-sm">
           <div className="relative w-full aspect-video bg-black">
