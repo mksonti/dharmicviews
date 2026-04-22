@@ -3,6 +3,7 @@
 import React from 'react';
 import { Mail } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 
 export default function Footer() {
@@ -31,7 +32,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           <div className="col-span-1 lg:col-span-2">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 bg-orange-600 rounded-full flex items-center justify-center text-white font-serif italic font-bold text-lg">DV</div>
+              <Image src="/logo.png" alt="Dharmic Views" width={40} height={40} className="rounded-full" />
               <h2 className="font-serif italic text-2xl font-bold">Dharmic Views</h2>
             </div>
             <p className="text-stone-400 text-lg max-w-md mb-8">
