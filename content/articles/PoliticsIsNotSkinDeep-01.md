@@ -3,7 +3,7 @@ title: "Politics Is NOT Skin Deep"
 description: "Hindus should reject purely 'skin deep' ethnic representation and instead grant their 'vote of approval' only to leaders who genuinely identify with and act in accordance with Dharmic principles and cultural value. Word of caution for Hindus against supporting 'skin deep' Indian-origin politicians who distance themselves from their heritage or act against Dharmic interests, characterizing such support as an emotional mistake rather than an intellectual reality. Instead, the community is urged to treat their vote as a 'vote of approval' earned only by leaders who genuinely identify with and represent their cultural roots, regardless of the time it takes to cultivate such true representation."
 date: "2020-09-20"
 author: "Mohan Sonti"
-heroImage: "/content/articles/PoliticsIsNotSkinDeep-01.png"
+heroImage: "/content/articles/PoliticsIsNotSkinDeep-01.webp"
 ---
 
 I must admit that there is a part of me (the *unreasonable 'emotional' side*) that is happy to see an **'Indian origin' lady rise up to be the VP candidate of USA** — proud, very proud of her. But once the **'frailties of heart'** are sufficiently pampered and celebrated — the *so called 'Honeymoon period'* — the mind gets control of the situation and starts churning and analysing the realities, which are the **'realities of intellect'**!

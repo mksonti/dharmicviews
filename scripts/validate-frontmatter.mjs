@@ -10,7 +10,10 @@ const frontmatterSchema = z.object({
   date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/, "Date must be in YYYY-MM-DD format"),
   description: z.string().min(1, "Description is required"),
   author: z.string().min(1, "Author is required"),
-  heroImage: z.string().url("Hero image must be a valid URL").optional()
+  heroImage: z.union([
+    z.string().url(),
+    z.string().startsWith("/", "Hero image must be a valid URL or local path starting with /")
+  ]).optional()
 });
 
 function validateArticles() {

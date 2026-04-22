@@ -63,12 +63,12 @@ export default async function Article({ params }: { params: Promise<{ slug: stri
       />
       <article className="max-w-3xl mx-auto bg-white rounded-3xl border border-orange-100 overflow-hidden shadow-sm">
         {articleData.heroImage && (
-          <div className="relative w-full h-64 md:h-96">
+          <div className="relative w-full" style={{ aspectRatio: '16/9' }}>
             <Image
               src={articleData.heroImage}
               alt={articleData.title}
               fill
-              className="object-cover"
+              className="object-contain"
               referrerPolicy="no-referrer"
               priority
             />

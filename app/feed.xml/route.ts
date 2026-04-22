@@ -46,6 +46,10 @@ export async function GET() {
       ],
       date: new Date(article.date),
       image: article.heroImage
+        ? article.heroImage.startsWith('http')
+          ? article.heroImage
+          : `${baseUrl}${article.heroImage}`
+        : undefined
     });
   });
 

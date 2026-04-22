@@ -3,7 +3,7 @@ title: "The Future of Hindus in America"
 description: "Hindus should treat their political support in America as a 'stable diversified portfolio,' spreading influence across power centers to ensure the community has no enemies and that Dharmic interests are secured regardless of which side wins. Rather than getting caught in the destructive 'Abrahamic Binary' of the Left and Right—which the author predicts will lead to national decline or civil war—Hindus should act as 'independent colorful thinkers' who promote peace and coexistence through principles like Vasudaiva Kutumbakam."
 date: "2020-11-11"
 author: "Mohan Sonti"
-heroImage: "/content/articles/FutureOfHindusInAmerica-04.png"
+heroImage: "/content/articles/FutureOfHindusInAmerica-04.webp"
 ---
 
 **Hindu Investment:**

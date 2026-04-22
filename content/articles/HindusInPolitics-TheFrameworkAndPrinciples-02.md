@@ -3,7 +3,7 @@ title: "Hindus in Politics: The Framework and Principles"
 description: "I propose a framework for Hindus to engage in politics as 'independent colorful thinkers' who prioritize Dharmic principles and a common vision over the restrictive and exclusionary 'Abrahamic Binary' of existing political parties. This approach encourages Hindus to transcend the totalitarianism inherent in partisan systems and instead operate as independent thinkers who prioritize addressing the specific global and domestic threats posed by the unholy alliance of Leftist and Islamist ideologies."
 date: "2020-09-20"
 author: "Mohan Sonti"
-heroImage: "/content/articles/HindusInPolitics-TheFrameworkAndPrinciples-02.png"
+heroImage: "/content/articles/HindusInPolitics-TheFrameworkAndPrinciples-02.webp"
 ---
 
 There is an ardent debate and furor in the Indian-American community that I’ve been following for some time with interest regarding the current elections (potentially setting course for Indians in USA and Bharat). So here I would like to make an attempt at coming up with some **Framework and Principles** that all of us can possibly be ‘warm to it’ if not fully agree with it — to see how each one of us and our positions fits into the political paradigm. In this article I’ve presented **3 broad categories with corresponding questions we must ask people**, so as to have a more meaningful discussion on the subjects.

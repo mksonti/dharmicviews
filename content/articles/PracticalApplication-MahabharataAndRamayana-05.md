@@ -3,7 +3,7 @@ title: "Mahabharata and Ramayana: Practical Application"
 description: "The Ramayana provides guidance for individuals facing moral dilemmas between right and wrong, emphasizing system preservation and tactical crisis management against external threats. In contrast, the Mahabharata offers a framework for navigating complex ethical dilemmas, advocating for systemic change and long-term strategic problem-solving to address internal or self-generated troubles."
 date: "2020-12-03"
 author: "Mohan Sonti"
-heroImage: "/content/articles/PracticalApplication-MahabharataAndRamayana-05.png"
+heroImage: "/content/articles/PracticalApplication-MahabharataAndRamayana-05.webp"
 ---
 
 The ‘Itihasa’ containing Ramayana and Mahabharata are the longest epics written by mankind. There are several lessons and many ways to understand these epics. It can be sliced and diced into innumerable philosophical nuggets. Here is one such practical way that all humans can understand and apply it to everyday life. This is a perspective and advice about the epic one should refer to when in need of guidance in life.
