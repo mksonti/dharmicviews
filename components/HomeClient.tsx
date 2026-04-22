@@ -425,10 +425,10 @@ export default function HomeClient({ initialData, featuredVideos = [], featuredA
           >
             <div className="flex items-center gap-4">
               <div className="p-3 bg-orange-50 text-orange-600 rounded-2xl">
-                <BookOpen className="w-6 h-6" />
+                <Sparkles className="w-6 h-6" />
               </div>
               <div>
-                <h2 className="text-2xl font-bold text-stone-900">Resource Library</h2>
+                <h1 className="text-2xl font-bold text-stone-900">Hinduismn Resources</h1>
                 <div className="h-1 w-12 bg-orange-500 rounded-full mt-1" />
               </div>
             </div>
