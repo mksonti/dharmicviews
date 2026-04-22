@@ -59,7 +59,7 @@ export default function ArticlesClient({ articles }: { articles: ArticleData[] }
         {sorted.map(({ slug, date, title, description, heroImage }) => (
           <article key={slug} className="bg-white rounded-2xl border border-orange-100 overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col md:flex-row">
             {heroImage && (
-              <div className="md:w-1/3 relative h-48 md:h-auto">
+              <div className="md:w-2/5 relative h-56 md:h-auto shrink-0">
                 <Image
                   src={heroImage}
                   alt={title}
@@ -69,7 +69,7 @@ export default function ArticlesClient({ articles }: { articles: ArticleData[] }
                 />
               </div>
             )}
-            <div className={`p-6 flex flex-col justify-center ${heroImage ? 'md:w-2/3' : 'w-full'}`}>
+            <div className={`p-8 flex flex-col justify-center ${heroImage ? 'md:w-3/5' : 'w-full'}`}>
               <p className="text-sm text-stone-500 mb-2">
                 {new Date(date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
               </p>

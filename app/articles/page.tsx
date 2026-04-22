@@ -12,7 +12,7 @@ export default function ArticlesPage() {
 
   return (
     <main className="py-12 px-6 lg:px-12">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <ArticlesClient articles={articles} />
       </div>
     </main>
