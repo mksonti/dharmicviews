@@ -184,7 +184,7 @@ export default function Navigation({ children, videoChannels = [] }: { children:
             </div>
             
             <div className="py-4">
-              <p className="px-4 text-[10px] uppercase tracking-[0.2em] text-stone-400 font-bold mb-2">Categories</p>
+              <p className="px-4 text-[10px] uppercase tracking-[0.2em] text-stone-400 font-bold mb-2">Hinduism Resources</p>
               {resourceData.map((category) => (
                 isHomePage ? (
                   <button

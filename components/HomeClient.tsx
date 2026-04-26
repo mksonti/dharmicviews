@@ -429,7 +429,7 @@ export default function HomeClient({ initialData, featuredVideos = [], featuredA
                 <Sparkles className="w-6 h-6" />
               </div>
               <div>
-                <h1 className="text-2xl font-bold text-stone-900">Hinduismn Resources</h1>
+                <h1 className="text-2xl font-bold text-stone-900">Hinduism Resources</h1>
                 <div className="h-1 w-12 bg-orange-500 rounded-full mt-1" />
               </div>
             </div>
