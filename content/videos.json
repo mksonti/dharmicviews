@@ -12,7 +12,8 @@
     "channelId": "pgurus1",
     "tags": [
       "Geopolitics"
-    ]
+    ],
+    "featured": false
   },
   {
     "videoId": "zjL8XfRWOc4",
@@ -27,7 +28,8 @@
     "channelId": "itvgold",
     "tags": [
       "Community"
-    ]
+    ],
+    "featured": false
   },
   {
     "videoId": "cKDKnIHR0rA",
@@ -42,7 +44,8 @@
     "channelId": "jaipurdialoguesusa",
     "tags": [
       "Geopolitics"
-    ]
+    ],
+    "featured": false
   },
   {
     "videoId": "L8VM06Lrer8",
@@ -59,7 +62,8 @@
       "Geopolitics",
       "Economy",
       "Energy"
-    ]
+    ],
+    "featured": false
   },
   {
     "videoId": "z1U0vL_zdQ8",
@@ -75,7 +79,8 @@
     "tags": [
       "History",
       "Kashmir"
-    ]
+    ],
+    "featured": false
   },
   {
     "videoId": "NEreJ3Lc8VY",
@@ -90,7 +95,8 @@
     "channelId": "jaipurdialoguesusa",
     "tags": [
       "Geopolitics"
-    ]
+    ],
+    "featured": false
   },
   {
     "videoId": "W6YyFd6DeDc",
@@ -106,7 +112,8 @@
     "tags": [
       "Governance",
       "Law"
-    ]
+    ],
+    "featured": false
   },
   {
     "videoId": "B7XsLB0pAmc",
@@ -122,7 +129,8 @@
     "tags": [
       "Geopolitics",
       "Community"
-    ]
+    ],
+    "featured": false
   },
   {
     "videoId": "wAQxo4WpTZs",
@@ -137,7 +145,8 @@
     "channelId": "jaipurdialoguesusa",
     "tags": [
       "Geopolitics"
-    ]
+    ],
+    "featured": false
   },
   {
     "videoId": "dxubKDmbn90",
@@ -152,7 +161,8 @@
     "channelId": "jaipurdialoguesusa",
     "tags": [
       "Geopolitics"
-    ]
+    ],
+    "featured": false
   },
   {
     "videoId": "3SAg9vqHth8",
@@ -168,7 +178,8 @@
     "tags": [
       "Geopolitics",
       "Community"
-    ]
+    ],
+    "featured": true
   },
   {
     "videoId": "gHZYLzbgK4g",
@@ -184,7 +195,8 @@
     "tags": [
       "Geopolitics",
       "Economy"
-    ]
+    ],
+    "featured": false
   },
   {
     "videoId": "IX8nWd8P4nk",
@@ -199,7 +211,8 @@
     "channelId": "jaipurdialoguesusa",
     "tags": [
       "Geopolitics"
-    ]
+    ],
+    "featured": false
   },
   {
     "videoId": "IxBpDv82NN8",
@@ -214,7 +227,8 @@
     "channelId": "jaipurdialoguesusa",
     "tags": [
       "Geopolitics"
-    ]
+    ],
+    "featured": false
   },
   {
     "videoId": "4iZm5EiU878",
@@ -230,7 +244,8 @@
     "tags": [
       "Geopolitics",
       "Economy"
-    ]
+    ],
+    "featured": false
   },
   {
     "videoId": "UMGZCh5YzFY",
@@ -246,7 +261,8 @@
     "tags": [
       "Geopolitics",
       "Community"
-    ]
+    ],
+    "featured": false
   },
   {
     "videoId": "saI3SgbVG10",
@@ -262,7 +278,25 @@
     "tags": [
       "Geopolitics",
       "Governance"
-    ]
+    ],
+    "featured": false
+  },
+  {
+    "videoId": "neiw9pJ8ym8",
+    "url": "https://www.youtube.com/watch?v=neiw9pJ8ym8",
+    "title": "Bangladesh Genocide Series EP-01 Mohan Sonti | Anjalee Swamy & Divya Jain",
+    "description": "In these episodes of our series on the Bangladesh genocide, we turn to memory, history, and moral responsibility. The 1971 genocide remains one of the most devastating yet under-recognized chapters in South Asian history, with its deep and continuing impact still felt by survivors, descendants, and minority communities today. Joining Anjalee Swamy are Rinita Mazumdar, Mohan Sonti, Divya Jain, and Paromita Sarkar for a conversation that will explore the human cost of violence, the suppression of historical memory, and the urgent need for recognition, justice, and solidarity.\n\nTopics:\n• Global Attention - Issue of Persecution - Perspective with Data/Stats (Numbers) & Facts\n• Raising Awareness - Everyone's Responsibility\n• Challenges and Concerns for Activists\n• Institutional Discrimination - Historical\n• Urgency - B'Desh today is where Kashmir was in 1990s",
+    "duration": "",
+    "thumbnail": "https://i.ytimg.com/vi/neiw9pJ8ym8/maxresdefault.jpg",
+    "publishDate": "2026-04-28T00:00:00-07:00",
+    "publisher": "Bharat FM",
+    "channelName": "Bharat FM",
+    "channelId": "BHARATFM",
+    "tags": [
+      "History",
+      "Geopolitics"
+    ],
+    "featured": false
   },
   {
     "videoId": "c3exI06i4TE",
@@ -279,6 +313,7 @@
       "Geopolitics",
       "Economy",
       "Energy"
-    ]
+    ],
+    "featured": false
   }
 ]
