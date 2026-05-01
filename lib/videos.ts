@@ -25,9 +25,9 @@ export interface VideoData {
 /**
  * Returns the best thumbnail src for a video:
  * 1. Local file at public/thumbnails/<videoId>.(jpg|png|webp) if it exists
- * 2. Live YouTube maxresdefault CDN URL derived from the videoId
+ * 2. The thumbnail URL stored in the JSON (may be hqdefault or maxresdefault)
  */
-function resolveThumbnail(videoId: string): string {
+function resolveThumbnail(videoId: string, jsonThumbnail: string): string {
   const extensions = ['jpg', 'png', 'webp'];
   for (const ext of extensions) {
     const localPath = path.join(thumbnailsDir, `${videoId}.${ext}`);
@@ -35,11 +35,11 @@ function resolveThumbnail(videoId: string): string {
       return `/thumbnails/${videoId}.${ext}`;
     }
   }
-  return `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
+  return jsonThumbnail || `https://i.ytimg.com/vi/${videoId}/maxresdefault.jpg`;
 }
 
 function enrichVideo(raw: Omit<VideoData, 'thumbnailSrc'>): VideoData {
-  return { ...raw, thumbnailSrc: resolveThumbnail(raw.videoId) };
+  return { ...raw, thumbnailSrc: resolveThumbnail(raw.videoId, raw.thumbnail) };
 }
 
 export function getAllVideos(): VideoData[] {
