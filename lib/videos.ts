@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 
 const videosFilePath = path.join(process.cwd(), 'content', 'videos.json');
+const channelsFilePath = path.join(process.cwd(), 'content', 'channels.json');
 const thumbnailsDir = path.join(process.cwd(), 'public', 'thumbnails');
 
 export interface VideoData {
@@ -59,18 +60,34 @@ export function getVideoData(videoId: string): VideoData | undefined {
 export interface ChannelInfo {
   channelId: string;
   channelName: string;
+  avatar: string;
+}
+
+function loadChannels(): ChannelInfo[] {
+  if (!fs.existsSync(channelsFilePath)) return [];
+  return JSON.parse(fs.readFileSync(channelsFilePath, 'utf8')) as ChannelInfo[];
+}
+
+export function getChannelAvatarMap(): Record<string, string> {
+  const channels = loadChannels();
+  return Object.fromEntries(channels.map(c => [c.channelId, c.avatar]));
 }
 
 export function getChannels(): ChannelInfo[] {
+  const channels = loadChannels();
+  const avatarMap = Object.fromEntries(channels.map(c => [c.channelId, c.avatar]));
   const videos = getAllVideos();
-  const seen = new Map<string, string>();
+  const seen = new Map<string, { channelName: string; avatar: string }>();
   for (const v of videos) {
     if (v.channelId && !seen.has(v.channelId)) {
-      seen.set(v.channelId, v.channelName);
+      seen.set(v.channelId, {
+        channelName: v.channelName,
+        avatar: avatarMap[v.channelId] || '',
+      });
     }
   }
   return Array.from(seen.entries())
-    .map(([channelId, channelName]) => ({ channelId, channelName }))
+    .map(([channelId, { channelName, avatar }]) => ({ channelId, channelName, avatar }))
     .sort((a, b) => a.channelName.localeCompare(b.channelName));
 }
 

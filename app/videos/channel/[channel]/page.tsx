@@ -1,4 +1,4 @@
-import { getChannels, getVideosByChannelId } from '@/lib/videos';
+import { getChannels, getVideosByChannelId, getChannelAvatarMap } from '@/lib/videos';
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import ChannelVideosClient from '@/components/ChannelVideosClient';
@@ -43,6 +43,7 @@ export default async function ChannelPage({ params }: Props) {
   }
 
   const channelName = videos[0].channelName;
+  const avatarMap = getChannelAvatarMap();
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -63,7 +64,7 @@ export default async function ChannelPage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <ChannelVideosClient channelName={channelName} channelId={channel} videos={videos} />
+      <ChannelVideosClient channelName={channelName} channelId={channel} videos={videos} avatarMap={avatarMap} />
     </main>
   );
 }

@@ -16,7 +16,7 @@ const SORT_OPTIONS: { value: SortKey; label: string }[] = [
   { value: 'title-desc', label: 'Title Z → A' },
 ];
 
-export default function ChannelVideosClient({ channelName, channelId, videos }: { channelName: string; channelId: string; videos: VideoData[] }) {
+export default function ChannelVideosClient({ channelName, channelId, videos, avatarMap = {} }: { channelName: string; channelId: string; videos: VideoData[]; avatarMap?: Record<string, string> }) {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
   const [sort, setSort] = useState<SortKey>('date-desc');
@@ -171,7 +171,11 @@ export default function ChannelVideosClient({ channelName, channelId, videos }: 
 
                       <div className="flex flex-col gap-1.5 pt-4 border-t border-stone-100 mt-auto">
                         <div className="flex items-center gap-2 text-xs font-medium text-stone-500">
-                          <User className="w-3.5 h-3.5 text-stone-400" />
+                          {avatarMap[video.channelId] ? (
+                            <Image src={avatarMap[video.channelId]} alt={video.channelName} width={16} height={16} className="rounded-full object-cover shrink-0" referrerPolicy="no-referrer" />
+                          ) : (
+                            <User className="w-3.5 h-3.5 text-stone-400 shrink-0" />
+                          )}
                           <span className="truncate">{video.publisher || video.channelName}</span>
                         </div>
                         <div className="flex items-center gap-2 text-xs font-medium text-stone-400">

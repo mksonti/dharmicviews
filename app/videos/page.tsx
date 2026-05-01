@@ -1,4 +1,4 @@
-import { getAllVideos } from '@/lib/videos';
+import { getAllVideos, getChannelAvatarMap } from '@/lib/videos';
 import { Metadata } from 'next';
 import VideosClient from '@/components/VideosClient';
 
@@ -20,6 +20,7 @@ export const metadata: Metadata = {
 
 export default function VideosPage() {
   const videos = getAllVideos();
+  const avatarMap = getChannelAvatarMap();
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -44,7 +45,7 @@ export default function VideosPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <VideosClient initialVideos={videos} />
+      <VideosClient initialVideos={videos} avatarMap={avatarMap} />
     </main>
   );
 }

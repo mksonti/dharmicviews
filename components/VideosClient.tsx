@@ -16,7 +16,7 @@ const SORT_OPTIONS: { value: SortKey; label: string }[] = [
   { value: 'title-desc', label: 'Title Z → A' },
 ];
 
-export default function VideosClient({ initialVideos }: { initialVideos: VideoData[] }) {
+export default function VideosClient({ initialVideos, avatarMap = {} }: { initialVideos: VideoData[]; avatarMap?: Record<string, string> }) {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
   const [collapsedChannels, setCollapsedChannels] = useState<Set<string>>(new Set());
@@ -169,7 +169,7 @@ export default function VideosClient({ initialVideos }: { initialVideos: VideoDa
                   >
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                       {videos.map((video) => (
-                        <VideoCard key={video.videoId} video={video} />
+                        <VideoCard key={video.videoId} video={video} avatar={avatarMap[video.channelId] || ''} />
                       ))}
                     </div>
                   </motion.div>
@@ -191,7 +191,7 @@ export default function VideosClient({ initialVideos }: { initialVideos: VideoDa
   );
 }
 
-function VideoCard({ video }: { video: VideoData }) {
+function VideoCard({ video, avatar }: { video: VideoData; avatar: string }) {
   return (
     <Link href={`/videos/${video.videoId}`} className="group block h-full">
       <div className="bg-white rounded-2xl border border-orange-100 overflow-hidden shadow-sm hover:shadow-md transition-all h-full flex flex-col">
@@ -233,7 +233,11 @@ function VideoCard({ video }: { video: VideoData }) {
 
           <div className="flex flex-col gap-1.5 pt-4 border-t border-stone-100 mt-auto">
             <div className="flex items-center gap-2 text-xs font-medium text-stone-500">
-              <User className="w-3.5 h-3.5 text-stone-400" />
+              {avatar ? (
+                <Image src={avatar} alt={video.channelName} width={16} height={16} className="rounded-full object-cover shrink-0" referrerPolicy="no-referrer" />
+              ) : (
+                <User className="w-3.5 h-3.5 text-stone-400 shrink-0" />
+              )}
               <span className="truncate">{video.publisher || video.channelName}</span>
             </div>
             <div className="flex items-center gap-2 text-xs font-medium text-stone-400">
