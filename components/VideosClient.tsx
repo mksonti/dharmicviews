@@ -19,6 +19,7 @@ const SORT_OPTIONS: { value: SortKey; label: string }[] = [
 export default function VideosClient({ initialVideos, avatarMap = {} }: { initialVideos: VideoData[]; avatarMap?: Record<string, string> }) {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
+  const [selectedChannel, setSelectedChannel] = useState<string | null>(null);
   const [collapsedChannels, setCollapsedChannels] = useState<Set<string>>(new Set());
   const [sort, setSort] = useState<SortKey>('date-desc');
 
@@ -26,6 +27,16 @@ export default function VideosClient({ initialVideos, avatarMap = {} }: { initia
     const tags = new Set<string>();
     initialVideos.forEach(v => v.tags?.forEach(t => tags.add(t)));
     return Array.from(tags).sort();
+  }, [initialVideos]);
+
+  const allChannels = useMemo(() => {
+    const seen = new Map<string, string>();
+    for (const v of initialVideos) {
+      if (v.channelId && !seen.has(v.channelId)) seen.set(v.channelId, v.channelName || v.channelId);
+    }
+    return Array.from(seen.entries())
+      .map(([channelId, channelName]) => ({ channelId, channelName }))
+      .sort((a, b) => a.channelName.localeCompare(b.channelName));
   }, [initialVideos]);
 
   const videosByChannel = useMemo(() => {
@@ -43,6 +54,10 @@ export default function VideosClient({ initialVideos, avatarMap = {} }: { initia
 
     if (selectedTag) {
       videos = videos.filter(v => v.tags?.includes(selectedTag));
+    }
+
+    if (selectedChannel) {
+      videos = videos.filter(v => v.channelId === selectedChannel);
     }
 
     const byChannel: Record<string, { channelName: string; channelId: string; videos: VideoData[] }> = {};
@@ -66,7 +81,7 @@ export default function VideosClient({ initialVideos, avatarMap = {} }: { initia
     }
 
     return Object.values(byChannel).sort((a, b) => a.channelName.localeCompare(b.channelName));
-  }, [initialVideos, searchQuery, selectedTag, sort]);
+  }, [initialVideos, searchQuery, selectedTag, selectedChannel, sort]);
 
   const totalCount = videosByChannel.reduce((sum, ch) => sum + ch.videos.length, 0);
 
@@ -112,6 +127,37 @@ export default function VideosClient({ initialVideos, avatarMap = {} }: { initia
           </div>
         </div>
       </div>
+
+      {allChannels.length > 0 && (
+        <div className="flex flex-wrap gap-2 mb-4">
+          <button
+            onClick={() => setSelectedChannel(null)}
+            className={`px-4 py-1.5 rounded-full text-sm font-medium transition-colors ${
+              selectedChannel === null
+                ? 'bg-orange-600 text-white shadow-md shadow-orange-600/20'
+                : 'bg-white border border-stone-200 text-stone-600 hover:border-orange-300 hover:text-orange-600 hover:bg-orange-50'
+            }`}
+          >
+            All Channels
+          </button>
+          {allChannels.map(({ channelId, channelName }) => (
+            <button
+              key={channelId}
+              onClick={() => setSelectedChannel(channelId === selectedChannel ? null : channelId)}
+              className={`flex items-center gap-1.5 pl-1.5 pr-3 py-1 rounded-full text-sm font-medium transition-colors ${
+                selectedChannel === channelId
+                  ? 'bg-orange-600 text-white shadow-md shadow-orange-600/20'
+                  : 'bg-white border border-stone-200 text-stone-600 hover:border-orange-300 hover:text-orange-600 hover:bg-orange-50'
+              }`}
+            >
+              {avatarMap[channelId] && (
+                <Image src={avatarMap[channelId]} alt={channelName} width={22} height={22} className="rounded-full object-cover shrink-0" referrerPolicy="no-referrer" />
+              )}
+              {channelName}
+            </button>
+          ))}
+        </div>
+      )}
 
       {allTags.length > 0 && (
         <div className="flex flex-wrap gap-2 mb-8">
