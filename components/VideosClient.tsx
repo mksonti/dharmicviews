@@ -149,6 +149,9 @@ export default function VideosClient({ initialVideos, avatarMap = {} }: { initia
                 onClick={() => toggleChannel(channelId)}
                 className="flex items-center gap-3 mb-6 group w-full text-left"
               >
+                {avatarMap[channelId] && (
+                  <Image src={avatarMap[channelId]} alt={channelName} width={36} height={36} className="rounded-full object-cover shrink-0 ring-2 ring-orange-100" referrerPolicy="no-referrer" />
+                )}
                 <h2 className="font-serif italic text-2xl text-orange-900 group-hover:text-orange-600 transition-colors">
                   {channelName}
                 </h2>

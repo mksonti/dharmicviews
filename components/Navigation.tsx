@@ -164,8 +164,8 @@ export default function Navigation({ children, videoChannels = [] }: { children:
                 )}
               </div>
               {videosExpanded && videoChannels.length > 0 && (
-                <div className="ml-4 mt-1 space-y-0.5 border-l-2 border-orange-100 pl-3">
-                  {videoChannels.map(({ channelId, channelName }) => {
+                <div className="mt-1 space-y-0.5">
+                  {videoChannels.map(({ channelId, channelName, avatar }) => {
                     const isActive = pathname === `/videos/channel/${channelId}`;
                     return (
                       <Link
@@ -174,7 +174,11 @@ export default function Navigation({ children, videoChannels = [] }: { children:
                         onClick={() => setIsSidebarOpen(false)}
                         className={`flex items-center gap-2 px-3 py-2 rounded-lg text-xs font-medium transition-all ${isActive ? 'bg-orange-100 text-orange-700' : 'text-stone-500 hover:bg-orange-50 hover:text-orange-700'}`}
                       >
-                        <Video className="w-3.5 h-3.5 shrink-0" />
+                        {avatar ? (
+                          <Image src={avatar} alt={channelName} width={20} height={20} className="rounded-full object-cover shrink-0" referrerPolicy="no-referrer" />
+                        ) : (
+                          <Video className="w-3.5 h-3.5 shrink-0" />
+                        )}
                         <span className="truncate">{channelName}</span>
                       </Link>
                     );
