@@ -159,36 +159,39 @@ export default function VideosClient({ initialVideos, avatarMap = {} }: { initia
         </div>
       )}
 
-      {allTags.length > 0 && (
-        <div className="flex flex-wrap gap-2 mb-8">
-          <button
-            onClick={() => setSelectedTag(null)}
-            className={`px-4 py-1.5 rounded-full text-sm font-medium transition-colors ${
-              selectedTag === null
-                ? 'bg-orange-600 text-white shadow-md shadow-orange-600/20'
-                : 'bg-white border border-stone-200 text-stone-600 hover:border-orange-300 hover:text-orange-600 hover:bg-orange-50'
-            }`}
-          >
-            All Videos
-          </button>
-          {allTags.map(tag => (
-            <button
-              key={tag}
-              onClick={() => setSelectedTag(tag)}
-              className={`px-4 py-1.5 rounded-full text-sm font-medium transition-colors ${
-                selectedTag === tag
-                  ? 'bg-orange-600 text-white shadow-md shadow-orange-600/20'
-                  : 'bg-white border border-stone-200 text-stone-600 hover:border-orange-300 hover:text-orange-600 hover:bg-orange-50'
-              }`}
-            >
-              {tag}
-            </button>
-          ))}
-        </div>
-      )}
 
       {totalCount > 0 ? (
         <div className="space-y-12">
+          <div className="hidden">
+            {allTags.length > 0 && (
+              <div className="flex flex-wrap gap-2 mb-8">
+                <button
+                  onClick={() => setSelectedTag(null)}
+                  className={`px-4 py-1.5 rounded-full text-sm font-medium transition-colors ${
+                    selectedTag === null
+                      ? 'bg-orange-600 text-white shadow-md shadow-orange-600/20'
+                      : 'bg-white border border-stone-200 text-stone-600 hover:border-orange-300 hover:text-orange-600 hover:bg-orange-50'
+                  }`}
+                >
+                  All Videos
+                </button>
+                {allTags.map(tag => (
+                  <button
+                    key={tag}
+                    onClick={() => setSelectedTag(tag)}
+                    className={`px-4 py-1.5 rounded-full text-sm font-medium transition-colors ${
+                      selectedTag === tag
+                        ? 'bg-orange-600 text-white shadow-md shadow-orange-600/20'
+                        : 'bg-white border border-stone-200 text-stone-600 hover:border-orange-300 hover:text-orange-600 hover:bg-orange-50'
+                    }`}
+                  >
+                    {tag}
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
+
           {videosByChannel.map(({ channelId, channelName, videos }) => (
             <section key={channelId}>
               <button
