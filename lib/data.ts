@@ -108,6 +108,7 @@ export const resourceData: ResourceCategory[] = [
       { title: "Jeffrey Armstrong - Ayurvedic Astrologer", url: "https://www.jeffreyarmstrong.com/", isActive: true , description: "Seeking experienced guidance in relationships or major life decisions? Jeffrey Armstrong provides authoritative Vedic Astrology (Jyotish) consultations and an extensive online curriculum in Yoga Philosophy, with in-depth programs, classes, and retreats for dedicated yoga practitioners." },
       { title: "Dr. Frank Morales - Sri Dharma Pravartaka Acharya", url: "https://www.dharmacentral.com/", isActive: true },
       { title: "Gabriel Pradipaka - Sanskrit and Trika Pundit", url: "https://www.sanskrit-sanscrito.com.ar/", isActive: false , description: "This domain may be for sale!", tags: ["squatted"] },
+      { title: "Gabriel Pradipaka - Sanskrit and Trika Pundit", url: "https://www.sanskrit-trikashaivism.com/", isActive: true , description: "This domain may be for sale!", tags: ["squatted"] },
       { title: "Freedom Cole - Astrology, Yoga and Ayurveda", url: "https://www.shrifreedom.com/", isActive: true },
       { title: "Gregorian Bivolaru - Romanian Yoga Guru", url: "https://www.sivasakti.com/", isActive: true },
       { title: "Vedavisharada Yogi Baba Prem Tom Beal", url: "https://www.floridavedicinstitute.com/", isActive: false },
