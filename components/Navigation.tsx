@@ -50,6 +50,7 @@ export default function Navigation({ children, videoChannels = [] }: { children:
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
   const [videosExpanded, setVideosExpanded] = useState(false);
+  const [adminMode, setAdminMode] = useState(false);
   const pathname = usePathname();
   const isHomePage = pathname === '/';
   const isVideosPage = pathname.startsWith('/videos');
@@ -57,6 +58,19 @@ export default function Navigation({ children, videoChannels = [] }: { children:
   useEffect(() => {
     setVideosExpanded(isVideosPage);
   }, [isVideosPage]);
+
+  useEffect(() => {
+    const mode = new URLSearchParams(window.location.search).get('mode');
+    if (mode === 'admin') {
+      sessionStorage.setItem('dv-admin', '1');
+      setAdminMode(true);
+    } else if (mode === 'normal') {
+      sessionStorage.removeItem('dv-admin');
+      setAdminMode(false);
+    } else {
+      setAdminMode(sessionStorage.getItem('dv-admin') === '1');
+    }
+  }, [pathname]);
 
   useEffect(() => {
     if (!isHomePage) return;
@@ -144,14 +158,16 @@ export default function Navigation({ children, videoChannels = [] }: { children:
               Articles
             </Link>
 
-            <Link
-              href="/insights"
-              onClick={() => setIsSidebarOpen(false)}
-              className={`w-full flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-all ${pathname.startsWith('/insights') ? 'bg-orange-600 text-white shadow-md shadow-orange-100' : 'text-stone-500 hover:bg-orange-50 hover:text-orange-700'}`}
-            >
-              <BarChart3 className="w-5 h-5" />
-              Insights
-            </Link>
+            {adminMode && (
+              <Link
+                href="/insights"
+                onClick={() => setIsSidebarOpen(false)}
+                className={`w-full flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-all ${pathname.startsWith('/insights') ? 'bg-orange-600 text-white shadow-md shadow-orange-100' : 'text-stone-500 hover:bg-orange-50 hover:text-orange-700'}`}
+              >
+                <BarChart3 className="w-5 h-5" />
+                Insights
+              </Link>
+            )}
 
             <div>
               <div className="flex items-center">
