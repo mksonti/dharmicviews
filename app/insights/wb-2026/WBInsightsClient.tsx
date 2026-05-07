@@ -1,9 +1,9 @@
 'use client';
 
 import Image from 'next/image';
-import { useMemo, useState } from 'react';
-import { motion } from 'motion/react';
-import { ChevronRight, Play, AlertTriangle } from 'lucide-react';
+import { useEffect, useMemo, useState } from 'react';
+import { motion, AnimatePresence } from 'motion/react';
+import { ChevronRight, Play, AlertTriangle, X } from 'lucide-react';
 import {
   elections,
   seat2026,
@@ -12,6 +12,11 @@ import {
   populationContext,
   demographics,
   sourceVideo,
+  tnTimeline,
+  tnSeatThresholdPct,
+  tnSmallParties,
+  tnIumlConstituencies,
+  tnNotableWins,
   type Election,
 } from './data';
 
@@ -403,14 +408,114 @@ function DemographicVectors() {
   );
 }
 
+function TNRollsTurnoutChart() {
+  const pts = tnTimeline;
+  const width = 720;
+  const height = 280;
+  const padding = { top: 24, right: 60, bottom: 44, left: 50 };
+  const innerW = width - padding.left - padding.right;
+  const innerH = height - padding.top - padding.bottom;
+  const xs = (i: number) => padding.left + (i * innerW) / (pts.length - 1);
+  const yReg = (v: number) => padding.top + innerH - ((v - 40) / 30) * innerH; // 40–70 M
+  const yTurn = (v: number) => padding.top + innerH - ((v - 70) / 20) * innerH; // 70–90%
+
+  const regPath = pts.map((p, i) => `${i === 0 ? 'M' : 'L'}${xs(i)},${yReg(p.registeredVotersM)}`).join(' ');
+  const turnPath = pts.map((p, i) => `${i === 0 ? 'M' : 'L'}${xs(i)},${yTurn(p.turnout)}`).join(' ');
+
+  return (
+    <div className="not-prose rounded-2xl border border-orange-100 bg-white p-5 md:p-6 shadow-sm">
+      <div className="flex flex-wrap items-center justify-between gap-3 mb-4">
+        <h3 className="font-serif italic text-xl text-stone-900">Tamil Nadu — voter rolls vs. turnout</h3>
+        <div className="flex items-center gap-4 text-xs">
+          <span className="flex items-center gap-1.5"><span className="inline-block w-3 h-3 rounded-full" style={{ background: ORANGE }} />Registered voters (M)</span>
+          <span className="flex items-center gap-1.5"><span className="inline-block w-3 h-3 rounded-full" style={{ background: GREEN }} />Turnout (%)</span>
+        </div>
+      </div>
+      <div className="overflow-x-auto">
+        <svg viewBox={`0 0 ${width} ${height}`} className="w-full min-w-[560px]">
+          {[40, 50, 60, 70].map(g => (
+            <g key={`l-${g}`}>
+              <line x1={padding.left} x2={width - padding.right} y1={yReg(g)} y2={yReg(g)} stroke="#f5f5f4" />
+              <text x={padding.left - 8} y={yReg(g) + 4} textAnchor="end" fontSize="10" fill={ORANGE}>{g}M</text>
+            </g>
+          ))}
+          {[70, 75, 80, 85, 90].map(g => (
+            <text key={`r-${g}`} x={width - padding.right + 8} y={yTurn(g) + 4} textAnchor="start" fontSize="10" fill={GREEN}>{g}%</text>
+          ))}
+          <motion.path d={regPath} fill="none" stroke={ORANGE} strokeWidth={2.5} initial={{ pathLength: 0 }} whileInView={{ pathLength: 1 }} viewport={{ once: true }} transition={{ duration: 1 }} />
+          <motion.path d={turnPath} fill="none" stroke={GREEN} strokeWidth={2.5} strokeDasharray="6 4" initial={{ pathLength: 0 }} whileInView={{ pathLength: 1 }} viewport={{ once: true }} transition={{ duration: 1, delay: 0.2 }} />
+          {pts.map((p, i) => (
+            <g key={p.year}>
+              <circle cx={xs(i)} cy={yReg(p.registeredVotersM)} r={4} fill={ORANGE} />
+              <circle cx={xs(i)} cy={yTurn(p.turnout)} r={4} fill={GREEN} />
+              <text x={xs(i)} y={yReg(p.registeredVotersM) - 10} textAnchor="middle" fontSize="11" fontWeight={600} fill={ORANGE}>{p.registeredVotersM}M</text>
+              <text x={xs(i)} y={yTurn(p.turnout) + 18} textAnchor="middle" fontSize="11" fontWeight={600} fill={GREEN}>{p.turnout}%</text>
+              <text x={xs(i)} y={height - 22} textAnchor="middle" fontSize="11" fill={STONE}>{p.year}</text>
+            </g>
+          ))}
+        </svg>
+      </div>
+      <p className="text-xs text-stone-500 mt-3">In 2026, registered voters fell 8.9% (a roll-cleanup), yet turnout jumped 11.47 points to 85.10% — the inverse of every prior cycle.</p>
+    </div>
+  );
+}
+
+function TNSeatEfficiency() {
+  const threshold = tnSeatThresholdPct;
+  const expected = (votePct: number) => votePct / threshold;
+  return (
+    <div className="not-prose rounded-2xl border border-orange-100 bg-white p-5 md:p-6 shadow-sm">
+      <h3 className="font-serif italic text-xl text-stone-900 mb-1">Seat efficiency among small parties</h3>
+      <p className="text-sm text-stone-500 mb-4">
+        With 234 seats, each seat represents <strong>~{threshold.toFixed(3)}%</strong> of the statewide vote. Compare actual seats to what the vote share alone would predict.
+      </p>
+      <div className="overflow-x-auto">
+        <table className="w-full text-sm">
+          <thead className="bg-stone-50 text-stone-600">
+            <tr>
+              <th className="text-left font-semibold px-4 py-2.5">Party</th>
+              <th className="text-right font-semibold px-4 py-2.5">Vote %</th>
+              <th className="text-right font-semibold px-4 py-2.5">Predicted seats</th>
+              <th className="text-right font-semibold px-4 py-2.5">Actual seats</th>
+              <th className="text-right font-semibold px-4 py-2.5">Multiplier</th>
+            </tr>
+          </thead>
+          <tbody>
+            {tnSmallParties.map(p => {
+              const exp = expected(p.votePct);
+              const mult = p.seats / exp;
+              return (
+                <tr key={p.party} className={`border-t border-stone-100 ${p.flag ? 'bg-orange-50/50' : ''}`}>
+                  <td className="px-4 py-2.5 font-medium text-stone-800">
+                    {p.party} {p.flag && <span className="text-[10px] uppercase tracking-wider text-orange-700 ml-1.5 bg-orange-100 px-1.5 py-0.5 rounded">flagged</span>}
+                  </td>
+                  <td className="px-4 py-2.5 text-right tabular-nums text-stone-700">{p.votePct}%</td>
+                  <td className="px-4 py-2.5 text-right tabular-nums text-stone-500">{exp.toFixed(2)}</td>
+                  <td className="px-4 py-2.5 text-right tabular-nums font-semibold text-stone-900">{p.seats}</td>
+                  <td className={`px-4 py-2.5 text-right tabular-nums font-bold ${mult > 2 ? 'text-orange-700' : 'text-stone-700'}`}>
+                    {mult.toFixed(1)}×
+                  </td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
+      <p className="text-xs text-stone-500 mt-3">
+        <strong>IUML</strong> picked up 2 seats with just 0.29% of the statewide vote — a <strong>~3× efficiency</strong> over the proportional baseline. Both wins are concentrated in districts with active Waqf-Board land disputes.
+      </p>
+    </div>
+  );
+}
+
 const chapters = [
   { id: 'overview',     label: 'Overview',          t: 0 },
-  { id: 'rolls',        label: 'Voter rolls anomaly', t: 390 },
-  { id: 'metrics',      label: 'Election metrics',  t: 0 },
+  { id: 'rolls',        label: 'WB voter rolls',    t: 390 },
+  { id: 'metrics',      label: 'WB metrics',        t: 0 },
   { id: 'rise',         label: "BJP's rise",        t: 0 },
-  { id: 'maps',         label: 'Electoral maps',    t: 0 },
-  { id: 'seats',        label: '2026 seat map',     t: 0 },
-  { id: 'eras',         label: 'Ruling-party eras', t: 0 },
+  { id: 'seats',        label: 'WB seat map',       t: 0 },
+  { id: 'eras',         label: 'WB eras',           t: 0 },
+  { id: 'tn',           label: 'Tamil Nadu',        t: 0 },
   { id: 'demographics', label: 'Demographics',      t: 1000 },
 ];
 
@@ -484,8 +589,23 @@ function MapsGallery() {
 }
 
 export default function WBInsightsClient() {
-  const videoUrl = useMemo(() => `https://www.youtube.com/embed/${sourceVideo.videoId}`, []);
+  const embedBase = `https://www.youtube.com/embed/${sourceVideo.videoId}`;
+  const inlineEmbed = useMemo(() => `${embedBase}?rel=0`, [embedBase]);
+  const modalEmbed = useMemo(() => `${embedBase}?autoplay=1&rel=0`, [embedBase]);
   const [activeChapter, setActiveChapter] = useState('overview');
+  const [videoOpen, setVideoOpen] = useState(false);
+
+  useEffect(() => {
+    if (!videoOpen) return;
+    const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') setVideoOpen(false); };
+    document.addEventListener('keydown', onKey);
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    return () => {
+      document.removeEventListener('keydown', onKey);
+      document.body.style.overflow = prev;
+    };
+  }, [videoOpen]);
 
   return (
     <div className="relative">
@@ -493,12 +613,12 @@ export default function WBInsightsClient() {
       <div className="relative overflow-hidden border-b border-orange-100">
         <div className="absolute inset-0 bg-gradient-to-br from-orange-50 via-white to-stone-50" />
         <div className="relative px-6 lg:px-12 py-16 md:py-24 max-w-6xl mx-auto">
-          <Pill>West Bengal · Assembly 2026</Pill>
+          <Pill>Tamil Nadu &amp; West Bengal · 2026</Pill>
           <h1 className="font-serif italic text-4xl md:text-6xl text-stone-900 mt-4 leading-[1.05]">
-            A decade of Bengal&rsquo;s political transformation
+            Bizarre, shocking data from the TN &amp; WB polls
           </h1>
           <p className="mt-5 text-lg text-stone-600 max-w-2xl leading-relaxed">
-            Five elections from 2016 to 2026 reveal a seismic realignment — TMC&rsquo;s dominance eroding while BJP surges from a fringe presence to the largest party. This page distills the data behind that shift.
+            Two states, one cycle, several anomalies. Bengal records a seismic realignment as BJP surges from fringe to first party; Tamil Nadu posts an 8.9% drop in registrations alongside a record-high 85% turnout — and small parties bank seats far above their proportional weight. This page distills the data behind both stories.
           </p>
           <div className="mt-7 flex flex-wrap items-center gap-3 text-sm">
             <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white border border-orange-200 text-stone-700">
@@ -511,9 +631,13 @@ export default function WBInsightsClient() {
             <a href="#metrics" className="inline-flex items-center gap-2 rounded-xl bg-orange-600 hover:bg-orange-700 text-white px-5 py-3 text-sm font-semibold shadow-md shadow-orange-100 transition-colors">
               Explore the analysis <ChevronRight className="w-4 h-4" />
             </a>
-            <a href={sourceVideo.url} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-xl bg-white border border-stone-200 hover:border-orange-300 text-stone-800 px-5 py-3 text-sm font-semibold transition-colors">
+            <button
+              type="button"
+              onClick={() => setVideoOpen(true)}
+              className="inline-flex items-center gap-2 rounded-xl bg-white border border-stone-200 hover:border-orange-300 text-stone-800 px-5 py-3 text-sm font-semibold transition-colors"
+            >
               <Play className="w-4 h-4" /> Watch the source discussion
-            </a>
+            </button>
           </div>
         </div>
       </div>
@@ -633,6 +757,57 @@ export default function WBInsightsClient() {
           </p>
         </Section>
 
+        {/* Tamil Nadu */}
+        <Section id="tn" eyebrow="The other 2026 story" title="Tamil Nadu: bizarre, shocking polling data">
+          <p className="text-stone-600 leading-relaxed mb-6 max-w-3xl">
+            Tamil Nadu&rsquo;s 2026 numbers carry their own anomalies. After a 23% spike in voter rolls between 2011 and 2016, the 2026 cycle reversed direction with an 8.9% drop in registrations — yet turnout simultaneously jumped 11.47 points to 85.10%, the highest in two decades. Several small parties also banked seats well above what their statewide vote share would predict.
+          </p>
+          <div className="space-y-6">
+            <TNRollsTurnoutChart />
+            <TNSeatEfficiency />
+            <div className="grid md:grid-cols-2 gap-4">
+              <div className="rounded-2xl border border-orange-100 bg-white p-5 shadow-sm">
+                <p className="text-[11px] uppercase tracking-wider text-orange-600 font-bold mb-2">IUML wins · 2 seats / 0.29% vote</p>
+                <h4 className="font-serif italic text-lg text-stone-900 mb-3">Both seats sit in active Waqf-Board dispute zones</h4>
+                <ul className="space-y-2">
+                  {tnIumlConstituencies.map(c => (
+                    <li key={c.seat} className="flex items-baseline justify-between text-sm border-b border-stone-100 pb-2 last:border-0">
+                      <span className="font-medium text-stone-800">{c.seat}</span>
+                      <span className="text-stone-500">{c.district}</span>
+                    </li>
+                  ))}
+                </ul>
+                <p className="text-xs text-stone-500 mt-3 leading-relaxed">
+                  Both constituencies overlap with regions where Waqf-Board land claims have been politically contested in recent years.
+                </p>
+              </div>
+              <div className="rounded-2xl border border-orange-100 bg-white p-5 shadow-sm">
+                <p className="text-[11px] uppercase tracking-wider text-orange-600 font-bold mb-2">Other notable wins</p>
+                <h4 className="font-serif italic text-lg text-stone-900 mb-3">Heritage and minority-vote constituencies</h4>
+                <ul className="space-y-2">
+                  {tnNotableWins.map(c => (
+                    <li key={c.seat} className="text-sm border-b border-stone-100 pb-2 last:border-0">
+                      <div className="flex items-baseline justify-between">
+                        <span className="font-medium text-stone-800">{c.seat}</span>
+                        <span className="text-stone-500">{c.district}</span>
+                      </div>
+                      {c.note && <p className="text-xs text-stone-500 mt-1">{c.note}</p>}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+            <div className="rounded-xl border-l-4 border-yellow-400 bg-yellow-50 p-4">
+              <div className="flex items-start gap-3">
+                <AlertTriangle className="w-5 h-5 text-yellow-700 shrink-0 mt-0.5" />
+                <p className="text-sm text-yellow-900 leading-relaxed">
+                  <strong>Pattern check:</strong> the same kind of voter-roll volatility flagged in the West Bengal section repeats here in Tamil Nadu — large registration swings (+23%, then −8.9%) that don&rsquo;t track underlying population growth. The PGurus discussion frames this as evidence that constituency-level demographic engineering, not just political swing, is shaping outcomes.
+                </p>
+              </div>
+            </div>
+          </div>
+        </Section>
+
         {/* Demographics */}
         <Section id="demographics" eyebrow="Beyond the numbers" title="Demographic dimensions">
           <p className="text-stone-600 leading-relaxed mb-6 max-w-3xl">
@@ -682,16 +857,20 @@ export default function WBInsightsClient() {
               <p className="text-sm text-stone-600 mt-2 leading-relaxed">
                 Hosted by {sourceVideo.hosts}. The video walks through these data anomalies in detail, including additional analysis of Tamil Nadu polling and the broader demographic forces at play.
               </p>
-              <a href={sourceVideo.url} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 mt-4 rounded-lg bg-stone-900 hover:bg-black text-white px-4 py-2 text-sm font-semibold transition-colors">
-                <Play className="w-4 h-4" /> Watch on YouTube
-              </a>
+              <button
+                type="button"
+                onClick={() => setVideoOpen(true)}
+                className="inline-flex items-center gap-2 mt-4 rounded-lg bg-stone-900 hover:bg-black text-white px-4 py-2 text-sm font-semibold transition-colors"
+              >
+                <Play className="w-4 h-4" /> Play video
+              </button>
             </div>
             <div className="w-full md:w-80 aspect-video rounded-xl overflow-hidden border border-stone-200 shrink-0">
               <iframe
-                src={videoUrl}
+                src={inlineEmbed}
                 title="PGurus discussion"
                 className="w-full h-full"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               />
             </div>
@@ -701,6 +880,51 @@ export default function WBInsightsClient() {
           </p>
         </section>
       </div>
+
+      <AnimatePresence>
+        {videoOpen && (
+          <motion.div
+            key="video-modal"
+            className="fixed inset-0 z-[60] flex items-center justify-center p-4 md:p-8"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.2 }}
+            onClick={() => setVideoOpen(false)}
+            role="dialog"
+            aria-modal="true"
+            aria-label="Source discussion video"
+          >
+            <div className="absolute inset-0 bg-stone-900/80 backdrop-blur-sm" />
+            <motion.div
+              initial={{ opacity: 0, scale: 0.96, y: 8 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.96, y: 8 }}
+              transition={{ duration: 0.22 }}
+              className="relative w-full max-w-4xl"
+              onClick={e => e.stopPropagation()}
+            >
+              <button
+                type="button"
+                onClick={() => setVideoOpen(false)}
+                className="absolute -top-12 right-0 inline-flex items-center gap-1.5 text-white/90 hover:text-white text-sm font-medium"
+                aria-label="Close video"
+              >
+                <X className="w-4 h-4" /> Close
+              </button>
+              <div className="aspect-video w-full rounded-2xl overflow-hidden bg-black shadow-2xl ring-1 ring-white/10">
+                <iframe
+                  src={modalEmbed}
+                  title="PGurus discussion"
+                  className="w-full h-full"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }

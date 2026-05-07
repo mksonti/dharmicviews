@@ -6,14 +6,13 @@ import WBInsightsClient from './WBInsightsClient';
 const baseUrl = process.env.APP_URL || 'https://dharmicviews.com';
 
 export const metadata: Metadata = {
-  title: 'West Bengal Assembly Election 2026 — A decade in data',
+  title: 'TN & WB 2026: Bizarre, shocking data from the polls',
   description:
-    "Interactive analysis of West Bengal's 2016–2026 electoral transformation: vote shares, seat counts, voter-roll anomalies, and demographic shifts behind BJP's surge to 207 seats.",
+    "Interactive analysis of West Bengal's 2016–2026 transformation alongside Tamil Nadu's 2026 anomalies — vote shares, seat counts, voter-roll inflation, IUML seat-efficiency, and the demographic forces behind both stories.",
   alternates: { canonical: `${baseUrl}/insights/wb-2026` },
   openGraph: {
-    title: 'West Bengal Assembly Election 2026 — A decade in data',
-    description:
-      "Interactive analysis of West Bengal's 2016–2026 electoral transformation.",
+    title: 'TN & WB 2026: Bizarre, shocking data from the polls',
+    description: "Interactive analysis of WB's decade-long realignment and TN's 2026 anomalies.",
     url: `${baseUrl}/insights/wb-2026`,
     type: 'article',
   },
@@ -27,7 +26,9 @@ export default function Page() {
           <ol className="flex items-center gap-1 text-sm text-stone-500">
             <li><Link href="/" className="hover:text-orange-600 transition-colors">Home</Link></li>
             <li><ChevronRight className="w-3.5 h-3.5 text-stone-300" /></li>
-            <li className="text-stone-400" aria-current="page">Insights · WB 2026</li>
+            <li><Link href="/insights" className="hover:text-orange-600 transition-colors">Insights</Link></li>
+            <li><ChevronRight className="w-3.5 h-3.5 text-stone-300" /></li>
+            <li className="text-stone-400" aria-current="page">TN &amp; WB 2026</li>
           </ol>
         </nav>
       </div>

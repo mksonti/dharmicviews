@@ -145,12 +145,12 @@ export default function Navigation({ children, videoChannels = [] }: { children:
             </Link>
 
             <Link
-              href="/insights/wb-2026"
+              href="/insights"
               onClick={() => setIsSidebarOpen(false)}
               className={`w-full flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-all ${pathname.startsWith('/insights') ? 'bg-orange-600 text-white shadow-md shadow-orange-100' : 'text-stone-500 hover:bg-orange-50 hover:text-orange-700'}`}
             >
               <BarChart3 className="w-5 h-5" />
-              WB 2026 Analysis
+              Insights
             </Link>
 
             <div>

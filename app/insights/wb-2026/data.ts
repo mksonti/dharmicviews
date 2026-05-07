@@ -246,3 +246,42 @@ export const sourceVideo = {
   channel: 'PGurus',
   hosts: 'Sree Iyer & Mohan Sonti',
 };
+
+// ─── Tamil Nadu Assembly 2026 ──────────────────────────────────────────────
+// Source: PGurus video reference table.
+
+export type TNYear = {
+  year: number;
+  registeredVotersM: number;
+  regChange: number;
+  turnout: number;
+  turnoutChange: number;
+};
+
+export const tnTimeline: TNYear[] = [
+  { year: 2011, registeredVotersM: 47.15, regChange: 1.2,  turnout: 78.01, turnoutChange: 7.19 },
+  { year: 2016, registeredVotersM: 58.05, regChange: 23.0, turnout: 74.24, turnoutChange: -3.77 },
+  { year: 2021, registeredVotersM: 62.94, regChange: 8.4,  turnout: 72.73, turnoutChange: -1.51 },
+  { year: 2026, registeredVotersM: 57.34, regChange: -8.9, turnout: 85.10, turnoutChange: 11.47 },
+];
+
+// 234 seats total → ~0.427% vote share per seat under proportional reading.
+export const tnSeatThresholdPct = 100 / 234;
+
+export const tnSmallParties = [
+  { party: 'VCK',    votePct: 1.09, seats: 2 },
+  { party: 'CPI',    votePct: 0.66, seats: 2 },
+  { party: 'CPI(M)', votePct: 0.60, seats: 2 },
+  { party: 'IUML',   votePct: 0.29, seats: 2, flag: true },
+];
+
+export const tnIumlConstituencies = [
+  { district: 'Thanjavur',  seat: 'Papanasam' },
+  { district: 'Tirupathur', seat: 'Vaniyambadi' },
+];
+
+export const tnNotableWins = [
+  { district: 'Tiruchirappalli', seat: 'Srirangam',    note: '1,500-yr-old Chandrasekhara Swamy temple (Tiruchendurai)' },
+  { district: 'Tenkasi',         seat: 'Kadayanallur', note: '' },
+  { district: 'Cuddalore',       seat: 'Chidambaram',  note: '' },
+];
