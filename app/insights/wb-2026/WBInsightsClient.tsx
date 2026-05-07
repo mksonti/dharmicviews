@@ -602,14 +602,6 @@ export default function WBInsightsClient() {
           </div>
         </Section>
 
-        {/* Electoral maps gallery */}
-        <Section id="maps" eyebrow="Bengal's shifting political geography" title="Electoral maps: 2006 → 2021">
-          <p className="text-stone-600 leading-relaxed mb-6 max-w-3xl">
-            Four constituency maps capture Bengal&rsquo;s transformation: a Left-dominated red state, converted to TMC green, and now increasingly saffron. Click a thumbnail to explore each election.
-          </p>
-          <MapsGallery />
-        </Section>
-
         {/* 2026 seat map */}
         <Section id="seats" eyebrow="The 2026 verdict" title="Seat distribution & political geography">
           <div className="grid lg:grid-cols-2 gap-6">
