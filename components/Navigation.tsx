@@ -19,7 +19,8 @@ import {
   ChevronRight,
   Home,
   FileText,
-  Video
+  Video,
+  BarChart3
 } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -134,13 +135,22 @@ export default function Navigation({ children, videoChannels = [] }: { children:
               Overview
             </Link>
             
-            <Link 
-              href="/articles" 
+            <Link
+              href="/articles"
               onClick={() => setIsSidebarOpen(false)}
               className={`w-full flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-all ${pathname.startsWith('/articles') ? 'bg-orange-600 text-white shadow-md shadow-orange-100' : 'text-stone-500 hover:bg-orange-50 hover:text-orange-700'}`}
             >
               <FileText className="w-5 h-5" />
               Articles
+            </Link>
+
+            <Link
+              href="/insights/wb-2026"
+              onClick={() => setIsSidebarOpen(false)}
+              className={`w-full flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-all ${pathname.startsWith('/insights') ? 'bg-orange-600 text-white shadow-md shadow-orange-100' : 'text-stone-500 hover:bg-orange-50 hover:text-orange-700'}`}
+            >
+              <BarChart3 className="w-5 h-5" />
+              WB 2026 Analysis
             </Link>
 
             <div>
