@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(node -e ' *)"
+      "Bash(node -e ' *)",
+      "Bash(node -e \"JSON.parse\\(require\\('fs'\\).readFileSync\\('content/videos.json','utf8'\\)\\); console.log\\('valid JSON'\\)\")"
     ]
   }
 }
