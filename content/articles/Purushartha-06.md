@@ -1,9 +1,9 @@
 ---
-title: "Purushartha"
-description: "Hindus in America should build a diversified political portfolio across power centers to protect Dharmic and community interests long-term."
+title: "Purushartha: Four Pursuits Of Life"
+description: "Purushartha represents the four essential pursuits of human life—dharma, artha, kama, and moksha—which function as the organized driving forces and core purpose of an individual's existence"
 date: "2022-03-15"
 author: "Mohan Sonti"
-heroImage: "/content/articles/purushartha.webp"
+heroImage: "/content/articles/Purushartha_Four_Human_Existence_Aims-06.png"
 ---
 
 <SectionHeading>Purushartha</SectionHeading>
