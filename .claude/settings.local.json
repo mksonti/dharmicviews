@@ -2,7 +2,29 @@
   "permissions": {
     "allow": [
       "Bash(node -e ' *)",
-      "Bash(node -e \"JSON.parse\\(require\\('fs'\\).readFileSync\\('content/videos.json','utf8'\\)\\); console.log\\('valid JSON'\\)\")"
+      "Bash(node -e \"JSON.parse\\(require\\('fs'\\).readFileSync\\('content/videos.json','utf8'\\)\\); console.log\\('valid JSON'\\)\")",
+      "Bash(curl -s -A \"Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/124.0.0.0 Safari/537.36\" \"https://www.youtube.com/@TOLwithJjay\" -o /tmp/channel.html -w \"%{http_code}\\\\n\")",
+      "Bash(rm -f /tmp/channel.html)",
+      "Bash(node -e \"JSON.parse\\(require\\('fs'\\).readFileSync\\('content/channels.json','utf8'\\)\\); console.log\\('valid JSON'\\)\")",
+      "Bash(curl -s -A \"Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/124.0.0.0 Safari/537.36\" \"https://www.youtube.com/@HinduTempleofBloomingtonNormal\" -o /tmp/htbn.html -w \"%{http_code}\\\\n\")",
+      "Bash(curl -s -A \"Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/124.0.0.0 Safari/537.36\" \"https://www.youtube.com/watch?v=6YF4MWOVrIY\" -o /tmp/v.html -w \"%{http_code}\\\\n\")",
+      "Bash(curl -s -A \"Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/124.0.0.0 Safari/537.36\" \"https://www.youtube.com/@hindutempleofbloomingtonno6602\" -o /tmp/htbn.html -w \"%{http_code}\\\\n\")",
+      "Bash(grep -i \"\\\\.png$\")",
+      "Bash(grep -i \"\\\\.webp$\")",
+      "Bash(node -e \"console.log\\(require\\('sharp'\\)\\)\")",
+      "Bash(curl -s http://localhost:3000/articles -o /dev/null -w \"%{http_code}\\\\n\")",
+      "Bash(curl -s \"http://localhost:3000/articles/CalendarsOfHindus-07\")",
+      "Bash(grep -o \"Word Trail.\\\\{0,200}\")",
+      "Bash(curl -s \"http://localhost:3000/articles/CalendarsOfHindus-07\" -o /tmp_page.html)",
+      "Bash(grep -c \"Word Trail\" /tmp_page.html)",
+      "Bash(grep -o \"background-color:#d97706[^\\\\\"]*\" /tmp_page.html)",
+      "Bash(curl -s http://localhost:3000/articles/CalendarsOfHindus-07 -o /c/Users/SKBSS/AppData/Local/Temp/claude/d--Sruthi-dharmicviews/6d586fcb-2f60-4879-9055-4f7b0e1b2bb8/scratchpad/page.html)",
+      "Bash(grep -o '.\\\\{0,80\\\\}Solis.\\\\{0,20\\\\}' /c/Users/SKBSS/AppData/Local/Temp/claude/d--Sruthi-dharmicviews/6d586fcb-2f60-4879-9055-4f7b0e1b2bb8/scratchpad/page.html)",
+      "Bash(curl -s http://localhost:3000/articles/CalendarsOfHindus-07 -o /c/Users/SKBSS/AppData/Local/Temp/claude/d--Sruthi-dharmicviews/6d586fcb-2f60-4879-9055-4f7b0e1b2bb8/scratchpad/page2.html)",
+      "Bash(grep -o '.\\\\{0,120\\\\}Solis.\\\\{0,20\\\\}' /c/Users/SKBSS/AppData/Local/Temp/claude/d--Sruthi-dharmicviews/6d586fcb-2f60-4879-9055-4f7b0e1b2bb8/scratchpad/page2.html)"
+    ],
+    "additionalDirectories": [
+      "\\tmp"
     ]
   }
 }

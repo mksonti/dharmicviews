@@ -190,33 +190,17 @@ And from the *Brihad Paraashara Hora Shastra* (Chapter 3, Verse 10):
 
 **Vaara** (or vaasarah) generally means 'week' — from the dhaatu √*vṛ*, 'to cover, encompass, surround'. Based on Vedic roots found the world over, a week is universally accepted to have 7 days, based on the 7 identified graha in the same order as above.
 
-| Graha (Samskrutam) | Vaara (Samskrutam) | Celestial Body | Current Name |
-|---|---|---|---|
-| ravi, surya, aditya | adi/ravi-vaasarah | Sun | Sunday |
-| chandra, soma | soma-vaasarah | Moon | Monday |
-| mangala | mangala-vaasarah | Mars | Tuesday |
-| budha | budha-vaasarah | Mercury | Wednesday |
-| bruhaspathi, guru | guru-vaasarah | Jupiter | Thursday |
-| shukra | shukra-vaasarah | Venus | Friday |
-| shani | shani-vaasarah | Saturn | Saturday |
+Each culture named its day after the same body in its own tongue. The color-coded tags below trace that word's journey — <LangTag lang="R" /> Roman, <LangTag lang="L" /> Latin, <LangTag lang="G" /> Germanic, <LangTag lang="N" /> Norse, <LangTag lang="O" /> Old English — so the same tag color always marks the same layer of history as you scan down the table.
 
-<br />
-
-Same 7 graha, same order, same sky — but each culture named the day after the body in its own tongue. Tracing the word itself, rather than just the meaning, shows the shared inheritance more vividly than any table of abbreviations could:
-
-<Callout type="note">**☉ Sun-day** — samskrutam *ravi/surya* → Latin *Solis* → Germanic *Sunno* → English **Sunday**</Callout>
-
-<Callout type="note">**☾ Mon-day** — samskrutam *chandra/soma* → Latin *Lunae* → Old English *Monan* → English **Monday**</Callout>
-
-<Callout type="note">**♂ Tues-day** — samskrutam *mangala* → Roman *Mars* → Latin *Martis* → Germanic *Tiu* → English **Tuesday**</Callout>
-
-<Callout type="note">**☿ Wednes-day** — samskrutam *budha* → Roman *Mercury* → Latin *Mercurii* → Germanic *Woden* → English **Wednesday**</Callout>
-
-<Callout type="note">**♃ Thurs-day** — samskrutam *bruhaspathi/guru* → Roman *Jupiter* → Latin *Jovis* → Norse *Thor* → English **Thursday**</Callout>
-
-<Callout type="note">**♀ Fri-day** — samskrutam *shukra* → Roman *Venus* → Latin *Veneris* → Norse *Frigg* → English **Friday**</Callout>
-
-<Callout type="note">**♄ Sat-day** — samskrutam *shani* → Roman *Saturn* → Latin *Saturni* → English **Saturday**</Callout>
+| Graha (Samskrutam) | Vaara (Samskrutam) | Body | Word Trail | Current Name |
+|---|---|---|---|---|
+| ravi, surya, aditya | adi/ravi-vaasarah | ☉ Sun | <LangTag lang="L" /> Solis · <LangTag lang="G" /> Sunno | **Sunday** |
+| chandra, soma | soma-vaasarah | ☾ Moon | <LangTag lang="L" /> Lunae · <LangTag lang="O" /> Monan | **Monday** |
+| mangala | mangala-vaasarah | ♂ Mars | <LangTag lang="R" /> Mars · <LangTag lang="L" /> Martis · <LangTag lang="G" /> Tiu | **Tuesday** |
+| budha | budha-vaasarah | ☿ Mercury | <LangTag lang="R" /> Mercury · <LangTag lang="L" /> Mercurii · <LangTag lang="G" /> Woden | **Wednesday** |
+| bruhaspathi, guru | guru-vaasarah | ♃ Jupiter | <LangTag lang="R" /> Jupiter · <LangTag lang="L" /> Jovis · <LangTag lang="N" /> Thor | **Thursday** |
+| shukra | shukra-vaasarah | ♀ Venus | <LangTag lang="R" /> Venus · <LangTag lang="L" /> Veneris · <LangTag lang="N" /> Frigg | **Friday** |
+| shani | shani-vaasarah | ♄ Saturn | <LangTag lang="R" /> Saturn · <LangTag lang="L" /> Saturni | **Saturday** |
 
 <Pullquote>Seven graha, seven names, one sky — every ancient culture simply looked up and read the same week.</Pullquote>
 

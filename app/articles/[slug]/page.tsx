@@ -14,9 +14,10 @@ import EpicCompare from '@/components/EpicCompare';
 import BinaryList, { BinaryItem } from '@/components/BinaryList';
 import ForceCard from '@/components/ForceCard';
 import SourceNote from '@/components/SourceNote';
+import LangTag from '@/components/LangTag';
 import { ChevronRight, Clock } from 'lucide-react';
 
-const mdxComponents = { Callout, Pullquote, Divider, SectionHeading, Definition, Question, EpicCompare, BinaryList, BinaryItem, ForceCard, SourceNote };
+const mdxComponents = { Callout, Pullquote, Divider, SectionHeading, Definition, Question, EpicCompare, BinaryList, BinaryItem, ForceCard, SourceNote, LangTag };
 
 const baseUrl = process.env.APP_URL || 'https://dharmicviews.com';
 
