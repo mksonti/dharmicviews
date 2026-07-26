@@ -80,7 +80,7 @@ export default function VideosClient({ initialVideos, avatarMap = {} }: { initia
       byChannel[key].videos.sort(compareFn);
     }
 
-    return Object.values(byChannel).sort((a, b) => a.channelName.localeCompare(b.channelName));
+    return Object.values(byChannel).sort((a, b) => b.videos.length - a.videos.length);
   }, [initialVideos, searchQuery, selectedTag, selectedChannel, sort]);
 
   const totalCount = videosByChannel.reduce((sum, ch) => sum + ch.videos.length, 0);
