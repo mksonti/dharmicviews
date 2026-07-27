@@ -155,7 +155,27 @@ Video write-ups always use `category: "Videos"`.
 
 ---
 
-## 5. Quick checklist before publishing
+## 5. How video write-ups show up on the Articles page (and where the link goes)
+
+Video write-ups are **not** stored alongside regular articles, but they still appear as cards on the `/articles` page, mixed in with regular articles and sorted by date like everything else.
+
+This is wired up in [app/articles/page.tsx](app/articles/page.tsx):
+
+1. `getSortedArticlesData()` loads the regular `.md` files from `content/articles/`.
+2. `getAllVideoArticles()` loads every file from `content/video_articles/`.
+3. For each video write-up, the code looks up the matching entry in `content/videos.json` (via `getVideoData(va.videoId)`) to borrow its thumbnail image, since write-up frontmatter doesn't have its own `heroImage`.
+4. Both lists are merged into one `articles` array and handed to `ArticlesClient` ([components/ArticlesClient.tsx](components/ArticlesClient.tsx)), which renders the cards, category badges (`Ādhyatmik` / `Cultural` / `Videos`), and the category filter buttons.
+
+**The link:** each card's title and "Read more →" both point to an `href` computed per item:
+
+- Regular article → `href: /articles/{slug}` (its own page under `app/articles/[slug]/page.tsx`)
+- Video write-up → `href: /videos/{videoId}` (**not** `/articles/...`) — see [app/articles/page.tsx:33](app/articles/page.tsx#L33)
+
+So clicking a "Videos"-category card on the Articles page takes you to the video's page at `/videos/<videoId>`, where the write-up's Markdown body is rendered underneath the embedded YouTube player (see `app/videos/[slug]/page.tsx`). There is no separate `/articles/<videoId>` page for these — the write-up only ever lives on the video's own page; the Articles listing just surfaces it there as a shortcut.
+
+---
+
+## 6. Quick checklist before publishing
 
 - [ ] `category` is set and is exactly one of `Ādhyatmik`, `Cultural`, `Videos`
 - [ ] `date` is `YYYY-MM-DD`
