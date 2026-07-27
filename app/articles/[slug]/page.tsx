@@ -98,7 +98,7 @@ export default async function Article({ params }: { params: Promise<{ slug: stri
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <div className="mb-4">
+      <div className="max-w-3xl mx-auto mb-4">
         <nav aria-label="Breadcrumb">
           <ol className="flex items-center gap-1 text-sm text-stone-500">
             <li><Link href="/" className="hover:text-orange-600 transition-colors">Home</Link></li>
@@ -109,9 +109,9 @@ export default async function Article({ params }: { params: Promise<{ slug: stri
           </ol>
         </nav>
       </div>
-      <article className="bg-white rounded-3xl border border-orange-100 overflow-hidden shadow-sm">
+      <article className="max-w-3xl mx-auto bg-white rounded-3xl border border-orange-100 overflow-hidden shadow-sm">
         {articleData.heroImage && (
-          <div className="relative w-full" style={{ aspectRatio: '16/9' }}>
+          <div className="relative w-full mx-auto" style={{ aspectRatio: '16/9' }}>
             <Image
               src={articleData.heroImage}
               alt={articleData.title}
