@@ -26,7 +26,7 @@ Keeping time requires us to first understand everything that moves — real and 
 | Moon spins around its own axis | Almost the same time as revolving around Earth | Real, but appears as not spinning |
 | Stars 'move' at night | — | Apparent, due to Earth's revolution around the Sun |
 
-In addition to this, Earth has another motion called **precession**. Imagine a toy spinning top — it spins around its axis, but the axis itself also 'wobbles' around in circles when observed from the top. That circular wobbling of the spinning axis is precession. Likewise, the axis of Earth, which is slightly inclined with respect to the Earth-Sun plane, also wobbles — that wobble is the precession motion of Earth. The axial precession takes about **26,000 Earth years** to complete one full cycle, changing the seasons' position relative to the distant stars over that span.
+In addition to this, Earth has another motion called **<Term id="precession">precession</Term>**. Imagine a toy spinning top — it spins around its axis, but the axis itself also 'wobbles' around in circles when observed from the top. That circular wobbling of the spinning axis is precession. Likewise, the axis of Earth, which is slightly inclined with respect to the Earth-Sun plane, also wobbles — that wobble is the precession motion of Earth. The axial precession takes about **26,000 Earth years** to complete one full cycle, changing the seasons' position relative to the distant stars over that span.
 
 
 ![Picture 2.1: Advanced Precession and Reference Point Visualization](/content/articles/CalendarsOfHindus-07-precession.webp)
@@ -41,8 +41,8 @@ Setting aside the accuracy of the values themselves, the durations of the moveme
 
 | Reference Point | Root | Vantage | Nature |
 |---|---|---|---|
-| **Sidereal** | Latin 'sidereus' — 'belonging to a star' | Observed from a distant star | Absolute, irrespective of what we see from Earth (a bird's-eye view) |
-| **Synodic** | Latin 'synodus' — 'meeting' (as in 'synchronizing') | Observed from Earth | Relative to our location |
+| **<Term id="sidereal">Sidereal</Term>** | Latin 'sidereus' — 'belonging to a star' | Observed from a distant star | Absolute, irrespective of what we see from Earth (a bird's-eye view) |
+| **<Term id="synodic">Synodic</Term>** | Latin 'synodus' — 'meeting' (as in 'synchronizing') | Observed from Earth | Relative to our location |
 
 For example, if Earth wasn't spinning at all but was still revolving around the Sun, then after one full revolution we would have zero Sidereal day but '-1' (a lost day) Synodic day. That's because, as observed from a distant star, Earth did not spin at all — zero Sidereal day. But a person living on Earth would observe the Sun apparently rise from the west and set in the east once that year — one full day, but in the opposite direction, i.e. one Synodic day (rather, '-1').
 
@@ -68,9 +68,9 @@ So now the question is: how do we measure the Year? That is a calendar.
 
 | Calendar Type | Basis | Accounts for Precession? | Where Used / Notes |
 |---|---|---|---|
-| **Synodic/Tropical Solar** | ~365 Earth rotations per Solar year, divided into variable-size months with fixed-size weeks | Yes (saayana) | Sections of Tamil Nadu, Kerala, etc. Technically closest to the western **Gregorian Calendar** |
-| **Sidereal Solar** | One complete absolute revolution of Earth around the Sun | No (nirayana) | Exists in parts of India; little practical value for seasons/agriculture |
-| **Synodic/Tropical Luni-Solar** | Fixed-size months from the Moon's Synodic revolution (~29.5 days = 30 tithi), weeks from Earth's spin, extra **adhika maasam** every ~32 months | Yes (saayana) | The most widely used calendar across the country |
+| **<Term id="tropical-solar-calendar">Synodic/Tropical Solar</Term>** | ~365 Earth rotations per Solar year, divided into variable-size months with fixed-size weeks | Yes (saayana) | Sections of Tamil Nadu, Kerala, etc. Technically closest to the western **Gregorian Calendar** |
+| **<Term id="sidereal-solar-calendar">Sidereal Solar</Term>** | One complete absolute revolution of Earth around the Sun | No (nirayana) | Exists in parts of India; little practical value for seasons/agriculture |
+| **<Term id="luni-solar-calendar">Synodic/Tropical Luni-Solar</Term>** | Fixed-size months from the Moon's Synodic revolution (~29.5 days = 30 tithi), weeks from Earth's spin, extra **adhika maasam** every ~32 months | Yes (saayana) | The most widely used calendar across the country |
 | **Pure Lunar** | Exclusively the Moon's revolution (~30 days), no adjustment for Earth's solar year | No | Ancient preliminary step to the Luni-Solar calendar; no notion of seasons; still used in Islamic societies |
 
 ![Picture 3: Moon's Synodic and Sidereal Revolution Around Earth](/content/articles/CalendarsOfHindus-07-lunisolar.webp)
@@ -86,7 +86,7 @@ In the Luni-Solar calendar, the Moon completes an apparent 360 degrees around Ea
 
 <SectionHeading>Panchanga: The Five Limbs</SectionHeading>
 
-**Panchanga** literally translates to 'five limbs' (pancha + anga). It is a Sidereal-Synodic based, complex calendar. The five limbs are **tithi, vaara, nakshatra, yoga** and **karana** — though several other concepts are intrinsically involved, such as graha, maasa and raasi. Below is a description of each, traced from its dhaatu (root concept, marked with √).
+**<Term id="panchanga">Panchanga</Term>** literally translates to 'five limbs' (pancha + anga). It is a Sidereal-Synodic based, complex calendar. The five limbs are **tithi, vaara, nakshatra, yoga** and **karana** — though several other concepts are intrinsically involved, such as graha, maasa and raasi. Below is a description of each, traced from its dhaatu (root concept, marked with √).
 
 <SectionHeading>tithi</SectionHeading>
 
@@ -312,14 +312,14 @@ The 2 karana on each half-tithi across the full month (sukla and krishna paksha)
 
 | Term | Quick Definition |
 |---|---|
-| **Real & apparent motions** | Earth spins about its axis; the axis wobbles (precession); Earth revolves around the Sun; the Moon spins about its own axis (negligible); the Moon revolves around Earth; the stars appear to 'revolve' in the background |
-| **Synodic** | A spin or revolution as experienced from a relative location, such as Earth |
-| **Sidereal** | A spin or revolution as seen from an absolute location, such as a distant star |
-| **Precession (ayana)** | Earth's spin axis wobbles, completing the cycle in about 26,000 years. **Saayana** accounts for it; **nirayana** does not |
-| **Synodic/Tropical Solar Calendar** | ~365 days per Earth revolution around the Sun, accounting for precession, divided into months and weeks from Earth's spin. Similar to the Gregorian Calendar |
-| **Sidereal Solar Calendar** | One complete absolute revolution of Earth around the Sun, ignoring precession. Exists, but of little practical value |
-| **Synodic/Tropical Luni-Solar Calendar** | ~365 days per year, accounting for precession, with fixed-size months from the Moon's Synodic revolution, weeks (vaasarah) from Earth's spin, and tithi dividing each lunar month into 30 units. The most commonly used calendar |
-| **Panchanga** | A Sidereal-Synodic calendar of five limbs: **tithi** (30 divisions of the Moon's Synodic revolution), **vaara** (7-day week from the graha), **nakshatra** (27 divisions of the Moon's Sidereal revolution), **yoga** (27 divisions combining both Sidereal revolutions), and **karana** (half-tithi units, 11 types) |
+| **<Term id="real-apparent-motions">Real & apparent motions</Term>** | Earth spins about its axis; the axis wobbles (precession); Earth revolves around the Sun; the Moon spins about its own axis (negligible); the Moon revolves around Earth; the stars appear to 'revolve' in the background |
+| **<Term id="synodic">Synodic</Term>** | A spin or revolution as experienced from a relative location, such as Earth |
+| **<Term id="sidereal">Sidereal</Term>** | A spin or revolution as seen from an absolute location, such as a distant star |
+| **<Term id="precession">Precession (ayana)</Term>** | Earth's spin axis wobbles, completing the cycle in about 26,000 years. **Saayana** accounts for it; **nirayana** does not |
+| **<Term id="tropical-solar-calendar">Synodic/Tropical Solar Calendar</Term>** | ~365 days per Earth revolution around the Sun, accounting for precession, divided into months and weeks from Earth's spin. Similar to the Gregorian Calendar |
+| **<Term id="sidereal-solar-calendar">Sidereal Solar Calendar</Term>** | One complete absolute revolution of Earth around the Sun, ignoring precession. Exists, but of little practical value |
+| **<Term id="luni-solar-calendar">Synodic/Tropical Luni-Solar Calendar</Term>** | ~365 days per year, accounting for precession, with fixed-size months from the Moon's Synodic revolution, weeks (vaasarah) from Earth's spin, and tithi dividing each lunar month into 30 units. The most commonly used calendar |
+| **<Term id="panchanga">Panchanga</Term>** | A Sidereal-Synodic calendar of five limbs: **tithi** (30 divisions of the Moon's Synodic revolution), **vaara** (7-day week from the graha), **nakshatra** (27 divisions of the Moon's Sidereal revolution), **yoga** (27 divisions combining both Sidereal revolutions), and **karana** (half-tithi units, 11 types) |
 | **<Term id="sankranthi">Sankranthi</Term>** | Earth's transit from one raasi to another (12 per year); a Sidereal event that drifts on Tropical calendars by about 20 minutes a year |
 
 <br />
