@@ -188,11 +188,15 @@ The 12 maasa, with their reference raasi:
 
 Shri Veda Vyasa's stotram on the nava-graha summarizes them in a verse:
 
-<Pullquote>ādityāya ca somāya maṅgaldāya budhāya ca | guru śukra śanibhyaśca rāhave ketave namaḥ ||</Pullquote>
+<Pullquote>ādityāya ca somāya maṅgaldāya budhāya ca |
+<br />
+guru śukra śanibhyaśca rāhave ketave namaḥ ||</Pullquote>
 
 And from the *Brihad Paraashara Hora Shastra* (Chapter 3, Verse 10):
 
-<Pullquote>atha khetaa ravischandro mangalascha budhastatha | guruh shukrah shanee raahuh ketuschaite yathakramam ||</Pullquote>
+<Pullquote>atha khetaa ravischandro mangalascha budhastatha |
+<br />
+guruh shukrah shanee raahuh ketuschaite yathakramam ||</Pullquote>
 
 <Divider />
 
