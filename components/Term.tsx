@@ -38,10 +38,23 @@ export default function Term({ id, children }: { id: TermKey; children: React.Re
         <span
           id={tooltipId}
           role="tooltip"
-          className="not-prose absolute z-20 left-1/2 -translate-x-1/2 bottom-full mb-2 w-64 max-w-[80vw] rounded-lg border border-orange-200 bg-white px-3 py-2 text-xs font-normal leading-snug text-stone-700 shadow-lg"
+          className="not-prose fixed z-50 w-64 max-w-[80vw] -translate-x-1/2 rounded-lg border border-orange-200 bg-white px-3 py-2 text-xs font-normal leading-snug text-stone-700 shadow-lg"
+          style={{ top: 'var(--term-tooltip-top, auto)', left: 'var(--term-tooltip-left, auto)' }}
+          ref={(el) => {
+            if (!el) return;
+            const trigger = el.parentElement?.querySelector('button');
+            const rect = trigger?.getBoundingClientRect();
+            if (!rect) return;
+            const tipHeight = el.offsetHeight;
+            const spaceAbove = rect.top;
+            const openBelow = spaceAbove < tipHeight + 16;
+            el.style.setProperty('--term-tooltip-top', openBelow ? `${rect.bottom + 8}px` : `${rect.top - tipHeight - 8}px`);
+            const half = el.offsetWidth / 2;
+            const clampedLeft = Math.min(Math.max(rect.left + rect.width / 2, half + 8), window.innerWidth - half - 8);
+            el.style.setProperty('--term-tooltip-left', `${clampedLeft}px`);
+          }}
         >
           {definition}
-          <span className="absolute left-1/2 top-full -translate-x-1/2 -mt-1 h-2 w-2 rotate-45 border-b border-r border-orange-200 bg-white" />
         </span>
       )}
     </span>
