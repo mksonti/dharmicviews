@@ -4,6 +4,7 @@ description: "A ground-up explanation of how Hindu calendars work — from Earth
 date: "2020-01-01"
 author: "Sonti Mohan Krishna"
 heroImage: "/content/articles/CalendarsOfHindus-07.webp"
+category: "Ādhyatmik"
 ---
 
 A calendar, in general, is about time keeping — accounting for and organizing the timeline. In a broader sense, it perhaps started as a need for food gathering and cultivation for any culture, because in a given span of time, the seasons and weather change in a periodic manner — synchronizing with nature and its events. This periodic change is based on the fact that Earth revolves around the Sun. We call one full revolution around the Sun a **'year'**.

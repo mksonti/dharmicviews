@@ -4,6 +4,7 @@ description: "Hindus in the US must move beyond the Republican-Democrat divide a
 date: "2020-10-11"
 author: "Mohan Sonti"
 heroImage: "/content/articles/HindusInPolitics-BattleOfWillAndSurvival-03.webp"
+category: "Cultural"
 ---
 
 It is said that *'No one is defeated without until they are defeated within'* — something we need to keep in mind. It is all the more important to know this for all the Hindus here in the USA, who form a very tiny population (and spread out).

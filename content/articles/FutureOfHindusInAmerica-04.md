@@ -4,6 +4,7 @@ description: "Hindus in America should build a diversified political portfolio a
 date: "2020-11-11"
 author: "Mohan Sonti"
 heroImage: "/content/articles/FutureOfHindusInAmerica-04.webp"
+category: "Cultural"
 ---
 
 <SectionHeading>Hindu Investment</SectionHeading>

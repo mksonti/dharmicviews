@@ -17,6 +17,7 @@ export interface VideoArticleData {
   date: string;
   description: string;
   author: string;
+  category?: string;
 }
 
 export function getVideoArticleData(videoId: string): VideoArticleData | undefined {
@@ -31,6 +32,14 @@ export function getVideoArticleData(videoId: string): VideoArticleData | undefin
     videoId,
     content: matterResult.content,
     readingTime: calcReadingTime(matterResult.content),
-    ...(matterResult.data as { title: string; date: string; description: string; author: string }),
+    ...(matterResult.data as { title: string; date: string; description: string; author: string; category?: string }),
   };
+}
+
+export function getAllVideoArticles(): VideoArticleData[] {
+  if (!fs.existsSync(videoArticlesDirectory)) {
+    return [];
+  }
+  const fileNames = fs.readdirSync(videoArticlesDirectory).filter(f => f.endsWith('.md'));
+  return fileNames.map((fileName) => getVideoArticleData(fileName.replace(/\.md$/, ''))!);
 }

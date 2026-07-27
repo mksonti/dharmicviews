@@ -4,6 +4,7 @@ description: "Mohan Sonti breaks down India's pollution sources, the collapse of
 date: "2026-07-24"
 author: "Mohan Sonti"
 videoId: "x9mkNEQF7M0"
+category: "Videos"
 ---
 
 A visiting delegation from IIT Delhi once sat down to dinner, and one member's breathing was audible across the table — a small, human detail that opens a much bigger conversation about where India's pollution actually comes from, and why the usual Western prescriptions don't fit.

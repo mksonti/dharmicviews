@@ -4,6 +4,7 @@ description: "A framework for Hindus to engage in politics as independent Dharmi
 date: "2020-09-20"
 author: "Mohan Sonti"
 heroImage: "/content/articles/HindusInPolitics-TheFrameworkAndPrinciples-02.webp"
+category: "Cultural"
 ---
 
 There is an ardent debate and furor in the Indian-American community that I've been following for some time with interest regarding the current elections (potentially setting course for Indians in USA and Bharat). So here I would like to make an attempt at coming up with some **Framework and Principles** that all of us can possibly be 'warm to it' if not fully agree with it — to see how each one of us and our positions fits into the political paradigm. In this article I've presented **3 broad categories with corresponding questions we must ask people**, so as to have a more meaningful discussion on the subjects.

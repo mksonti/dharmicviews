@@ -4,6 +4,7 @@ description: "Mohan Sonti argues the US-Iran war has little to do with Iran itse
 date: "2026-07-16"
 author: "Mohan Sonti"
 videoId: "iPJioR2Qwxs"
+category: "Videos"
 ---
 
 Set aside morality and ethics for a moment — this is pure politics, the way it actually runs behind the public rhetoric. Every government gives its citizens one set of reasons for a war and keeps a very different set for itself.

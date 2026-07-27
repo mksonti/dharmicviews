@@ -4,6 +4,7 @@ description: "Purushartha represents the four essential pursuits of human lifeâ€
 date: "2022-03-15"
 author: "Mohan Sonti"
 heroImage: "/content/articles/Purushartha_Four_Human_Existence_Aims-06.png"
+category: "Ä€dhyatmik"
 ---
 
 <SectionHeading>Purushartha</SectionHeading>

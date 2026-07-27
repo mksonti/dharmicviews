@@ -1,4 +1,6 @@
 import { getSortedArticlesData } from '@/lib/articles';
+import { getAllVideoArticles } from '@/lib/video-articles';
+import { getVideoData } from '@/lib/videos';
 import { Metadata } from 'next';
 import ArticlesClient from '@/components/ArticlesClient';
 
@@ -19,7 +21,27 @@ export const metadata: Metadata = {
 };
 
 export default function ArticlesPage() {
-  const articles = getSortedArticlesData();
+  const textArticles = getSortedArticlesData().map(a => ({
+    ...a,
+    href: `/articles/${a.slug}`,
+  }));
+
+  const videoArticles = getAllVideoArticles().map(va => {
+    const video = getVideoData(va.videoId);
+    return {
+      slug: va.videoId,
+      href: `/videos/${va.videoId}`,
+      title: va.title,
+      date: va.date,
+      description: va.description,
+      author: va.author,
+      heroImage: video?.thumbnailSrc,
+      readingTime: va.readingTime,
+      category: va.category,
+    };
+  });
+
+  const articles = [...textArticles, ...videoArticles].sort((a, b) => b.date.localeCompare(a.date));
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -32,7 +54,7 @@ export default function ArticlesPage() {
       itemListElement: articles.map((a, i) => ({
         '@type': 'ListItem',
         position: i + 1,
-        url: `${baseUrl}/articles/${a.slug}`,
+        url: `${baseUrl}${a.href}`,
         name: a.title,
       })),
     },

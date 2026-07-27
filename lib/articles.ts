@@ -24,7 +24,7 @@ export function getSortedArticlesData() {
     return {
       slug,
       readingTime: calcReadingTime(matterResult.content),
-      ...(matterResult.data as { title: string; date: string; description: string; author: string; heroImage: string; featured?: boolean; draft?: boolean }),
+      ...(matterResult.data as { title: string; date: string; description: string; author: string; heroImage: string; category?: string; featured?: boolean; draft?: boolean }),
     };
   }).filter(a => !a.draft);
 
@@ -68,6 +68,6 @@ export function getArticleData(slug: string) {
     slug,
     content: matterResult.content,
     readingTime: calcReadingTime(matterResult.content),
-    ...(matterResult.data as { title: string; date: string; description: string; author: string; heroImage: string }),
+    ...(matterResult.data as { title: string; date: string; description: string; author: string; heroImage: string; category?: string }),
   };
 }

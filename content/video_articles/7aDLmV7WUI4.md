@@ -4,6 +4,7 @@ description: "Mohan Sonti examines how Aadhaar saturation exceeding 100% in Biha
 date: "2026-07-10"
 author: "Mohan Sonti"
 videoId: "7aDLmV7WUI4"
+category: "Videos"
 ---
 
 A district cannot legitimately have more Aadhaar cards than people living in it. Yet several border districts in Bihar are showing saturation rates above 120% — a number that only makes sense if it is being gamed.
