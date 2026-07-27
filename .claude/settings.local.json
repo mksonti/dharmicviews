@@ -50,7 +50,11 @@
       "Bash(curl -s http://localhost:3000/articles/CalendarsOfHindus-07 -o /tmp/article3.html)",
       "Bash(curl -s \"http://localhost:3000/_next/static/css/app/layout.css?v=1785123040444\" -o /tmp/layout3.css)",
       "Bash(curl -s http://localhost:3000/articles/CalendarsOfHindus-07 -o /tmp/article4.html)",
-      "Bash(curl -s \"http://localhost:3000/_next/static/css/app/layout.css?v=1785123097436\" -o /tmp/layout4.css)"
+      "Bash(curl -s \"http://localhost:3000/_next/static/css/app/layout.css?v=1785123097436\" -o /tmp/layout4.css)",
+      "Bash(grep -n \"\\\\.prose table {\\\\|\\\\.prose thead {\\\\|\\\\.prose tbody tr {\\\\|\\\\.prose th,\\\\|\\\\.prose td {\" /tmp/layout4.css)",
+      "Bash(grep -n -A2 \"^.prose th,$\" /tmp/layout4.css)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:3000/articles/HindusInPolitics-TheFrameworkAndPrinciples-02)",
+      "Bash(curl -s http://localhost:3000/articles/HindusInPolitics-TheFrameworkAndPrinciples-02 -o /tmp/article5.html)"
     ],
     "additionalDirectories": [
       "\\tmp",
