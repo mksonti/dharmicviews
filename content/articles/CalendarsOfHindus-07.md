@@ -13,7 +13,7 @@ A calendar, in general, is about time keeping — accounting for and organizing 
 
 <SectionHeading>Movement</SectionHeading>
 
-![Picture 1: Movements with Respect To Earth](/content/articles/CalendarsOfHindus-07-movements.png)
+![Picture 1: Movements with Respect To Earth](/content/articles/CalendarsOfHindus-07-movements.webp)
 
 Keeping time requires us to first understand everything that moves — real and apparent — with respect to where we live, called Earth. The following things move:
 
@@ -29,7 +29,7 @@ Keeping time requires us to first understand everything that moves — real and 
 In addition to this, Earth has another motion called **precession**. Imagine a toy spinning top — it spins around its axis, but the axis itself also 'wobbles' around in circles when observed from the top. That circular wobbling of the spinning axis is precession. Likewise, the axis of Earth, which is slightly inclined with respect to the Earth-Sun plane, also wobbles — that wobble is the precession motion of Earth. The axial precession takes about **26,000 Earth years** to complete one full cycle, changing the seasons' position relative to the distant stars over that span.
 
 
-![Picture 2.1: Advanced Precession and Reference Point Visualization](/content/articles/CalendarsOfHindus-07-precession.png)
+![Picture 2.1: Advanced Precession and Reference Point Visualization](/content/articles/CalendarsOfHindus-07-precession.webp)
 
 <Callout type="info">The wobbling of Earth about its axis (precession) is called **'ayana'** in Sanskrit. **'Sa-ayana'** is used when precession is taken into account, and **'nir-ayana'** is when it is not.</Callout>
 

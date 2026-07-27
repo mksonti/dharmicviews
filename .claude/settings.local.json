@@ -29,7 +29,22 @@
       "Bash(curl -s -o /tmp/articles.html -w \"HTTP:%{http_code}\\\\n\" http://127.0.0.1:3100/articles)",
       "Bash(pkill -f \"serve out\")",
       "Bash(pkill -f \"next start\")",
-      "Bash(cp \"/c/Users/SKBSS/Downloads/Gemini_Generated_Image_sze95esze95esze9.png\" \"/d/Sruthi/dharmicviews/public/content/articles/CalendarsOfHindus-07-movements.png\" *)"
+      "Bash(cp \"/c/Users/SKBSS/Downloads/Gemini_Generated_Image_sze95esze95esze9.png\" \"/d/Sruthi/dharmicviews/public/content/articles/CalendarsOfHindus-07-movements.png\" *)",
+      "Bash(cwebp -version)",
+      "PowerShell(Get-Command magick -ErrorAction SilentlyContinue; Get-Command ffmpeg -ErrorAction SilentlyContinue; [System.Reflection.Assembly]::LoadWithPartialName\\(\"System.Drawing\"\\) | Out-Null; \"System.Drawing loaded\")",
+      "Bash(mv CalendarsOfHindus-07-movements.png Orig-CalendarsOfHindus-07-movements.png)",
+      "Bash(mv CalendarsOfHindus-07-precession.png Orig-CalendarsOfHindus-07-precession.png)",
+      "Bash(awk -F'|' '{print NR\": \"$0}')",
+      "Bash(npm run *)",
+      "Bash(echo \"started, pid $!\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:3000/articles/CalendarsOfHindus-07)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:3002/articles/CalendarsOfHindus-07)",
+      "Bash(curl -s http://localhost:3002/articles/CalendarsOfHindus-07 -o /tmp/article.html)",
+      "Bash(curl -s http://localhost:3002/_next/static/css/app/layout.css -o /tmp/layout.css)",
+      "Bash(grep -o '\\\\.prose table{[^}]*}\\\\|\\\\.prose thead{[^}]*}\\\\|\\\\.prose tbody tr{[^}]*}\\\\|\\\\.prose th,\\\\.prose td{[^}]*}' /tmp/layout.css)",
+      "Bash(grep -o '.\\\\{0,40\\\\}prose table.\\\\{0,80\\\\}' /tmp/layout.css)",
+      "Bash(grep -o '.\\\\{0,40\\\\}prose thead.\\\\{0,80\\\\}' /tmp/layout.css)",
+      "Bash(grep -o '.\\\\{0,40\\\\}prose tbody tr.\\\\{0,80\\\\}' /tmp/layout.css)"
     ],
     "additionalDirectories": [
       "\\tmp",
