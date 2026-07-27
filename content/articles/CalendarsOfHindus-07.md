@@ -73,6 +73,9 @@ So now the question is: how do we measure the Year? That is a calendar.
 | **Synodic/Tropical Luni-Solar** | Fixed-size months from the Moon's Synodic revolution (~29.5 days = 30 tithi), weeks from Earth's spin, extra **adhika maasam** every ~32 months | Yes (saayana) | The most widely used calendar across the country |
 | **Pure Lunar** | Exclusively the Moon's revolution (~30 days), no adjustment for Earth's solar year | No | Ancient preliminary step to the Luni-Solar calendar; no notion of seasons; still used in Islamic societies |
 
+![Picture 3: Moon's Synodic and Sidereal Revolution Around Earth](/content/articles/CalendarsOfHindus-07-lunisolar.webp)
+<span className="block text-center text-sm font-bold text-stone-500 mt-2">Picture – 3: Moon's Synodic and Sidereal Revolution Around Earth</span>
+
 The Synodic/Tropical Solar Calendar's days have no immediate practical value in their Sidereal form — so any mention of Earth's rotations should be assumed Synodic unless stated otherwise. While the Gregorian Calendar (itself a correction of the Julian Calendar) is the most widely used in the world today, it is built on the same principles as this ancient Solar Calendar of India.
 
 In the Luni-Solar calendar, the Moon completes an apparent 360 degrees around Earth in each Synodic revolution, so the ~29.5 days are divided into 30 equal units called **tithi** — each a 12-degree angular change of the Moon in the sky. (The Moon's *Sidereal* revolution, by contrast, takes only a little over 27 days — the absolute, one-complete-revolution figure as observed from a distant star; the Synodic revolution is longer because Earth itself is moving around the Sun during those days.) Dividing the Tropical Year into equal-size months this way leaves about 10 days unaccounted for each year, so roughly every 32 months an extra month called **adhika maasam** is added to realign the calendar.
@@ -299,7 +302,7 @@ The 2 karana on each half-tithi across the full month (sukla and krishna paksha)
 
 **Festivals** — Most Hindu festivals, such as Vijayadashami, Ugadi, Diwali and Holi, follow either the full Panchanga or the simpler Synodic Luni-Solar calendar, celebrated on specific tithi of the lunar months. In every sense, they fall on the "same day" if the Hindu calendar is followed — the date naturally varies only when mapped onto a purely Solar calendar such as the Gregorian.
 
-**Sankranthi** — The word comes from 'sankramana', meaning to 'cross over or transit', referring to Earth's crossing from one raasi to another — there are 12 sankranthi in a year. **Makar Sankranti**, the most celebrated, marks Earth's transit into makar raasi. This is a Sidereal event: irrespective of Earth's precession (a Synodic phenomenon that drifts seasons across the celestial scale), the celebration stays pegged to the fixed celestial scale (raasi). So on any Tropical calendar such as the Gregorian, the date will always drift — by about 20 minutes a year, or roughly one day every 72 years.
+**<Term id="sankranthi">Sankranthi</Term>** — The word comes from 'sankramana', meaning to 'cross over or transit', referring to Earth's crossing from one raasi to another — there are 12 sankranthi in a year. **Makar Sankranti**, the most celebrated, marks Earth's transit into makar raasi. This is a Sidereal event: irrespective of Earth's precession (a Synodic phenomenon that drifts seasons across the celestial scale), the celebration stays pegged to the fixed celestial scale (raasi). So on any Tropical calendar such as the Gregorian, the date will always drift — by about 20 minutes a year, or roughly one day every 72 years.
 
 **Reference Year** — All Solar calendars require a reference year to start counting from, since every year is otherwise identical and can only be distinguished by counting from that point. The scales used in the Panchanga run into thousands of years with a unique timestamp for any given moment, owing to the many data points — from fractions of a second to cycles of years — used to peg a specific date; tithi, vaara, nakshatra, yoga and karana above are only a few of those data points.
 
@@ -317,6 +320,7 @@ The 2 karana on each half-tithi across the full month (sukla and krishna paksha)
 | **Sidereal Solar Calendar** | One complete absolute revolution of Earth around the Sun, ignoring precession. Exists, but of little practical value |
 | **Synodic/Tropical Luni-Solar Calendar** | ~365 days per year, accounting for precession, with fixed-size months from the Moon's Synodic revolution, weeks (vaasarah) from Earth's spin, and tithi dividing each lunar month into 30 units. The most commonly used calendar |
 | **Panchanga** | A Sidereal-Synodic calendar of five limbs: **tithi** (30 divisions of the Moon's Synodic revolution), **vaara** (7-day week from the graha), **nakshatra** (27 divisions of the Moon's Sidereal revolution), **yoga** (27 divisions combining both Sidereal revolutions), and **karana** (half-tithi units, 11 types) |
+| **<Term id="sankranthi">Sankranthi</Term>** | Earth's transit from one raasi to another (12 per year); a Sidereal event that drifts on Tropical calendars by about 20 minutes a year |
 
 <br />
 

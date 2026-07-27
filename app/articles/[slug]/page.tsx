@@ -15,9 +15,11 @@ import BinaryList, { BinaryItem } from '@/components/BinaryList';
 import ForceCard from '@/components/ForceCard';
 import SourceNote from '@/components/SourceNote';
 import LangTag from '@/components/LangTag';
+import GrahaTag from '@/components/GrahaTag';
+import Term from '@/components/Term';
 import { ChevronRight, Clock } from 'lucide-react';
 
-const mdxComponents = { Callout, Pullquote, Divider, SectionHeading, Definition, Question, EpicCompare, BinaryList, BinaryItem, ForceCard, SourceNote, LangTag };
+const mdxComponents = { Callout, Pullquote, Divider, SectionHeading, Definition, Question, EpicCompare, BinaryList, BinaryItem, ForceCard, SourceNote, LangTag, GrahaTag, Term };
 
 const baseUrl = process.env.APP_URL || 'https://dharmicviews.com';
 
