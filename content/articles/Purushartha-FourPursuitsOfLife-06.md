@@ -8,95 +8,95 @@ heroImage: "/content/articles/Purushartha_Four_Human_Existence_Aims-06.png"
 
 <SectionHeading>Purushartha</SectionHeading>
 
-Meaning: (from dhaatu – root of root words)
+The word 'purushartha' is a compound derived from 'purusha' and 'artha' — root words that together shape its entire meaning.
 
-<br />
-The word ‘purushartha’ is a compound word derived from ‘purusha’ and ‘artha’.
+<Definition term="Purusha">In the bipartite concept of purush-prakrit in Sankhya and Yoga darshana, the one that 'holds ground' (pura + sha), determining and asserting its own course of action — often understood as the 'person' who wills their own path in life, as distinct from prakrit, which is 'designed by nature' (pra + krit) and follows a natural course.</Definition>
 
-<br />
-In the bipartite concept of purush-prakrit in Sankhya and Yoga darshana – the meaning of ‘purusha’ can be understood as the one that ‘holds ground’ (pura + sha) determining and asserting its course of action, while the ‘prakrit’ is ‘designed by nature’ (pra+krit) having a ‘natural course’. In this context the word purush is often ascribed and understood to be a ‘person’ – who asserts and wills their our course of life.
+<Definition term="Artha (as root)">From the dhaatu 'rta', meaning to pursue, purpose, or goal — the 'core driving force' of the subject in question. In conversation it conveys 'meaning' (the artha of a phrase); in artha-shastra it deals with the acquisition of wealth. At its root, artha is simply the inner core purpose of a context.</Definition>
 
-<br />
-The word artha comes from the dhaatu ‘rta’ which roughly means to pursue, purpose or goal.  The word ‘artha’ essentially is the ‘core driving force’ of the subject in question – the purpose. For example, in the general social conversational context, it conveys the idea of ‘meaning’, such as say “what is the ‘artha’ of a phrase”, which is asking for the ‘meaning’ of a phrase – as in the ‘core idea’ behind the phrase.  In a different context, such as in say ‘artha-shastra’, it deals with the ‘purpose’ therein, which is the ‘acquisition’ of wealth or prosperity. In summary, ‘artha’ can be understood as the ‘inner core purpose’ for the context.
+Hence 'purushartha', in its simplest definition, stands for the pursuits of a human for this life.
 
-<br />
-Hence ‘purushartha’ is in its simplest definition stands for ‘pursuits of a human’ for this life.
+<Divider />
 
+<SectionHeading>The Concept</SectionHeading>
 
-<br />
-Concept: (The fundamental idea) The ‘purushartha’ are the ‘pursuits of life’ which in simple terms can be understood as the ‘meaning or purpose of life’. It fundamentally addresses the question of why we are born and what are we trying to accomplish in this life. There are Four main pursuits of a human – dharma, artha, kama, moksha. The pursuits are often practiced in this natural order, but one can always skip one or more intermediate steps, with the last step ‘moksha’ being the final objective.
+The purushartha are the pursuits of life — in simple terms, the meaning or purpose of life. They address the fundamental question of why we are born and what we are trying to accomplish in this life. There are four main pursuits: dharma, artha, kama, and moksha. These are often practiced in this natural order, but one can always skip one or more intermediate steps, with moksha as the final objective.
 
-<br />
-Every human in their life, knowingly (consciously) or unknowingly (sub/unconsciously), would naturally work towards one or more of these 4 aims or goals through the length of their existence. Like everything else in life, it makes more sense to understand the concept and work towards it in an organized and planned manner than doing it ad-hoc.
+<Pullquote>Every human, knowingly or unknowingly, naturally works toward one or more of these four aims through the length of their existence.</Pullquote>
 
-<br />
-Details: (of each of the four pursuits)
+Like everything else in life, it makes more sense to understand the concept and work toward it in an organized, planned manner than to pursue it ad-hoc.
 
-<br />
-dharma -
+<Divider />
 
-<br />
-The word is derived from ‘dhr+ma’, which translates to ‘hold or sustain in a controlled or measured way’.  In essence dharma is one that ‘sustains a system’ in a ‘well regulated manner’. So the pursuit of ‘dharma’ is about learning and understanding the ‘truths’ of the society, nature and life – and further, it is to see how these can be improved in a sustainable way.
+<SectionHeading>Dharma</SectionHeading>
 
-<br />
-The concept of ‘dharma’ can be better understood as part of the tripartite system - ‘ritham-satyamdharmam’.
-<br />
-- ‘ritham’ is mental/intellectual realization of non-relative absolute truth
-- ‘satyam’ is the outward expression of the truth in the form of vocal, art, philosophy etc
-- ‘dharmam’ is putting that realized truth into action as a sustainable system
+The word is derived from 'dhr + ma', which translates to 'hold or sustain in a controlled or measured way'. In essence, dharma is that which sustains a system in a well-regulated manner. The pursuit of dharma is about learning and understanding the truths of society, nature, and life — and further, seeing how these can be improved in a sustainable way.
 
-<br />
-This is roughly analogous to the relationship between Justice-Law-Jurisprudence. Wherein ‘justice’ is about the realization of the ‘truth’, as in what is ‘just’. The ‘law’ is expressly codifying things based on what is understood about ‘justice’. The ‘jurisprudence’ is a system of procedures using ‘law’ to make the ‘justice’ happen.
+The concept of dharma is best understood as part of a tripartite system — ritham-satyam-dharmam:
 
-<br />In Mahabharatha (Shantiparva 12.110.11), Bhishma explains dharma thus –
-<br />
-dhāraṇād dharma ityāhuḥ dharmo dhārayate prajāḥ |
+<Definition term="Ritham">The mental and intellectual realization of non-relative, absolute truth.</Definition>
+
+<Definition term="Satyam">The outward expression of that truth, in the form of vocal expression, art, philosophy, and so on.</Definition>
+
+<Definition term="Dharmam">Putting the realized truth into action as a sustainable system.</Definition>
+
+This is roughly analogous to the relationship between Justice, Law, and Jurisprudence — where justice is the realization of truth (what is 'just'), law expressly codifies what is understood about justice, and jurisprudence is the system of procedures that uses law to make justice happen.
+
+In the Mahabharata (Shanti Parva 12.110.11), Bhishma explains dharma thus:
+
+<Callout type="note">
+dhāraṇād dharma ityāhuḥ dharmo dhārayate prajāḥ |<br />
 ya syād dhāraṇa samyuktaḥ sa dharma iti niścayaḥ ||
-<br />
-[It roughly translates to – dharma sustains the society and maintains the social order | dharma ensures well being of humanity and surely is that which fulfills these objectives ||]
+<br /><br />
+*Dharma sustains the society and maintains the social order — dharma ensures the well-being of humanity, and surely is that which fulfills these objectives.*
+</Callout>
+
+<Divider />
+
+<SectionHeading>Artha</SectionHeading>
+
+As described earlier, the word artha comes from the dhaatu 'rta', the core driving force of the subject in question. In the context of purushartha, it was about the purpose and meaning of life. As a pursuit of life, it is about prosperity and well-being as the core driving force.
+
+Prosperity is often misunderstood to be just about material wealth, but it is far more than that. An easier way to understand artha as 'prosperity and well-being' is through the different aspects of Goddess Lakshmi, the deity of that exact purpose.
+
+<Callout type="tip">
+Dhana (wealth), dhanya (food), vijaya (victory), santana (offspring), dhairya (courage), vidya (knowledge), saubhagya (fortune), vara (blessings), rajya (majesty) — all of these are part of artha constituting prosperity, alongside health, intellectual satisfaction, happiness, and emotional contentment.
+</Callout>
+
+Basically, anything that drives a human to acquire things for their own satisfaction is part of artha — and all of it forms this pursuit.
+
+<Divider />
+
+<SectionHeading>Kama</SectionHeading>
+
+The word 'kama' comes from the dhatu 'kam', meaning desire, wish, or something one longs for. This is perhaps the most misunderstood and maligned term, given its popularity with negative connotations as part of the ari-shad-varga — the six enemies within. The incorrect reading of the Kama Sutra as merely a 'sex manual' only makes it worse.
+
+Every human has desires and wishes they want to fulfill. The pursuit of kama is about fulfilling those desires while staying in line with the teachings of dharma. A balanced, constructive way to understand this is through Kamadhenu — the divine cow who grants any wish to fulfill the desires of those in her possession.
+
+<Pullquote>Wishes and desires are not just sensory in nature, but also intellectual, emotional, and aesthetic — one's pursuit of kama is about fulfilling those desires while staying within the bounds of dharma.</Pullquote>
+
+In Bharatiya samskruthi, it is common for the following mantra to be chanted to Devi Saraswati before beginning education-related activities:
+
+<Callout type="note">
+sarasvatī namastubhyaṃ varade kāmarūpiṇī |<br />
+vidyārambhaṃ kariṣyāmi siddhirbhavatu me sadā ||
+<br /><br />
+*Salutations Mother Saraswati, giver of boons, fulfiller of desires — bless me, so that I begin my studies successfully, may there be accomplishments.*
+</Callout>
+
+<Divider />
+
+<SectionHeading>Moksha</SectionHeading>
+
+The word 'moksha' comes from the dhatu 'muk', meaning to release. Among the four pursuits, moksha is considered the final objective of life — to be released at peace from the bondages and sufferings of this life, and to exit with the utmost peace and contentment.
+
+The pursuit of moksha, as explained in the Gita, is to be detached from raaga-dwesha (attachments and aversions), and to be able to leave this world in the most natural state — the way we came in at birth, by shedding all that was imposed on us afterward.
+
+<Divider />
+
+<SectionHeading>Summary</SectionHeading>
+
+The four pursuits — also the purpose, aim, or goals of life — are dharma, artha, kama, and moksha. While these are generally practiced in this natural order, one can alter the order of the first three and even skip some of them. The fourth pursuit, moksha, is universally accepted as the last one, and stands as the core objective of life.
 
 <br />
-artha -
-
-<br />
-As described earlier, the word artha comes from the dhaatu ‘rta’ which essentially is about the ‘core driving force’ of the subject in question.  In the context of purushartha, it was about the ‘purpose and meaning’ of life. In this context as a pursuit of life, it is about the ‘prosperity and well being’ as the core driving force.
-
-<br />
-The prosperity is often (mis)understood to be just about the material wealth, but in reality is far more than just that. An easier way of understanding the idea of artha as ‘prosperity and well being’, is to refer to the different aspects of Goddess Lakshmi, who is the diety of that exact purpose. Aspects such as dhana (wealth), dhanya (food), vijaya (victory), santana (offspring), dhairya (courage), vidya (knowledge), saubhagya (fortune), vara (blessings), rajya (majesty) and so on, are all part of ‘artha’ constituting prosperity. In addition to that, persuit for health, intellectual satisfaction, happiness, emotional contentment etc can all be construed as being part of ‘artha’. Basically anything that drives a human to acquire things for themselves for their satisfaction are all part of  ‘artha’ - and they all form a part of this pursuit.
-
-<br />
-kama -
-
-<br />
-The word ‘kama’ comes from the dhatu ‘kam’, which means desire or wish or something one longs for. This is perhaps the most misunderstood and maligned term, because of its popularity with its negative connotations as part of the ari-shad-varga – the six enemies within. The incorrect understanding of scripture kama-sutra being a ‘sex manual’ only makes it worse.
-
-<br />
-Every human has ‘desires’ and ‘wishes’ one wants to fulfill. The pursuit of kama is just about fulfilling the desires while being in line with the teachings of dharma described above. To understand some of the balanced and constructive idea, we could take kama-dhenu as an example. It is the ‘divine cow’ who would grant any wish to fulfill the desires of the people in possession of it.
-
-<br />
-It is very important to understand that the wishes and desires are not just sensory in nature, but are also intellectual, emotional, aesthetic and in many other forms.  So ones pursuit of ‘kama’ is about fulfilling those desires while staying within the bounds of dharma.
-
-<br />
-In Bharatiya samskruthi it is very common for the following mantra to be chanted to Devi Saraswati before starting education related activities – 
-
-<br />
-sarasvatī namastubhyaṃ varade kāmarūpiṇī |
-vidyārambhaṃ kariṣyāmi siddhirbhavatu me sadā | |
-
-<br />
-[It roughly translates to – Salutations Mother Saraswati, giver of boons, fulfiller of desires | Bless me, so that I begin my studies successfully, may there be accomplishments ||]
-
-<br />
-moksha -
-
-<br />
-The word ‘moksha’ comes from the dhatu ‘muk’, which means to release. Among the four pursuits, moksha is considered the final objective of life. The idea is to be ‘released’ at peace from any of the bondages and sufferings of this life – to be able to exit this life with upmost peace and contentment.
-
-<br />
-The pursuit of moksha as explained in Gita is to be detached from the raaga-dwesha (attachmentaversions) and be able to leave this world in the most ‘natural state’ like how we came in at birth, by shedding all the things that were imposed on us after birth.
-
-<br />
-Summary: (Conclusion on the four pursuits) The four pursuits (also the purpose, aim or goals) of life are dharma, artha, kama and moksha.  While these four pursuits as mentioned are in natural order, one can alter the order of the first three and can even skip some of them. The fourth pursuit is generally accepted as the last one and is a core objective of life.
-
-<br />
-- Mohan Krishna Sonti (2022)
+— Mohan Krishna Sonti (2022)

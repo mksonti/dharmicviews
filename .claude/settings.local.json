@@ -21,7 +21,9 @@
       "Bash(curl -s http://localhost:3000/articles/CalendarsOfHindus-07 -o /c/Users/SKBSS/AppData/Local/Temp/claude/d--Sruthi-dharmicviews/6d586fcb-2f60-4879-9055-4f7b0e1b2bb8/scratchpad/page.html)",
       "Bash(grep -o '.\\\\{0,80\\\\}Solis.\\\\{0,20\\\\}' /c/Users/SKBSS/AppData/Local/Temp/claude/d--Sruthi-dharmicviews/6d586fcb-2f60-4879-9055-4f7b0e1b2bb8/scratchpad/page.html)",
       "Bash(curl -s http://localhost:3000/articles/CalendarsOfHindus-07 -o /c/Users/SKBSS/AppData/Local/Temp/claude/d--Sruthi-dharmicviews/6d586fcb-2f60-4879-9055-4f7b0e1b2bb8/scratchpad/page2.html)",
-      "Bash(grep -o '.\\\\{0,120\\\\}Solis.\\\\{0,20\\\\}' /c/Users/SKBSS/AppData/Local/Temp/claude/d--Sruthi-dharmicviews/6d586fcb-2f60-4879-9055-4f7b0e1b2bb8/scratchpad/page2.html)"
+      "Bash(grep -o '.\\\\{0,120\\\\}Solis.\\\\{0,20\\\\}' /c/Users/SKBSS/AppData/Local/Temp/claude/d--Sruthi-dharmicviews/6d586fcb-2f60-4879-9055-4f7b0e1b2bb8/scratchpad/page2.html)",
+      "WebFetch(domain:youtubetotranscript.com)",
+      "Bash(tasklist //FI \"IMAGENAME eq node.exe\")"
     ],
     "additionalDirectories": [
       "\\tmp"

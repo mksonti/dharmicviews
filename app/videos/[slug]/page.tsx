@@ -1,8 +1,24 @@
 import { getVideoData, getAllVideos } from '@/lib/videos';
+import { getVideoArticleData } from '@/lib/video-articles';
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import { ChevronRight } from 'lucide-react';
+import { MDXRemote } from 'next-mdx-remote/rsc';
+import remarkGfm from 'remark-gfm';
+import Callout from '@/components/Callout';
+import Pullquote from '@/components/Pullquote';
+import Divider from '@/components/Divider';
+import SectionHeading from '@/components/SectionHeading';
+import Definition from '@/components/Definition';
+import Question from '@/components/Question';
+import EpicCompare from '@/components/EpicCompare';
+import BinaryList, { BinaryItem } from '@/components/BinaryList';
+import ForceCard from '@/components/ForceCard';
+import SourceNote from '@/components/SourceNote';
+import LangTag from '@/components/LangTag';
+import { ChevronRight, Clock } from 'lucide-react';
+
+const mdxComponents = { Callout, Pullquote, Divider, SectionHeading, Definition, Question, EpicCompare, BinaryList, BinaryItem, ForceCard, SourceNote, LangTag };
 
 const baseUrl = process.env.APP_URL || 'https://dharmicviews.com';
 
@@ -50,6 +66,8 @@ export default async function VideoPage({ params }: { params: Promise<{ slug: st
   if (!videoData) {
     notFound();
   }
+
+  const articleData = getVideoArticleData(slug);
 
   const jsonLd = [
     {
@@ -106,13 +124,28 @@ export default async function VideoPage({ params }: { params: Promise<{ slug: st
             />
           </div>
           <div className="p-8">
-            <h1 className="font-serif italic text-2xl md:text-3xl text-stone-900 mb-4">{videoData.title}</h1>
-            <div className="flex items-center text-stone-500 text-sm gap-4 mb-6 pb-6 border-b border-stone-100">
-              <span>Published on {new Date(videoData.publishDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
-            </div>
+            <h1 className="font-serif italic text-2xl md:text-3xl text-stone-900 mb-6 pb-6 border-b border-stone-100">{videoData.title}</h1>
+            <h2 className="text-xs font-semibold uppercase tracking-wide text-orange-600 mb-3">Overview</h2>
             <div className="prose prose-orange max-w-none text-stone-700">
               <p className="whitespace-pre-wrap">{videoData.description}</p>
             </div>
+            {articleData && (
+              <div className="mt-10 pt-8 border-t border-stone-100">
+                <div className="flex flex-wrap items-center text-stone-500 text-sm gap-3 mb-6">
+                  <span>{new Date(videoData.publishDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
+                  <span>&bull;</span>
+                  <span>By {articleData.author}</span>
+                  <span>&bull;</span>
+                  <span className="flex items-center gap-1">
+                    <Clock className="w-3.5 h-3.5" />
+                    {articleData.readingTime} min read
+                  </span>
+                </div>
+                <div className="prose prose-orange prose-lg max-w-none text-stone-700">
+                  <MDXRemote source={articleData.content} options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }} components={mdxComponents} />
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </div>
