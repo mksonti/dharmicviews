@@ -343,7 +343,7 @@ export const resourceData: ResourceCategory[] = [
       { title: "Global Hindu Heritage Foundation", url: "https://www.preservehinduism.org/", isActive: true , description: "SaveTemples.org! Mission to Protect and Preserve Hinduism and Hindu Temples Worldwide. | A project of Global Hindu Heritage Foundation [GHHF] USA" },
       { title: "Save Rama Setu", url: "https://saveramasetu.blogspot.com/", isActive: false, description: "This blogspot name was stolen and used for a purpose that it is not intended for." },
       { title: "Rama's Bridge", url: "https://www.bridgeofram.com/", isActive: false },
-      { title: "Rama Setu Information", url: "https://www.ramsethu.org/", isActive: false, description: "This domain name was stolen and used for a purpose that it is not intended for." },
+      { title: "Rama Setu Information", url: "https://www.ramsethu.org/", isActive: false, description: "This domain name was stolen and used for a purpose that it is not intended for, however here is the webarchive for this site." },
       { title: "Online Hindu Holocaust Memorial Museum", url: "https://www.hinduholocaust.com/", isActive: false },
       { title: "Holocaust Down the Timeline", url: "https://www.geocities.com/hindoo_humanist/", isActive: true , description: "Latest news coverage, email, free stock quotes, live scores and video are just the beginning. Discover more every day at Yahoo!" },
     ],
