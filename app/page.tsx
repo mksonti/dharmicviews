@@ -6,13 +6,13 @@ import { getFeaturedArticles } from '@/lib/articles';
 import { SITE_URL } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: 'Dharmic Views — Vedic Wisdom for the Hindu Diaspora',
+  title: 'Dharmic Views - For Dharma... Now and Forever.',
   description: 'Perspectives on Dharmic principles, Hindu identity in America, and Vedic wisdom for the modern world. Articles, videos, and curated resources by Mohan Sonti.',
   alternates: {
     canonical: SITE_URL,
   },
   openGraph: {
-    title: 'Dharmic Views — Vedic Wisdom for the Hindu Diaspora',
+    title: 'Dharmic Views - For Dharma... Now and Forever.',
     description: 'Perspectives on Dharmic principles, Hindu identity in America, and Vedic wisdom for the modern world. Articles, videos, and curated resources by Mohan Sonti.',
     url: SITE_URL,
     siteName: 'Dharmic Views',
