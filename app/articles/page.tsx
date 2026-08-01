@@ -3,8 +3,9 @@ import { getAllVideoArticles } from '@/lib/video-articles';
 import { getVideoData } from '@/lib/videos';
 import { Metadata } from 'next';
 import ArticlesClient from '@/components/ArticlesClient';
+import { SITE_URL } from '@/lib/site';
 
-const baseUrl = process.env.APP_URL || 'https://dharmicviews.com';
+const baseUrl = SITE_URL;
 
 export const metadata: Metadata = {
   title: 'Articles on Dharmic Living & Hindu Identity',
@@ -16,6 +17,8 @@ export const metadata: Metadata = {
     title: 'Articles on Dharmic Living & Hindu Identity',
     description: 'Essays on Vedic wisdom, Hindu political identity, and dharmic principles for the diaspora — by Mohan Sonti.',
     url: `${baseUrl}/articles`,
+    siteName: 'Dharmic Views',
+    images: [{ url: `${baseUrl}/og-image.jpg`, width: 1200, height: 630, alt: 'Dharmic Views' }],
     type: 'website',
   },
 };

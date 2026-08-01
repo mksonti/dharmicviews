@@ -1,8 +1,9 @@
 import { getAllVideos, getChannelAvatarMap } from '@/lib/videos';
 import { Metadata } from 'next';
 import VideosClient from '@/components/VideosClient';
+import { SITE_URL } from '@/lib/site';
 
-const baseUrl = process.env.APP_URL || 'https://dharmicviews.com';
+const baseUrl = SITE_URL;
 
 export const metadata: Metadata = {
   title: 'Videos on Vedic Wisdom & Hindu Culture',
@@ -14,6 +15,8 @@ export const metadata: Metadata = {
     title: 'Videos on Vedic Wisdom & Hindu Culture',
     description: 'Curated videos on Vedic wisdom, Hindu culture, and dharmic principles from leading scholars and teachers.',
     url: `${baseUrl}/videos`,
+    siteName: 'Dharmic Views',
+    images: [{ url: `${baseUrl}/og-image.jpg`, width: 1200, height: 630, alt: 'Dharmic Views' }],
     type: 'website',
   },
 };

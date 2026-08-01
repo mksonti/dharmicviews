@@ -2,8 +2,9 @@ import { getChannels, getVideosByChannelId, getChannelAvatarMap } from '@/lib/vi
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import ChannelVideosClient from '@/components/ChannelVideosClient';
+import { SITE_URL } from '@/lib/site';
 
-const baseUrl = process.env.APP_URL || 'https://dharmicviews.com';
+const baseUrl = SITE_URL;
 
 interface Props {
   params: Promise<{ channel: string }>;
@@ -29,6 +30,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: `${name} Videos`,
       description: `Watch curated videos from ${name} on Vedic wisdom and culture.`,
       url: `${baseUrl}/videos/channel/${channel}`,
+      siteName: 'Dharmic Views',
+      images: [{ url: `${baseUrl}/og-image.jpg`, width: 1200, height: 630, alt: 'Dharmic Views' }],
       type: 'website',
     },
   };

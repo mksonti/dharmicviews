@@ -1,5 +1,6 @@
 import { getVideoData, getAllVideos } from '@/lib/videos';
 import { getVideoArticleData } from '@/lib/video-articles';
+import { SITE_URL } from '@/lib/site';
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
@@ -20,7 +21,7 @@ import { ChevronRight, Clock } from 'lucide-react';
 
 const mdxComponents = { Callout, Pullquote, Divider, SectionHeading, Definition, Question, EpicCompare, BinaryList, BinaryItem, ForceCard, SourceNote, LangTag };
 
-const baseUrl = process.env.APP_URL || 'https://dharmicviews.com';
+const baseUrl = SITE_URL;
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
@@ -40,6 +41,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       title: videoData.title,
       description: videoData.description,
       url: `${baseUrl}/videos/${slug}`,
+      siteName: 'Dharmic Views',
       images: [{ url: videoData.thumbnail, width: 1280, height: 720, alt: videoData.title }],
       type: 'video.other',
     },

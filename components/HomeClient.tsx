@@ -25,6 +25,7 @@ import {
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import Link from 'next/link';
+import Image from 'next/image';
 import type { VideoData } from '@/lib/videos';
 
 const categoryIcons: Record<string, React.ReactNode> = {
@@ -264,11 +265,13 @@ export default function HomeClient({ initialData, featuredVideos = [], featuredA
                     >
                       {/* Thumbnail */}
                       <div className="relative aspect-video bg-stone-900 overflow-hidden">
-                        {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <img
+                        <Image
                           src={video.thumbnailSrc}
                           alt={video.title}
-                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                          fill
+                          sizes="(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw"
+                          className="object-cover group-hover:scale-105 transition-transform duration-500"
+                          referrerPolicy="no-referrer"
                         />
                         <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors" />
                         <div className="absolute inset-0 flex items-center justify-center">
@@ -463,7 +466,7 @@ export default function HomeClient({ initialData, featuredVideos = [], featuredA
                       key={link.url}
                       href={link.url}
                       target="_blank"
-                      rel="noopener noreferrer"
+                      rel="nofollow noopener"
                       initial={{ opacity: 0, y: 10 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true }}

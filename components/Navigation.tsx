@@ -122,7 +122,7 @@ export default function Navigation({ children, videoChannels = [] }: { children:
             <Link href="/" className="flex items-center gap-3" onClick={() => setIsSidebarOpen(false)}>
               <Image src="/logo.png" alt="Dharmic Views Logo" width={48} height={48} className="rounded-full" priority />
               <div>
-                <h1 className="font-serif italic text-xl font-bold text-orange-900 leading-tight">Dharmic Views</h1>
+                <p className="font-serif italic text-xl font-bold text-orange-900 leading-tight">Dharmic Views</p>
                 <p className="text-[10px] uppercase tracking-widest text-orange-600 font-bold">Wisdom & Culture</p>
               </div>
             </Link>
@@ -266,7 +266,7 @@ export default function Navigation({ children, videoChannels = [] }: { children:
         <header className="lg:hidden sticky top-0 z-30 bg-white/80 backdrop-blur-md border-b border-orange-100 px-4 py-3 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
             <Image src="/logo.png" alt="Dharmic Views Logo" width={32} height={32} className="rounded-full" priority />
-            <h1 className="font-serif italic text-lg font-semibold text-orange-900">Dharmic Views</h1>
+            <p className="font-serif italic text-lg font-semibold text-orange-900">Dharmic Views</p>
           </Link>
           <button 
             onClick={() => setIsSidebarOpen(true)}

@@ -1,4 +1,5 @@
 import { getArticleData, getAllArticleSlugs } from '@/lib/articles';
+import { SITE_URL } from '@/lib/site';
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -21,7 +22,7 @@ import { ChevronRight, Clock } from 'lucide-react';
 
 const mdxComponents = { Callout, Pullquote, Divider, SectionHeading, Definition, Question, EpicCompare, BinaryList, BinaryItem, ForceCard, SourceNote, LangTag, GrahaTag, Term };
 
-const baseUrl = process.env.APP_URL || 'https://dharmicviews.com';
+const baseUrl = SITE_URL;
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
@@ -38,6 +39,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       title: articleData.title,
       description: articleData.description,
       url: `${baseUrl}/articles/${slug}`,
+      siteName: 'Dharmic Views',
       images: [{ url: ogImage, width: 1200, height: 630, alt: articleData.title }],
       type: 'article',
       publishedTime: articleData.date,
@@ -62,26 +64,22 @@ export async function generateStaticParams() {
 export default async function Article({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const articleData = getArticleData(slug);
+  const absoluteHeroImage = articleData.heroImage
+    ? (articleData.heroImage.startsWith('http') ? articleData.heroImage : `${baseUrl}${articleData.heroImage}`)
+    : `${baseUrl}/logo.png`;
 
   const jsonLd = [
     {
       '@context': 'https://schema.org',
-      '@type': 'NewsArticle',
+      '@type': 'BlogPosting',
       headline: articleData.title,
       description: articleData.description,
-      url: `${baseUrl}/articles/${slug}`,
-      image: [articleData.heroImage || `${baseUrl}/logo.png`],
+      mainEntityOfPage: `${baseUrl}/articles/${slug}`,
+      image: [absoluteHeroImage],
       datePublished: articleData.date,
       dateModified: articleData.date,
-      author: [{
-        '@type': 'Person',
-        name: articleData.author,
-      }],
-      publisher: {
-        '@type': 'Organization',
-        name: 'Dharmic Views',
-        logo: { '@type': 'ImageObject', url: `${baseUrl}/logo.png` },
-      },
+      author: { '@id': `${baseUrl}/#mohan-sonti` },
+      publisher: { '@id': `${baseUrl}/#organization` },
     },
     {
       '@context': 'https://schema.org',

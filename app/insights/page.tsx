@@ -2,8 +2,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight, BarChart3 } from 'lucide-react';
 import { getSortedInsights } from '@/lib/insights';
+import { SITE_URL } from '@/lib/site';
 
-const baseUrl = process.env.APP_URL || 'https://dharmicviews.com';
+const baseUrl = SITE_URL;
 
 export const metadata: Metadata = {
   title: 'Insights — Data-driven analyses',
@@ -15,6 +16,8 @@ export const metadata: Metadata = {
     description:
       'Interactive, data-driven analyses on Indian elections, demographics, and political trends.',
     url: `${baseUrl}/insights`,
+    siteName: 'Dharmic Views',
+    images: [{ url: `${baseUrl}/og-image.jpg`, width: 1200, height: 630, alt: 'Dharmic Views' }],
     type: 'website',
   },
 };

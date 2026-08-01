@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
 import Script from 'next/script';
 import './globals.css';
+import { SITE_URL } from '@/lib/site';
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.APP_URL || 'https://dharmicviews.com'),
+  metadataBase: new URL(SITE_URL),
   title: {
     default: 'Dharmic Views',
     template: '%s | Dharmic Views',
@@ -14,17 +15,18 @@ export const metadata: Metadata = {
     shortcut: '/logo.png',
     apple: '/logo.png',
   },
+  robots: 'index, follow',
   openGraph: {
     title: 'Dharmic Views',
     description: 'A curated collection of digital resources, scriptures, and organizations dedicated to Vedic culture and heritage.',
-    url: process.env.APP_URL || 'https://dharmicviews.com',
+    url: SITE_URL,
     siteName: 'Dharmic Views',
     images: [
       {
-        url: `${process.env.APP_URL || 'https://dharmicviews.com'}/logo.png`,
-        width: 512,
-        height: 512,
-        alt: 'Dharmic Views Logo',
+        url: `${SITE_URL}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: 'Dharmic Views',
       },
     ],
     locale: 'en_US',
@@ -34,12 +36,12 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Dharmic Views',
     description: 'A curated collection of digital resources, scriptures, and organizations dedicated to Vedic culture and heritage.',
-    images: [`${process.env.APP_URL || 'https://dharmicviews.com'}/logo.png`],
+    images: [`${SITE_URL}/og-image.jpg`],
   },
   alternates: {
-    canonical: process.env.APP_URL || 'https://dharmicviews.com',
+    canonical: SITE_URL,
     types: {
-      'application/rss+xml': `${process.env.APP_URL || 'https://dharmicviews.com'}/feed.xml`,
+      'application/rss+xml': `${SITE_URL}/feed.xml`,
     },
   },
 };
@@ -54,22 +56,36 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     '@graph': [
       {
         '@type': 'Organization',
-        '@id': `${process.env.APP_URL || 'https://dharmicviews.com'}#organization`,
+        '@id': `${SITE_URL}/#organization`,
         name: 'Dharmic Views',
-        url: process.env.APP_URL || 'https://dharmicviews.com',
+        url: SITE_URL,
+        email: 'dharmicviews@gmail.com',
+        description: 'A curated collection of digital resources, scriptures, and organizations dedicated to Vedic culture and heritage.',
         logo: {
           '@type': 'ImageObject',
-          url: `${process.env.APP_URL || 'https://dharmicviews.com'}/logo.png`,
+          url: `${SITE_URL}/logo.png`,
+        },
+        founder: {
+          '@id': `${SITE_URL}/#mohan-sonti`,
         },
       },
       {
         '@type': 'WebSite',
-        '@id': `${process.env.APP_URL || 'https://dharmicviews.com'}#website`,
-        url: process.env.APP_URL || 'https://dharmicviews.com',
+        '@id': `${SITE_URL}/#website`,
+        url: SITE_URL,
         name: 'Dharmic Views',
+        inLanguage: 'en',
         publisher: {
-          '@id': `${process.env.APP_URL || 'https://dharmicviews.com'}#organization`,
+          '@id': `${SITE_URL}/#organization`,
         },
+      },
+      {
+        '@type': 'Person',
+        '@id': `${SITE_URL}/#mohan-sonti`,
+        name: 'Mohan Sonti',
+        jobTitle: 'Author & Public Speaker',
+        alumniOf: 'Indian Institute of Technology Bombay',
+        description: 'Certified Yoga teacher and public speaker on Dharmic scriptures, Hindu philosophy, and the Indian-American diaspora.',
       },
     ],
   };

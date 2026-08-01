@@ -1,11 +1,12 @@
 import { MetadataRoute } from 'next';
 import { getSortedArticlesData } from '@/lib/articles';
 import { getAllVideos, getChannels } from '@/lib/videos';
+import { SITE_URL } from '@/lib/site';
 
 export const dynamic = 'force-static';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.APP_URL || 'https://dharmicviews.com';
+  const baseUrl = SITE_URL;
 
   const articles = getSortedArticlesData();
   const videos = getAllVideos();

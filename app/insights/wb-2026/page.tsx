@@ -2,8 +2,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ChevronRight } from 'lucide-react';
 import WBInsightsClient from './WBInsightsClient';
+import { SITE_URL } from '@/lib/site';
 
-const baseUrl = process.env.APP_URL || 'https://dharmicviews.com';
+const baseUrl = SITE_URL;
 
 export const metadata: Metadata = {
   title: 'TN & WB 2026: Bizarre, shocking data from the polls',
@@ -14,6 +15,8 @@ export const metadata: Metadata = {
     title: 'TN & WB 2026: Bizarre, shocking data from the polls',
     description: "Interactive analysis of WB's decade-long realignment and TN's 2026 anomalies.",
     url: `${baseUrl}/insights/wb-2026`,
+    siteName: 'Dharmic Views',
+    images: [{ url: `${baseUrl}/og-image.jpg`, width: 1200, height: 630, alt: 'Dharmic Views' }],
     type: 'article',
   },
 };

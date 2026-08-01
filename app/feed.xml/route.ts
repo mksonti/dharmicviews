@@ -1,5 +1,6 @@
 import { Feed } from 'feed';
 import { getSortedArticlesData } from '@/lib/articles';
+import { SITE_URL } from '@/lib/site';
 
 // GET is supported in static export via route handlers only when the route
 // has no dynamic segments AND returns a static Response. Next.js will call
@@ -7,7 +8,7 @@ import { getSortedArticlesData } from '@/lib/articles';
 export const dynamic = 'force-static';
 
 export async function GET() {
-  const baseUrl = process.env.APP_URL || 'https://dharmicviews.com';
+  const baseUrl = SITE_URL;
   
   const feed = new Feed({
     title: "Dharmic Views",

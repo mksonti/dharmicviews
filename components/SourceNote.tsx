@@ -13,7 +13,7 @@ export default function SourceNote({
       <a
         href={href}
         target="_blank"
-        rel="noopener noreferrer"
+        rel="nofollow noopener"
         className="text-orange-600 hover:text-orange-700 underline underline-offset-2"
       >
         {label}
