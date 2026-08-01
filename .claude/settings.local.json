@@ -69,7 +69,10 @@
       "Bash(node -e \"const v=require\\('./content/videos.json'\\); console.log\\(JSON.stringify\\(v[0], null, 2\\)\\); console.log\\('Total videos:', v.length\\)\")",
       "WebFetch(domain:www.sanskrit-trikashaivism.com)",
       "WebFetch(domain:www.indicstudies.org)",
-      "WebFetch(domain:www.aaindicstudies.org)"
+      "WebFetch(domain:www.aaindicstudies.org)",
+      "WebFetch(domain:web.archive.org)",
+      "WebFetch(domain:www.swaminarayantirtha.org)",
+      "WebFetch(domain:www.orangecowboy.com)"
     ],
     "additionalDirectories": [
       "\\tmp",
