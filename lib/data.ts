@@ -300,7 +300,7 @@ export const resourceData: ResourceCategory[] = [
       { title: "Uniting Hindu Society Worldwide", url: "https://www.sanghparivar.org/", isActive: true },
       { title: "Sangh Parivar Insider", url: "https://sangh.wordpress.com/", isActive: true , description: "A swayamsevaks\&#039;s musing on Sangh Parivar" },
       { title: "Secular India", url: "https://indiasecular.wordpress.com/", isActive: true , description: "Secular & Democratic India" },
-      { title: "Faith, Culture and Politics", url: "https://indowave.tripod.com/", isActive: true },
+      { title: "Faith, Culture and Politics", url: "https://indowave.tripod.com/", isActive: false },
       { title: "News Analysis India", url: "https://www.newsanalysisindia.com/", isActive: true , description: "The news you need to know, explained" },
       { title: "India Awakening", url: "https://ariseindiaarise.blogspot.com/", isActive: true },
       { title: "Teesta Setalvad - Anti-India Activist", url: "https://teesta.blogspot.com/", isActive: false },
