@@ -60,25 +60,8 @@ const LINKS_PREVIEW_COUNT = 6;
 
 export default function ResourcesClient({ initialData }: ResourcesClientProps) {
   const [searchQuery, setSearchQuery] = useState('');
-  const [showInactive, setShowInactive] = useState(false);
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
   const [expandedCategories, setExpandedCategories] = useState<Set<string>>(new Set());
-
-  useEffect(() => {
-    setShowInactive(new URLSearchParams(window.location.search).get('archived') === '1');
-  }, []);
-
-  const toggleShowInactive = () => {
-    const next = !showInactive;
-    setShowInactive(next);
-    const url = new URL(window.location.href);
-    if (next) {
-      url.searchParams.set('archived', '1');
-    } else {
-      url.searchParams.delete('archived');
-    }
-    window.history.replaceState({}, '', url);
-  };
 
   const toggleExpanded = (id: string) => {
     setExpandedCategories(prev => {
@@ -96,17 +79,14 @@ export default function ResourcesClient({ initialData }: ResourcesClientProps) {
     return initialData.map(category => ({
       ...category,
       links: category.links.filter((link: any) => {
-        const isActiveLink = link.isActive !== false;
-        const isStatusMatch = showInactive ? !isActiveLink : isActiveLink;
-
-        if (!isStatusMatch) return false;
+        if (link.isActive === false) return false;
         if (!searchQuery) return true;
 
         return link.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
                link.url.toLowerCase().includes(searchQuery.toLowerCase());
       })
     })).filter(category => category.links.length > 0);
-  }, [searchQuery, showInactive, initialData]);
+  }, [searchQuery, initialData]);
 
   const isSearching = searchQuery.trim().length > 0;
   const totalResults = useMemo(
@@ -160,16 +140,10 @@ export default function ResourcesClient({ initialData }: ResourcesClientProps) {
             transition={{ duration: 0.6 }}
           >
             <h1 className="font-serif italic text-4xl lg:text-6xl text-orange-950 mb-6 leading-tight">
-              {showInactive ? (
-                <>Archived <span className="text-orange-600">Resources</span>.</>
-              ) : (
-                <>Hinduism <span className="text-orange-600">Resources</span>.</>
-              )}
+              Hinduism <span className="text-orange-600">Resources</span>.
             </h1>
             <p className="text-stone-500 text-lg lg:text-xl max-w-2xl mb-10 leading-relaxed">
-              {showInactive
-                ? "A historical collection of digital resources and websites that are currently offline or unavailable."
-                : "A curated collection of digital resources, scriptures, and organizations dedicated to Vedic culture and heritage."}
+              A curated collection of digital resources, scriptures, and organizations dedicated to Vedic culture and heritage.
             </p>
 
             <div className="relative max-w-xl">
@@ -189,20 +163,6 @@ export default function ResourcesClient({ initialData }: ResourcesClientProps) {
                   : 'No resources found'}
               </p>
             )}
-
-            <button
-              onClick={toggleShowInactive}
-              className="mt-5 inline-flex items-center gap-2 text-xs font-semibold text-stone-500 hover:text-orange-700 transition-colors"
-            >
-              <span
-                className={`relative inline-flex h-5 w-9 items-center rounded-full transition-colors ${showInactive ? 'bg-orange-600' : 'bg-stone-200'}`}
-              >
-                <span
-                  className={`inline-block h-3.5 w-3.5 transform rounded-full bg-white transition-transform ${showInactive ? 'translate-x-[18px]' : 'translate-x-1'}`}
-                />
-              </span>
-              Show archived resources
-            </button>
           </motion.div>
         </div>
       </section>
