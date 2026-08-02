@@ -56,27 +56,41 @@ interface ResourcesClientProps {
   initialData: any[];
 }
 
+const LINKS_PREVIEW_COUNT = 6;
+
 export default function ResourcesClient({ initialData }: ResourcesClientProps) {
   const [searchQuery, setSearchQuery] = useState('');
   const [showInactive, setShowInactive] = useState(false);
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
+  const [expandedCategories, setExpandedCategories] = useState<Set<string>>(new Set());
 
   useEffect(() => {
-    const handleLocationChange = () => {
-      setShowInactive(
-        window.location.pathname.includes('showInactive') || window.location.hash.includes('showInactive')
-      );
-    };
-
-    handleLocationChange();
-    window.addEventListener('hashchange', handleLocationChange);
-    window.addEventListener('popstate', handleLocationChange);
-
-    return () => {
-      window.removeEventListener('hashchange', handleLocationChange);
-      window.removeEventListener('popstate', handleLocationChange);
-    };
+    setShowInactive(new URLSearchParams(window.location.search).get('archived') === '1');
   }, []);
+
+  const toggleShowInactive = () => {
+    const next = !showInactive;
+    setShowInactive(next);
+    const url = new URL(window.location.href);
+    if (next) {
+      url.searchParams.set('archived', '1');
+    } else {
+      url.searchParams.delete('archived');
+    }
+    window.history.replaceState({}, '', url);
+  };
+
+  const toggleExpanded = (id: string) => {
+    setExpandedCategories(prev => {
+      const next = new Set(prev);
+      if (next.has(id)) {
+        next.delete(id);
+      } else {
+        next.add(id);
+      }
+      return next;
+    });
+  };
 
   const filteredData = useMemo(() => {
     return initialData.map(category => ({
@@ -175,6 +189,20 @@ export default function ResourcesClient({ initialData }: ResourcesClientProps) {
                   : 'No resources found'}
               </p>
             )}
+
+            <button
+              onClick={toggleShowInactive}
+              className="mt-5 inline-flex items-center gap-2 text-xs font-semibold text-stone-500 hover:text-orange-700 transition-colors"
+            >
+              <span
+                className={`relative inline-flex h-5 w-9 items-center rounded-full transition-colors ${showInactive ? 'bg-orange-600' : 'bg-stone-200'}`}
+              >
+                <span
+                  className={`inline-block h-3.5 w-3.5 transform rounded-full bg-white transition-transform ${showInactive ? 'translate-x-[18px]' : 'translate-x-1'}`}
+                />
+              </span>
+              Show archived resources
+            </button>
           </motion.div>
         </div>
       </section>
@@ -235,51 +263,80 @@ export default function ResourcesClient({ initialData }: ResourcesClientProps) {
                   </div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
-                  {category.links.map((link: any, linkIdx: number) => (
-                    <motion.a
-                      key={link.url}
-                      href={link.url}
-                      target="_blank"
-                      rel="nofollow noopener"
-                      initial={{ opacity: 0, y: 10 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ delay: linkIdx * 0.05 }}
-                      className="group relative bg-white p-5 rounded-2xl border border-stone-100 hover:border-orange-200 hover:shadow-xl hover:shadow-orange-500/5 transition-all flex flex-col justify-between"
-                    >
-                      <div>
-                        <div className="flex items-start justify-between mb-2">
-                          <h3 className="font-semibold text-stone-800 group-hover:text-orange-700 transition-colors line-clamp-2">
-                            {link.title}
-                          </h3>
-                          <ExternalLink className="w-4 h-4 text-stone-300 group-hover:text-orange-400 transition-colors flex-shrink-0 mt-1" />
-                        </div>
-                        {link.tags && link.tags.length > 0 && (
-                          <div className="flex gap-2 flex-wrap mb-2">
-                            {link.tags.map((tag: string) => (
-                              <span key={tag} className="px-2 py-0.5 bg-red-50 border border-red-100 text-red-600 text-[10px] font-bold uppercase tracking-wider rounded">
-                                {tag}
-                              </span>
-                            ))}
-                          </div>
-                        )}
-                        {link.description && (
-                          <p className="text-sm text-stone-500 mb-3 line-clamp-2 group-hover:text-stone-600 transition-colors">
-                            {link.description}
-                          </p>
-                        )}
-                        <p className="text-[10px] text-stone-400 truncate font-mono">
-                          {new URL(link.url).hostname}
-                        </p>
+                {(() => {
+                  const isExpanded = isSearching || expandedCategories.has(category.id);
+                  const visibleLinks = isExpanded
+                    ? category.links
+                    : category.links.slice(0, LINKS_PREVIEW_COUNT);
+                  const remaining = category.links.length - visibleLinks.length;
+
+                  return (
+                    <>
+                      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+                        {visibleLinks.map((link: any, linkIdx: number) => (
+                          <motion.a
+                            key={link.url}
+                            href={link.url}
+                            target="_blank"
+                            rel="nofollow noopener"
+                            initial={{ opacity: 0, y: 10 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: linkIdx * 0.05 }}
+                            className="group relative bg-white p-5 rounded-2xl border border-stone-100 hover:border-orange-200 hover:shadow-xl hover:shadow-orange-500/5 transition-all flex flex-col justify-between"
+                          >
+                            <div>
+                              <div className="flex items-start justify-between mb-2">
+                                <h3 className="font-semibold text-stone-800 group-hover:text-orange-700 transition-colors line-clamp-2">
+                                  {link.title}
+                                </h3>
+                                <ExternalLink className="w-4 h-4 text-stone-300 group-hover:text-orange-400 transition-colors flex-shrink-0 mt-1" />
+                              </div>
+                              {link.tags && link.tags.length > 0 && (
+                                <div className="flex gap-2 flex-wrap mb-2">
+                                  {link.tags.map((tag: string) => (
+                                    <span key={tag} className="px-2 py-0.5 bg-red-50 border border-red-100 text-red-600 text-[10px] font-bold uppercase tracking-wider rounded">
+                                      {tag}
+                                    </span>
+                                  ))}
+                                </div>
+                              )}
+                              {link.description && (
+                                <p className="text-sm text-stone-500 mb-3 line-clamp-2 group-hover:text-stone-600 transition-colors">
+                                  {link.description}
+                                </p>
+                              )}
+                              <p className="text-[10px] text-stone-400 truncate font-mono">
+                                {new URL(link.url).hostname}
+                              </p>
+                            </div>
+
+                            <div className="mt-4 flex items-center gap-2 text-[10px] font-bold uppercase tracking-wider text-orange-600 opacity-0 group-hover:opacity-100 transition-opacity">
+                              Visit Site <ChevronRight className="w-3 h-3" />
+                            </div>
+                          </motion.a>
+                        ))}
                       </div>
 
-                      <div className="mt-4 flex items-center gap-2 text-[10px] font-bold uppercase tracking-wider text-orange-600 opacity-0 group-hover:opacity-100 transition-opacity">
-                        Visit Site <ChevronRight className="w-3 h-3" />
-                      </div>
-                    </motion.a>
-                  ))}
-                </div>
+                      {!isSearching && remaining > 0 && (
+                        <button
+                          onClick={() => toggleExpanded(category.id)}
+                          className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-orange-600 hover:text-orange-700 transition-colors"
+                        >
+                          Show all {category.links.length} <ChevronRight className="w-4 h-4" />
+                        </button>
+                      )}
+                      {!isSearching && isExpanded && category.links.length > LINKS_PREVIEW_COUNT && (
+                        <button
+                          onClick={() => toggleExpanded(category.id)}
+                          className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-stone-500 hover:text-orange-700 transition-colors"
+                        >
+                          Show less
+                        </button>
+                      )}
+                    </>
+                  );
+                })()}
               </motion.section>
             ))
           ) : (
