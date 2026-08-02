@@ -118,14 +118,14 @@ export default function HomeClient({ initialData, featuredVideos = [], featuredA
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="font-serif italic text-4xl lg:text-6xl text-orange-950 mb-6 leading-tight">
+            <h1 className="font-serif italic text-4xl lg:text-6xl text-orange-950 mb-6 leading-tight">
               {showInactive ? (
                 <>Archived <span className="text-orange-600">Resources</span>.</>
               ) : (
                 <>For <span className="text-orange-600">Dharma...</span> Now and Forever.</>
 
               )}
-            </h2>
+            </h1>
             <p className="text-stone-500 text-lg lg:text-xl max-w-2xl mb-10 leading-relaxed">
               {showInactive
                 ? "A historical collection of digital resources and websites that are currently offline or unavailable."
@@ -173,7 +173,7 @@ export default function HomeClient({ initialData, featuredVideos = [], featuredA
                   </div>
                   <div className="lg:text-center">
                     <p className="text-orange-400 text-[10px] uppercase tracking-widest font-bold mb-1">About the Author</p>
-                    <h3 className="font-serif italic text-xl font-bold text-white">Mohan Sonti</h3>
+                    <h2 className="font-serif italic text-xl font-bold text-white">Mohan Sonti</h2>
                   </div>
                 </div>
 
@@ -432,7 +432,7 @@ export default function HomeClient({ initialData, featuredVideos = [], featuredA
                 <Sparkles className="w-6 h-6" />
               </div>
               <div>
-                <h1 className="text-2xl font-bold text-stone-900">Hinduism Resources</h1>
+                <h2 className="text-2xl font-bold text-stone-900">Hinduism Resources</h2>
                 <div className="h-1 w-12 bg-orange-500 rounded-full mt-1" />
               </div>
             </div>
@@ -455,7 +455,7 @@ export default function HomeClient({ initialData, featuredVideos = [], featuredA
                     {categoryIcons[category.id] || <BookOpen className="w-6 h-6" />}
                   </div>
                   <div>
-                    <h2 className="text-2xl font-bold text-stone-900">{category.title}</h2>
+                    <h3 className="text-2xl font-bold text-stone-900">{category.title}</h3>
                     <div className="h-1 w-12 bg-orange-500 rounded-full mt-1" />
                   </div>
                 </div>
