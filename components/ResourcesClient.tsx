@@ -15,7 +15,6 @@ import {
   AlertTriangle,
   History,
   ChevronRight,
-  Sparkles,
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
@@ -36,6 +35,23 @@ const categoryIcons: Record<string, React.ReactNode> = {
   'hindu-holocaust': <History className="w-5 h-5" />,
 };
 
+const categoryIconsSmall: Record<string, React.ReactNode> = {
+  'vedic-wisdom': <BookOpen className="w-3.5 h-3.5" />,
+  'international-vedic': <Globe className="w-3.5 h-3.5" />,
+  'vedic-intellectuals-indian': <Users className="w-3.5 h-3.5" />,
+  'vedic-intellectuals-western': <Users className="w-3.5 h-3.5" />,
+  'vedic-universities': <GraduationCap className="w-3.5 h-3.5" />,
+  'vedic-townships': <MapPin className="w-3.5 h-3.5" />,
+  'sustaining-vedic-culture': <Heart className="w-3.5 h-3.5" />,
+  'communities': <Users className="w-3.5 h-3.5" />,
+  'political-ideologues': <Users className="w-3.5 h-3.5" />,
+  'organizations': <Users className="w-3.5 h-3.5" />,
+  'news-magazines': <Newspaper className="w-3.5 h-3.5" />,
+  'opinions-articles': <MessageSquare className="w-3.5 h-3.5" />,
+  'threats-challenges': <AlertTriangle className="w-3.5 h-3.5" />,
+  'hindu-holocaust': <History className="w-3.5 h-3.5" />,
+};
+
 interface ResourcesClientProps {
   initialData: any[];
 }
@@ -43,6 +59,7 @@ interface ResourcesClientProps {
 export default function ResourcesClient({ initialData }: ResourcesClientProps) {
   const [searchQuery, setSearchQuery] = useState('');
   const [showInactive, setShowInactive] = useState(false);
+  const [activeCategory, setActiveCategory] = useState<string | null>(null);
 
   useEffect(() => {
     const handleLocationChange = () => {
@@ -76,6 +93,44 @@ export default function ResourcesClient({ initialData }: ResourcesClientProps) {
       })
     })).filter(category => category.links.length > 0);
   }, [searchQuery, showInactive, initialData]);
+
+  const isSearching = searchQuery.trim().length > 0;
+  const totalResults = useMemo(
+    () => filteredData.reduce((sum, category) => sum + category.links.length, 0),
+    [filteredData]
+  );
+
+  useEffect(() => {
+    if (isSearching) return;
+
+    const handleScroll = () => {
+      const sections = filteredData.map(cat => document.getElementById(cat.id));
+      const scrollPosition = window.scrollY + 120;
+
+      for (let i = sections.length - 1; i >= 0; i--) {
+        const section = sections[i];
+        if (section && section.offsetTop <= scrollPosition) {
+          setActiveCategory(filteredData[i].id);
+          return;
+        }
+      }
+      setActiveCategory(null);
+    };
+
+    handleScroll();
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [isSearching, filteredData]);
+
+  const handleChipClick = (id: string) => {
+    const element = document.getElementById(id);
+    if (!element) return;
+    const headerOffset = 140;
+    const elementPosition = element.getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+    window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+    setActiveCategory(id);
+  };
 
   return (
     <>
@@ -113,9 +168,49 @@ export default function ResourcesClient({ initialData }: ResourcesClientProps) {
                 className="w-full pl-12 pr-4 py-4 bg-white border border-orange-100 rounded-2xl shadow-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none transition-all text-stone-800 placeholder:text-stone-400"
               />
             </div>
+            {isSearching && (
+              <p className="mt-3 text-sm text-stone-500">
+                {totalResults > 0
+                  ? `${totalResults} resource${totalResults === 1 ? '' : 's'} found across ${filteredData.length} categor${filteredData.length === 1 ? 'y' : 'ies'}`
+                  : 'No resources found'}
+              </p>
+            )}
           </motion.div>
         </div>
       </section>
+
+      {/* Category Chip Nav */}
+      {!isSearching && filteredData.length > 1 && (
+        <div className="sticky top-0 z-20 bg-white/90 backdrop-blur-md border-b border-orange-50">
+          <div className="max-w-7xl mx-auto px-6 lg:px-12 py-3 overflow-x-auto">
+            <div className="flex items-center gap-2 w-max">
+              {filteredData.map((category) => (
+                <button
+                  key={category.id}
+                  onClick={() => handleChipClick(category.id)}
+                  className={`flex items-center gap-2 px-3.5 py-2 rounded-full text-xs font-semibold whitespace-nowrap transition-all border ${
+                    activeCategory === category.id
+                      ? 'bg-orange-600 text-white border-orange-600 shadow-sm'
+                      : 'bg-white text-stone-600 border-stone-200 hover:border-orange-300 hover:text-orange-700'
+                  }`}
+                >
+                  <span className={activeCategory === category.id ? 'text-white' : 'text-orange-600'}>
+                    {categoryIconsSmall[category.id] || <BookOpen className="w-3.5 h-3.5" />}
+                  </span>
+                  {category.title}
+                  <span
+                    className={`px-1.5 py-0.5 rounded-full text-[10px] font-bold ${
+                      activeCategory === category.id ? 'bg-white/20' : 'bg-stone-100 text-stone-500'
+                    }`}
+                  >
+                    {category.links.length}
+                  </span>
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Resource Categories Grid */}
       <div className="px-6 py-12 lg:px-12 max-w-7xl mx-auto flex-1 w-full">

@@ -72,7 +72,8 @@
       "WebFetch(domain:www.aaindicstudies.org)",
       "WebFetch(domain:web.archive.org)",
       "WebFetch(domain:www.swaminarayantirtha.org)",
-      "WebFetch(domain:www.orangecowboy.com)"
+      "WebFetch(domain:www.orangecowboy.com)",
+      "Bash(curl -s http://localhost:3000/resources)"
     ],
     "additionalDirectories": [
       "\\tmp",
