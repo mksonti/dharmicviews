@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import HomeClient from '@/components/HomeClient';
-import { resourceData } from '@/lib/data';
 import { getFeaturedVideos } from '@/lib/videos';
 import { getFeaturedArticles } from '@/lib/articles';
 import { SITE_URL } from '@/lib/site';
@@ -27,7 +26,7 @@ export default function HomePage() {
 
   return (
     <main>
-      <HomeClient initialData={resourceData} featuredVideos={videos} featuredArticles={articles} />
+      <HomeClient featuredVideos={videos} featuredArticles={articles} />
     </main>
   );
 }

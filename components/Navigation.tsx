@@ -54,6 +54,7 @@ export default function Navigation({ children, videoChannels = [] }: { children:
   const pathname = usePathname();
   const isHomePage = pathname === '/';
   const isVideosPage = pathname.startsWith('/videos');
+  const isResourcesPage = pathname.startsWith('/resources');
 
   useEffect(() => {
     setVideosExpanded(isVideosPage);
@@ -73,7 +74,7 @@ export default function Navigation({ children, videoChannels = [] }: { children:
   }, [pathname]);
 
   useEffect(() => {
-    if (!isHomePage) return;
+    if (!isResourcesPage) return;
 
     const handleScroll = () => {
       const sections = resourceData.map(cat => document.getElementById(cat.id));
@@ -90,25 +91,7 @@ export default function Navigation({ children, videoChannels = [] }: { children:
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, [isHomePage]);
-
-  const handleCategoryClick = (id: string) => {
-    if (isHomePage) {
-      const element = document.getElementById(id);
-      if (element) {
-        const headerOffset = 80;
-        const elementPosition = element.getBoundingClientRect().top;
-        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: "smooth"
-        });
-      }
-      setActiveCategory(id);
-    }
-    setIsSidebarOpen(false);
-  };
+  }, [isResourcesPage]);
 
   return (
     <div className="min-h-screen bg-[#FDFCFB] text-[#1A1A1A] font-sans flex">
@@ -143,12 +126,12 @@ export default function Navigation({ children, videoChannels = [] }: { children:
                 }
                 setIsSidebarOpen(false);
               }}
-              className={`w-full flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-all ${isHomePage && !activeCategory ? 'bg-orange-600 text-white shadow-md shadow-orange-100' : 'text-stone-500 hover:bg-orange-50 hover:text-orange-700'}`}
+              className={`w-full flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-all ${isHomePage ? 'bg-orange-600 text-white shadow-md shadow-orange-100' : 'text-stone-500 hover:bg-orange-50 hover:text-orange-700'}`}
             >
               <Home className="w-5 h-5" />
               Overview
             </Link>
-            
+
             <Link
               href="/articles"
               onClick={() => setIsSidebarOpen(false)}
@@ -214,28 +197,23 @@ export default function Navigation({ children, videoChannels = [] }: { children:
             </div>
             
             <div className="py-4">
-              <p className="px-4 text-[10px] uppercase tracking-[0.2em] text-stone-400 font-bold mb-2">Hinduism Resources</p>
+              <Link
+                href="/resources"
+                onClick={() => setIsSidebarOpen(false)}
+                className={`block px-4 text-[10px] uppercase tracking-[0.2em] font-bold mb-2 transition-colors ${isResourcesPage && !activeCategory ? 'text-orange-600' : 'text-stone-400 hover:text-orange-600'}`}
+              >
+                Hinduism Resources
+              </Link>
               {resourceData.map((category) => (
-                isHomePage ? (
-                  <button
-                    key={category.id}
-                    onClick={() => handleCategoryClick(category.id)}
-                    className={`w-full flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-all ${activeCategory === category.id ? 'bg-orange-600 text-white shadow-md shadow-orange-100' : 'text-stone-500 hover:bg-orange-50 hover:text-orange-700'}`}
-                  >
-                    {categoryIcons[category.id] || <ChevronRight className="w-4 h-4" />}
-                    <span className="truncate">{category.title}</span>
-                  </button>
-                ) : (
-                  <Link
-                    key={category.id}
-                    href={`/#${category.id}`}
-                    onClick={() => setIsSidebarOpen(false)}
-                    className="w-full flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-all text-stone-500 hover:bg-orange-50 hover:text-orange-700"
-                  >
-                    {categoryIcons[category.id] || <ChevronRight className="w-4 h-4" />}
-                    <span className="truncate">{category.title}</span>
-                  </Link>
-                )
+                <Link
+                  key={category.id}
+                  href={`/resources#${category.id}`}
+                  onClick={() => setIsSidebarOpen(false)}
+                  className={`w-full flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-all ${isResourcesPage && activeCategory === category.id ? 'bg-orange-600 text-white shadow-md shadow-orange-100' : 'text-stone-500 hover:bg-orange-50 hover:text-orange-700'}`}
+                >
+                  {categoryIcons[category.id] || <ChevronRight className="w-4 h-4" />}
+                  <span className="truncate">{category.title}</span>
+                </Link>
               ))}
             </div>
           </nav>
