@@ -39,13 +39,20 @@ export default function ResourcesPage() {
     },
   };
 
+  const categories = resourceData.map(category => ({
+    id: category.id,
+    title: category.title,
+    count: category.links.length,
+    preview: category.links.slice(0, 6),
+  }));
+
   return (
     <main>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <ResourcesClient initialData={resourceData} />
+      <ResourcesClient categories={categories} />
     </main>
   );
 }

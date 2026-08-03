@@ -73,7 +73,9 @@
       "WebFetch(domain:web.archive.org)",
       "WebFetch(domain:www.swaminarayantirtha.org)",
       "WebFetch(domain:www.orangecowboy.com)",
-      "Bash(curl -s http://localhost:3000/resources)"
+      "Bash(curl -s http://localhost:3000/resources)",
+      "Bash(node \"C:/Users/SKBSS/AppData/Local/Temp/claude/d--Sruthi-dharmicviews/4b9382cb-b32f-45b4-8d26-81d263f819dc/scratchpad/merge-resources.mjs\")",
+      "Bash(node \"C:/Users/SKBSS/AppData/Local/Temp/claude/d--Sruthi-dharmicviews/4b9382cb-b32f-45b4-8d26-81d263f819dc/scratchpad/sample-check.mjs\")"
     ],
     "additionalDirectories": [
       "\\tmp",

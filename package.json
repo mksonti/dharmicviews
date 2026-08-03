@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "node scripts/validate-frontmatter.mjs",
+    "prebuild": "node scripts/validate-frontmatter.mjs && node scripts/generate-resource-data.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
