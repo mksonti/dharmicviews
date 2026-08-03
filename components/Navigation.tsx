@@ -20,7 +20,8 @@ import {
   Home,
   FileText,
   Video,
-  BarChart3
+  BarChart3,
+  Flower2
 } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -33,6 +34,7 @@ const categoryIcons: Record<string, React.ReactNode> = {
   'vedic-intellectuals-western': <Users className="w-5 h-5" />,
   'vedic-universities': <GraduationCap className="w-5 h-5" />,
   'vedic-townships': <MapPin className="w-5 h-5" />,
+  'vedic-yoga': <Flower2 className="w-5 h-5" />,
   'sustaining-vedic-culture': <Heart className="w-5 h-5" />,
   'communities': <Users className="w-5 h-5" />,
   'political-ideologues': <Users className="w-5 h-5" />,

@@ -5,7 +5,12 @@
       "Bash(node \"C:/Users/SKBSS/AppData/Local/Temp/claude/d--Sruthi-dharmicviews/4b9382cb-b32f-45b4-8d26-81d263f819dc/scratchpad/split-active-inactive.mjs\")",
       "Bash(node scripts/generate-resource-data.mjs)",
       "Bash(curl -s http://localhost:3000/data/resources/index.json)",
-      "Bash(curl -s http://localhost:3000/data/resources/political-ideologues.json)"
+      "Bash(curl -s http://localhost:3000/data/resources/political-ideologues.json)",
+      "Bash(curl -s http://localhost:3000/resources)",
+      "Bash(pkill -f \"next dev -p 3001\")",
+      "Bash(node -e ' *)",
+      "Bash(curl -s http://localhost:3000/data/resources/sustaining-vedic-culture.json)",
+      "Bash(node \"C:/Users/SKBSS/AppData/Local/Temp/claude/d--Sruthi-dharmicviews/4b9382cb-b32f-45b4-8d26-81d263f819dc/scratchpad/merge-resources.mjs\")"
     ]
   }
 }

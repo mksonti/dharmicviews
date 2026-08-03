@@ -16,6 +16,7 @@ import {
   History,
   ChevronRight,
   Loader2,
+  Flower2,
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
@@ -26,6 +27,7 @@ const categoryIcons: Record<string, React.ReactNode> = {
   'vedic-intellectuals-western': <Users className="w-5 h-5" />,
   'vedic-universities': <GraduationCap className="w-5 h-5" />,
   'vedic-townships': <MapPin className="w-5 h-5" />,
+  'vedic-yoga': <Flower2 className="w-5 h-5" />,
   'sustaining-vedic-culture': <Heart className="w-5 h-5" />,
   'communities': <Users className="w-5 h-5" />,
   'political-ideologues': <Users className="w-5 h-5" />,
@@ -43,6 +45,7 @@ const categoryIconsSmall: Record<string, React.ReactNode> = {
   'vedic-intellectuals-western': <Users className="w-3.5 h-3.5" />,
   'vedic-universities': <GraduationCap className="w-3.5 h-3.5" />,
   'vedic-townships': <MapPin className="w-3.5 h-3.5" />,
+  'vedic-yoga': <Flower2 className="w-3.5 h-3.5" />,
   'sustaining-vedic-culture': <Heart className="w-3.5 h-3.5" />,
   'communities': <Users className="w-3.5 h-3.5" />,
   'political-ideologues': <Users className="w-3.5 h-3.5" />,
