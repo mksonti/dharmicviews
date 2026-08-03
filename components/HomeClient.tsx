@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import {
   Play,
   Clock,
@@ -13,10 +13,12 @@ import {
   Users,
   BookOpen,
   MessageSquare,
+  Search,
 } from 'lucide-react';
 import { motion } from 'motion/react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 import type { VideoData } from '@/lib/videos';
 
 function parseDuration(iso: string): string {
@@ -42,6 +44,15 @@ interface HomeClientProps {
 }
 
 export default function HomeClient({ featuredVideos = [], featuredArticles = [] }: HomeClientProps) {
+  const router = useRouter();
+  const [searchQuery, setSearchQuery] = useState('');
+
+  const handleSearchSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const trimmed = searchQuery.trim();
+    router.push(trimmed ? `/resources?q=${encodeURIComponent(trimmed)}` : '/resources');
+  };
+
   return (
     <>
       {/* Hero Section */}
@@ -61,6 +72,17 @@ export default function HomeClient({ featuredVideos = [], featuredArticles = [] 
             <p className="text-stone-500 text-lg lg:text-xl max-w-2xl mb-10 leading-relaxed">
               A curated collection of digital resources, scriptures, and organizations dedicated to Vedic culture and heritage.
             </p>
+
+            <form onSubmit={handleSearchSubmit} className="relative max-w-xl mb-6">
+              <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-stone-400 w-5 h-5" />
+              <input
+                type="text"
+                placeholder="Search resources, scriptures, or organizations..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="w-full pl-12 pr-4 py-4 bg-white border border-orange-100 rounded-2xl shadow-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none transition-all text-stone-800 placeholder:text-stone-400"
+              />
+            </form>
 
             <Link
               href="/resources"

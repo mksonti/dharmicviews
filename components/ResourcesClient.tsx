@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useMemo, useEffect, useCallback, useRef } from 'react';
+import { useSearchParams, useRouter, usePathname } from 'next/navigation';
 import {
   Search,
   ExternalLink,
@@ -84,7 +85,10 @@ async function fetchCategoryLinks(id: string): Promise<ResourceLink[]> {
 }
 
 export default function ResourcesClient({ categories }: ResourcesClientProps) {
-  const [searchQuery, setSearchQuery] = useState('');
+  const searchParams = useSearchParams();
+  const router = useRouter();
+  const pathname = usePathname();
+  const [searchQuery, setSearchQuery] = useState(() => searchParams.get('q') ?? '');
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
   const [expandedCategories, setExpandedCategories] = useState<Set<string>>(new Set());
   const [fullLinks, setFullLinks] = useState<Record<string, ResourceLink[]>>({});
@@ -133,6 +137,19 @@ export default function ResourcesClient({ categories }: ResourcesClientProps) {
       loadAllForSearch();
     }
   }, [isSearching, loadAllForSearch]);
+
+  useEffect(() => {
+    const trimmed = searchQuery.trim();
+    const currentQ = searchParams.get('q') ?? '';
+    if (trimmed === currentQ) return;
+
+    const params = new URLSearchParams(searchParams.toString());
+    if (trimmed) params.set('q', trimmed);
+    else params.delete('q');
+    const query = params.toString();
+    router.replace(query ? `${pathname}?${query}` : pathname, { scroll: false });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [searchQuery]);
 
   const toggleExpanded = (id: string) => {
     const willExpand = !expandedCategories.has(id);

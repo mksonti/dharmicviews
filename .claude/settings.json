@@ -10,7 +10,11 @@
       "Bash(pkill -f \"next dev -p 3001\")",
       "Bash(node -e ' *)",
       "Bash(curl -s http://localhost:3000/data/resources/sustaining-vedic-culture.json)",
-      "Bash(node \"C:/Users/SKBSS/AppData/Local/Temp/claude/d--Sruthi-dharmicviews/4b9382cb-b32f-45b4-8d26-81d263f819dc/scratchpad/merge-resources.mjs\")"
+      "Bash(node \"C:/Users/SKBSS/AppData/Local/Temp/claude/d--Sruthi-dharmicviews/4b9382cb-b32f-45b4-8d26-81d263f819dc/scratchpad/merge-resources.mjs\")",
+      "Bash(curl -s \"http://localhost:61849/resources?q=RSS\" -o /tmp/resources-q.html -w \"HTTP %{http_code}, size %{size_download}\\\\n\" --max-time 10)",
+      "Bash(curl -s \"http://localhost:61849/\")",
+      "Bash(pkill -f \"serve out\")",
+      "Bash(pkill -f \"next start -p 3002\")"
     ]
   }
 }

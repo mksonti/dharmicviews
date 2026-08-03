@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { Suspense } from 'react';
 import ResourcesClient from '@/components/ResourcesClient';
 import { resourceData } from '@/lib/data';
 import { SITE_URL } from '@/lib/site';
@@ -52,7 +53,9 @@ export default function ResourcesPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <ResourcesClient categories={categories} />
+      <Suspense fallback={null}>
+        <ResourcesClient categories={categories} />
+      </Suspense>
     </main>
   );
 }
