@@ -75,7 +75,15 @@
       "WebFetch(domain:www.orangecowboy.com)",
       "Bash(curl -s http://localhost:3000/resources)",
       "Bash(node \"C:/Users/SKBSS/AppData/Local/Temp/claude/d--Sruthi-dharmicviews/4b9382cb-b32f-45b4-8d26-81d263f819dc/scratchpad/merge-resources.mjs\")",
-      "Bash(node \"C:/Users/SKBSS/AppData/Local/Temp/claude/d--Sruthi-dharmicviews/4b9382cb-b32f-45b4-8d26-81d263f819dc/scratchpad/sample-check.mjs\")"
+      "Bash(node \"C:/Users/SKBSS/AppData/Local/Temp/claude/d--Sruthi-dharmicviews/4b9382cb-b32f-45b4-8d26-81d263f819dc/scratchpad/sample-check.mjs\")",
+      "Bash(curl -s -A \"Mozilla/5.0\" \"https://yogacampus.com\" -m 15 -o /d/tmp/sample1.html -w \"status:%{http_code} finalurl:%{url_effective}\\\\n\")",
+      "Bash(curl -s -A \"Mozilla/5.0\" \"https://nobelprize.org\" -m 15 -o /d/tmp/sample2.html -w \"status:%{http_code}\\\\n\")",
+      "Bash(curl -sL -A \"Mozilla/5.0\" \"https://yogacampus.com\" -m 15 -o /d/tmp/sample1.html)",
+      "Bash(curl -sL -A \"Mozilla/5.0\" \"https://nobelprize.org\" -m 15 -o /d/tmp/sample2.html)",
+      "Bash(node \"C:/Users/SKBSS/AppData/Local/Temp/claude/d--Sruthi-dharmicviews/d39c3f30-786d-4d4e-8926-e04e6e102f3d/scratchpad/reverify_risky.mjs\" d:/tmp/strong_risky.json d:/tmp/reverified_risky.json)",
+      "Bash(nslookup -type=A worldhindufederation.com.dbl.spamhaus.org)",
+      "Bash(curl -sIL -A \"Mozilla/5.0\" --max-time 15 \"http://www.worldhindufederation.com/\")",
+      "Bash(node scripts/generate-resource-data.mjs)"
     ],
     "additionalDirectories": [
       "\\tmp",

@@ -14,7 +14,24 @@
       "Bash(curl -s \"http://localhost:61849/resources?q=RSS\" -o /tmp/resources-q.html -w \"HTTP %{http_code}, size %{size_download}\\\\n\" --max-time 10)",
       "Bash(curl -s \"http://localhost:61849/\")",
       "Bash(pkill -f \"serve out\")",
-      "Bash(pkill -f \"next start -p 3002\")"
+      "Bash(pkill -f \"next start -p 3002\")",
+      "Bash(curl -s -A \"Mozilla/5.0 \\(compatible; Googlebot/2.1\\)\" https://www.dharmicviews.com/resources -o /tmp/resources.html -w \"HTTP %{http_code}\\\\n\")",
+      "Bash(curl -s -A \"Mozilla/5.0 \\(compatible; Googlebot/2.1\\)\" https://www.dharmicviews.com/ -o /tmp/home.html -w \"HTTP %{http_code}\\\\n\")",
+      "Bash(python3 -c ' *)",
+      "Bash(grep -o '<body[^>]*>.\\\\{0,4000\\\\}' /tmp/resources.html)",
+      "Bash(grep -o '<body[^>]*>.\\\\{0,15000\\\\}' /tmp/resources.html)",
+      "Bash(node -e \"console.log\\(require\\('dns'\\).promises\\)\")",
+      "Bash(node \"C:/Users/SKBSS/AppData/Local/Temp/claude/d--Sruthi-dharmicviews/d39c3f30-786d-4d4e-8926-e04e6e102f3d/scratchpad/dns_check.mjs\" d:/tmp/active_domains.tsv d:/tmp/dns_results.jsonl)",
+      "Bash(awk -F: '{print $3}')",
+      "PowerShell(Test-Path \"d:\\\\tmp\\\\dns_results.jsonl\"; if \\(Test-Path \"d:\\\\tmp\\\\dns_results.jsonl\"\\) { \\(Get-Content \"d:\\\\tmp\\\\dns_results.jsonl\" | Measure-Object -Line\\).Lines })",
+      "Bash(xargs grep -l \"use client\")",
+      "Bash(node \"C:/Users/SKBSS/AppData/Local/Temp/claude/d--Sruthi-dharmicviews/d39c3f30-786d-4d4e-8926-e04e6e102f3d/scratchpad/http_check.mjs\" d:/tmp/resolving_domains.tsv d:/tmp/http_results.jsonl)",
+      "Bash(grep -o '\"fallback\":[a-z0-9\\\\[\\\\]{}\",:]\\\\{0,80\\\\}' out/resources.html)",
+      "Bash(nslookup -type=A test.dbl.spamhaus.org)",
+      "Bash(nslookup -type=A dbltest.com.dbl.spamhaus.org)",
+      "Bash(nslookup -type=A google.com.dbl.spamhaus.org)",
+      "Bash(node \"C:/Users/SKBSS/AppData/Local/Temp/claude/d--Sruthi-dharmicviews/d39c3f30-786d-4d4e-8926-e04e6e102f3d/scratchpad/dbl_check.mjs\" d:/tmp/active_domains.tsv d:/tmp/dbl_results.jsonl)",
+      "PowerShell(if \\(Test-Path \"d:\\\\tmp\\\\http_results.jsonl\"\\) { \\(Get-Content \"d:\\\\tmp\\\\http_results.jsonl\" | Measure-Object -Line\\).Lines } else { \"missing\" })"
     ]
   }
 }
