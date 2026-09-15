@@ -26,7 +26,7 @@ const SORT_OPTIONS: { value: SortKey; label: string }[] = [
   { value: 'title-desc', label: 'Title Z → A' },
 ];
 
-const CATEGORIES = ['All', 'Videos', 'Ādhyatmik', 'Cultural'] as const;
+const CATEGORIES = ['All', 'Ādhyatmik', 'Cultural'] as const;
 type Category = typeof CATEGORIES[number];
 
 export default function ArticlesClient({ articles }: { articles: ArticleData[] }) {
