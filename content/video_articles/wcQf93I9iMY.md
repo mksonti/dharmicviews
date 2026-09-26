@@ -11,11 +11,11 @@ category: "Videos"
 
 ## Executive Summary & Core Premise
 
-Whenever discourse emerges regarding cow slaughter bans and cattle preservation in India, Indian commentators, intellectuals, and citizens frequently adopt an apologetic, defensive posture [1]. Responses often appeal to emotional or religious sentiments—such as revering the cow as a mother—without deploying rigorous legal, historical, and comparative data [1]. 
+Whenever discourse emerges regarding cow slaughter bans and cattle preservation in India, Indian commentators, intellectuals, and citizens frequently adopt an apologetic, defensive posture [1]. Responses often appeal to emotional or religious sentiments--such as revering the cow as a mother--without deploying rigorous legal, historical, and comparative data [1]. 
 
-In a detailed presentation delivered by analyst Mohan Krishna Sonti on PGurus (hosted by Sree Iyer), this intellectual asymmetry is directly challenged through the methodology of **Purva Paksha**—a classical Indian dialectical framework requiring a deep, objective analysis of the opponent's own history, statutory laws, religious scriptures, and societal evolution [1].
+In a detailed presentation delivered by analyst Mohan Krishna Sonti on PGurus (hosted by Sree Iyer), this intellectual asymmetry is directly challenged through the methodology of **Purva Paksha**--a classical Indian dialectical framework requiring a deep, objective analysis of the opponent's own history, statutory laws, religious scriptures, and societal evolution [1].
 
-This paper provides a 4–5 page statistical and comparative analysis of global animal slaughter laws, dietary prohibitions, and Western environmental records [1, 2]. By evaluating the biblical trajectory of dietary laws, the recent legislative history of dog meat bans in the West, Islamic dietary restrictions, Article 48 of the Indian Constitution, and India's cattle economics, this study demonstrates that Western lectures on animal welfare represent selective, recent emotional trends masking deep-seated cultural and historical hypocrisies [1, 3, 27, 32, 35].
+This paper provides a 4-5 page statistical and comparative analysis of global animal slaughter laws, dietary prohibitions, and Western environmental records [1, 2]. By evaluating the biblical trajectory of dietary laws, the recent legislative history of dog meat bans in the West, Islamic dietary restrictions, Article 48 of the Indian Constitution, and India's cattle economics, this study demonstrates that Western lectures on animal welfare represent selective, recent emotional trends masking deep-seated cultural and historical hypocrisies [1, 3, 27, 32, 35].
 
 ---
 
@@ -30,10 +30,10 @@ When Western media, foreign NGOs, and secular commentators accuse India of relig
 +------------------------------------+----------------------------------------------+
 | DEFENSIVE APPROACH (Weak)          | PURVA PAKSHA APPROACH (Rigorous)             |
 +------------------------------------+----------------------------------------------+
-| • Emotional appeals ("Cow is Mother")| • Objective study of Western legal histories  |
-| • Apologetic tone in international | • Analysis of Biblical & Quranic dietary rules|
-|   forums                           | • Exposing statutory loopholes & exemptions  |
-| • Retreating under Western criticism| • Comparing 5,000-year continuity vs. 100-year|
+| * Emotional appeals ("Cow is Mother")| * Objective study of Western legal histories  |
+| * Apologetic tone in international | * Analysis of Biblical & Quranic dietary rules|
+|   forums                           | * Exposing statutory loopholes & exemptions  |
+| * Retreating under Western criticism| * Comparing 5,000-year continuity vs. 100-year|
 |                                    |   transient Western emotional trends         |
 +------------------------------------+----------------------------------------------+
 ```
@@ -90,7 +90,7 @@ Why did the New Testament abandon Old Testament dietary restrictions? As early C
 A major narrative advanced by Western media is that Western nations have a centuries-old, principled moral aversion to eating dogs [10, 11, 17]. Historical data disproves this claim [10, 11].
 
 ### 1. European Dog Meat Consumption History
-* **Ecclesiastical Persecution**: During the medieval period and 16th–17th-century witch trials, the Church actively discouraged dog ownership, viewing dogs as pagan symbols or instruments of Satan [13].
+* **Ecclesiastical Persecution**: During the medieval period and 16th-17th-century witch trials, the Church actively discouraged dog ownership, viewing dogs as pagan symbols or instruments of Satan [13].
 * **Widespread Consumption**: Dog meat was consumed across Austria, Spain, Hungary, France, Belgium, Switzerland, and Germany well into the 20th century [10].
 * **German Economic Data (1982)**: In Germany, dog meat was sold legally until 1986 [10]. In 1982, dog meat commanded a price of **50 Deutsche Marks per kg**, compared to **1.5 Marks per kg** for beef or pork [10]. Far from being a desperate "famine food," dog meat was priced as a high-value luxury commodity in one of the world's wealthiest industrial nations [10, 11].
 * **Switzerland**: Approximately **3% of the Swiss population** (particularly in rural alpine cantons) continued to consume dog and cat meat into the 2000s despite international lobbying pressure [12].
@@ -106,8 +106,8 @@ The modern Western reverence for dogs is not an ancient moral tradition, but a r
 +-------------+---------------------------------------------------------------------+
 | 1859        | First official Dog Show held in Newcastle, England [14]             |
 | 1863        | First official Dog Show in the United States [14]                   |
-| 1863–1865   | Emancipation Proclamation; pet ownership surges post-slavery [14,15]|
-| 1966–2014   | US Animal Welfare Acts focus on "humane slaughter", not bans [15,16]|
+| 1863-1865   | Emancipation Proclamation; pet ownership surges post-slavery [14,15]|
+| 1966-2014   | US Animal Welfare Acts focus on "humane slaughter", not bans [15,16]|
 | 1972        | India bans dog meat trade under Wildlife Protection Act [21]        |
 | 1986        | Germany officially prohibits commercial dog meat sales [10]        |
 | 1991        | Humane Society International founded; begins global lobbying [18,20]|
@@ -120,7 +120,7 @@ The modern Western reverence for dogs is not an ancient moral tradition, but a r
 ### 3. Legislative Hypocrisy: US Federal Law vs. Global Criticism
 * **The 2018 US Federal Ban**: Prior to the passage of **H.R. 6720 (Dog and Cat Meat Trade Prohibition Act of 2018)**, eating dog meat was legally permissible in 44 US states [17, 18].
 * **The Tribal Exemption**: Section 2(c) of H.R. 6720 explicitly creates an exemption for "Indian tribes" (Native American tribal customs) [18].
-* **Double Standard against India**: While Western media and NGOs relentlessly lecture India over dog meat consumption in small northeastern tribal pockets (such as Nagaland), US federal law contains the **exact same statutory exemption** for its own indigenous tribes [18, 21, 23]. Furthermore, India banned dog meat trade under the **Wildlife Protection Act of 1972**—46 years before the US federal ban [21].
+* **Double Standard against India**: While Western media and NGOs relentlessly lecture India over dog meat consumption in small northeastern tribal pockets (such as Nagaland), US federal law contains the **exact same statutory exemption** for its own indigenous tribes [18, 21, 23]. Furthermore, India banned dog meat trade under the **Wildlife Protection Act of 1972**--46 years before the US federal ban [21].
 
 ---
 
@@ -144,7 +144,7 @@ Organizations like the **Humane Society of the United States (HSUS)** (founded 1
 ### 2. Analytical Takeaways on Western Diets
 * **India's Ethical Baseline**: India contains the largest vegetarian population on Earth (~40% strict vegetarians, representing over 500 million people) [21, 22]. Indian vegetarianism is anchored in **Ahimsa (non-violence)** and universal ethical compassion [22].
 * **US Dietary Reality**: 96% of the American population actively consumes meat [22, 23]. The meager 4% vegetarian minority in the US adopts the diet primarily for personal longevity and health reasons rather than philosophical non-violence [22, 23].
-* **Selective Morality**: Western society permits the industrial slaughter of billions of cows, pigs, turkeys, and chickens annually, yet seeks to impose international sanctions on Asian nations over dog meat—demonstrating that Western "animal rights" lobbies represent culturally specific pet preferences rather than universal ethical consistency [18, 20, 23, 33].
+* **Selective Morality**: Western society permits the industrial slaughter of billions of cows, pigs, turkeys, and chickens annually, yet seeks to impose international sanctions on Asian nations over dog meat--demonstrating that Western "animal rights" lobbies represent culturally specific pet preferences rather than universal ethical consistency [18, 20, 23, 33].
 
 ---
 
@@ -209,7 +209,7 @@ The breakdown of cattle availability relative to human population explains why u
 
 #### Consequences of the Demographic Skew
 1. **Loss of Agrarian Symbiosis**: In 1951, nearly every rural household maintained direct economic engagement with cattle [26, 30]. By 2012, while human population surged by over 230%, cow numbers grew by only 22.5%, dramatically reducing per-capita cattle contact in urbanizing regions [30, 31].
-2. **Importation of Foreign Crossbreeds**: To meet soaring milk demands from a growing human population, governments imported European breeds (Jersey, Holstein-Friesian), crossbreeding them with native stock and decimating pure indigenous (*Desi*) breeds—violating Article 48's mandate to preserve indigenous breeds [27, 31].
+2. **Importation of Foreign Crossbreeds**: To meet soaring milk demands from a growing human population, governments imported European breeds (Jersey, Holstein-Friesian), crossbreeding them with native stock and decimating pure indigenous (*Desi*) breeds--violating Article 48's mandate to preserve indigenous breeds [27, 31].
 
 ---
 

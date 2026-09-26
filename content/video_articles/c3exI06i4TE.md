@@ -27,19 +27,19 @@ Far from being a pushover, Bharat (India) possesses significant structural, geog
 +---------------------+---------------------+-------------------+-------------------+
 ```
 
-By synthesizing historical battlefield performance, high-altitude operational constraints, authoritarian governance fragility, People's Liberation Army (PLA) command structures, defense technology procurement, debt-trap isolation, and foundational strategic philosophies, this report provides a comprehensive 4–5 page analytical breakdown of China’s critical fault lines [3, 9, 16, 21, 24, 27, 29].
+By synthesizing historical battlefield performance, high-altitude operational constraints, authoritarian governance fragility, People's Liberation Army (PLA) command structures, defense technology procurement, debt-trap isolation, and foundational strategic philosophies, this report provides a comprehensive 4-5 page analytical breakdown of China's critical fault lines [3, 9, 16, 21, 24, 27, 29].
 
 ---
 
 ## Pillar 1: Combat History & The 45-Year War Experience Void
 
-### 1. Historical Conflict Record (1962–1979)
+### 1. Historical Conflict Record (1962-1979)
 A critical vulnerability of the People's Liberation Army (PLA) is its total lack of modern combat experience [8]. A review of China's major military engagements since the founding of the PRC demonstrates a history marked by heavy casualties, tactical stalemates, and political victories rather than decisive military dominance [4, 6]:
 
-* **1962 Sino-Indian War**: Frequently cited by Beijing as a major victory, the 1962 conflict lasted only one month and concluded with a *status quo ante bellum*—both armies returning to their pre-war positions [4, 5]. Despite enjoying a 4:1 numerical superiority (80,000 PLA troops against 20,000 Indian troops), the PLA suffered massive casualties [4, 5, 12]. At the Battle of Rezang La alone, 114 Indian soldiers of the 13 Kumaon regiment fought to the last man, killing over 1,300 Chinese troops [4, 5]. Total Indian fatalities were 1,383, matching the estimated total Chinese deaths [4, 5]. India's setback was primarily political—caused by Prime Minister Jawaharlal Nehru's refusal to modernize or deploy the Indian Air Force—rather than a battlefield failure [5, 13, 14].
+* **1962 Sino-Indian War**: Frequently cited by Beijing as a major victory, the 1962 conflict lasted only one month and concluded with a *status quo ante bellum*--both armies returning to their pre-war positions [4, 5]. Despite enjoying a 4:1 numerical superiority (80,000 PLA troops against 20,000 Indian troops), the PLA suffered massive casualties [4, 5, 12]. At the Battle of Rezang La alone, 114 Indian soldiers of the 13 Kumaon regiment fought to the last man, killing over 1,300 Chinese troops [4, 5]. Total Indian fatalities were 1,383, matching the estimated total Chinese deaths [4, 5]. India's setback was primarily political--caused by Prime Minister Jawaharlal Nehru's refusal to modernize or deploy the Indian Air Force--rather than a battlefield failure [5, 13, 14].
 * **1967 Nathu La and Cho La Clashes**: Five years after 1962, the PLA launched an unprovoked assault across the Sikkim border [5, 6]. The Indian Army soundly defeated the PLA in a 4-day engagement, killing 340 Chinese soldiers while losing 88 Indian troops [5, 6].
 * **1979 Sino-Vietnamese War**: China's last major conflict was a month-long invasion of Vietnam in 1979 [6, 7]. Mobilizing 200,000 to 600,000 PLA troops against 70,000 to 100,000 Vietnamese border militias, China suffered a humiliating tactical stalemate [6, 7]. Over 30,000 PLA soldiers were killed in 30 days before Beijing withdrew without achieving its objective of forcing Vietnam out of Cambodia [6, 7].
-* **1979–1991 Border Skirmishes**: Minor low-intensity border friction with Vietnam over 12 years resulted in an additional 2,000 Chinese fatalities, settling into another *status quo* [7].
+* **1979-1991 Border Skirmishes**: Minor low-intensity border friction with Vietnam over 12 years resulted in an additional 2,000 Chinese fatalities, settling into another *status quo* [7].
 
 ```
 +-------------------------------------------------------------------------------------------------+
@@ -56,7 +56,7 @@ A critical vulnerability of the People's Liberation Army (PLA) is its total lack
 ```
 
 ### 2. The 45-Year Experience Deficit
-China has not fought a major military conflict since 1979—a gap of **45 years** [7, 8]. 
+China has not fought a major military conflict since 1979--a gap of **45 years** [7, 8]. 
 
 ```
 1979 (Last Major War) ------------------- [45-Year Void] -------------------> 2024 (Present)
@@ -65,7 +65,7 @@ China has not fought a major military conflict since 1979—a gap of **45 years*
 * ZERO experience with life-or-death battlefield conditions, dismemberment, or high-intensity fire.
 ```
 
-In stark contrast, the Indian Armed Forces possess continuous operational combat experience from the 1965 and 1971 Indo-Pak Wars, the 1999 Kargil War, decades of high-altitude counter-insurgency operations, and routine engagements along the Line of Control (LoC) and Line of Actual Control (LAC) [5, 8]. Furthermore, Beijing routinely downplays its casualties to preserve domestic tranquility—underreporting casualties by 50% to 90% across every conflict (e.g., claiming only 4 deaths in the 2020 Galwan clash against 45+ actual fatalities confirmed by Russian and Western intelligence) [6, 22].
+In stark contrast, the Indian Armed Forces possess continuous operational combat experience from the 1965 and 1971 Indo-Pak Wars, the 1999 Kargil War, decades of high-altitude counter-insurgency operations, and routine engagements along the Line of Control (LoC) and Line of Actual Control (LAC) [5, 8]. Furthermore, Beijing routinely downplays its casualties to preserve domestic tranquility--underreporting casualties by 50% to 90% across every conflict (e.g., claiming only 4 deaths in the 2020 Galwan clash against 45+ actual fatalities confirmed by Russian and Western intelligence) [6, 22].
 
 ---
 
@@ -105,7 +105,7 @@ Under standard military doctrine, an attacking force requires a minimum **3:1 nu
 
 ---
 
-## Pillar 3: Governance Fragility – Democracy vs. Dictatorship
+## Pillar 3: Governance Fragility - Democracy vs. Dictatorship
 
 ### 1. Systemic Political Resiliency
 A fundamental divergence between India and China lies in political governance and social stability [14, 16]:
@@ -131,7 +131,7 @@ A fundamental divergence between India and China lies in political governance an
 ### 2. State Violence & Judicial Executions
 The extreme internal state violence in China demonstrates the leadership's deep insecurity [17]:
 
-* **State-Secret Capital Punishment**: China classifies its execution numbers as a state secret [17]. Research estimates indicate Beijing executes **8,000 to 12,000 citizens annually**—more than the rest of the world combined [17, 18]. Every change in CCP leadership is accompanied by internal purges and executions of political rivals [17, 18].
+* **State-Secret Capital Punishment**: China classifies its execution numbers as a state secret [17]. Research estimates indicate Beijing executes **8,000 to 12,000 citizens annually**--more than the rest of the world combined [17, 18]. Every change in CCP leadership is accompanied by internal purges and executions of political rivals [17, 18].
 * **Indian Judicial Restraint**: By comparison, Indian courts placed 561 convicts on death row in 2023, but only **8 executions have occurred in the last 27 years** (all involving brutal high-profile crimes or terrorism, such as Ajmal Kasab, Afzal Guru, and Yakub Memon) [18, 19, 20].
 
 ---
@@ -155,11 +155,11 @@ Unlike professional national militaries, the People's Liberation Army (PLA) does
 * **Voluntary vs. Conscript Mentality**: The Indian Armed Forces operate entirely on voluntary service with generations-old regimental martial traditions [21]. PLA recruits are predominantly single-child conscripts produced under the One-Child Policy, making Chinese families highly sensitive to military casualties [21, 22].
 
 ### 2. Historical Trauma & The Unwritten Economic Contract
-The CCP's history includes catastrophic domestic disasters, such as the Great Chinese Famine (1959–1961), during which **45 million Chinese citizens died**, including 2.5 million tortured or beaten to death during purges [21, 32]. The CCP maintains political legitimacy solely through an unwritten contract with its citizens: *delivering continuous economic growth in exchange for political submission* [32, 51, 52]. If a military conflict triggers severe economic contraction, debt defaults, or sanctions, this contract dissolves, exposing the regime to domestic upheaval [31, 32, 51, 52].
+The CCP's history includes catastrophic domestic disasters, such as the Great Chinese Famine (1959-1961), during which **45 million Chinese citizens died**, including 2.5 million tortured or beaten to death during purges [21, 32]. The CCP maintains political legitimacy solely through an unwritten contract with its citizens: *delivering continuous economic growth in exchange for political submission* [32, 51, 52]. If a military conflict triggers severe economic contraction, debt defaults, or sanctions, this contract dissolves, exposing the regime to domestic upheaval [31, 32, 51, 52].
 
 ---
 
-## Pillar 5: Military Technology – Quality vs. Quantity & R&D Wastage
+## Pillar 5: Military Technology - Quality vs. Quantity & R&D Wastage
 
 ### 1. R&D Waste and Reverse-Engineering Bottlenecks
 While China mass-produces military hardware, its military-industrial complex suffers from low R&D efficiency, pervasive corruption, and an inability to master core technologies [23, 24, 25, 45]:
@@ -215,18 +215,18 @@ Through its Belt and Road Initiative (BRI), China has extended predatory loans t
 
 * **Top Debt-Trap Victims**: Nations like Pakistan, Sri Lanka, Bangladesh, Angola, Ethiopia, and Kenya face severe debt distress [27, 37]. 
 * **Public Hostility**: Rather than building genuine alliances, Chinese debt diplomacy breeds anti-Beijing hostility among local populations [37, 39, 40]. When sovereign default occurs, populations blame Chinese exploitation, leading to political instability [37, 40].
-* **India's Multi-Aligned Diplomatic Advantage**: India maintains unique, high-trust diplomatic relationships across opposing global geopolitical blocks—maintaining simultaneous partnerships with the United States, Russia, Ukraine, Israel, Iran, Saudi Arabia, the UK, Argentina, and the African Union [28, 41].
+* **India's Multi-Aligned Diplomatic Advantage**: India maintains unique, high-trust diplomatic relationships across opposing global geopolitical blocks--maintaining simultaneous partnerships with the United States, Russia, Ukraine, Israel, Iran, Saudi Arabia, the UK, Argentina, and the African Union [28, 41].
 
 ---
 
-## Pillar 7: Cultural Strategic Philosophy – Sun Tzu vs. Chanakya
+## Pillar 7: Cultural Strategic Philosophy - Sun Tzu vs. Chanakya
 
 ### 1. Sun Tzu and Doctrine of Deception
 Chinese strategic behavior is guided by Sun Tzu's *The Art of War* [29, 30]. The central tenets of Sun Tzu's philosophy are anchored in psychological warfare [29, 30]:
 
-> *"All warfare is based on deception. Hence, when able to attack, we must seem unable; when using our forces, we must seem inactive; when we are near, we must make the enemy believe we are far away."* — Sun Tzu, Chapter 1 [29, 30]
+> *"All warfare is based on deception. Hence, when able to attack, we must seem unable; when using our forces, we must seem inactive; when we are near, we must make the enemy believe we are far away."* -- Sun Tzu, Chapter 1 [29, 30]
 
-> *"Supreme excellence consists in breaking the enemy's resistance without fighting."* — Sun Tzu, Chapter 3 [30]
+> *"Supreme excellence consists in breaking the enemy's resistance without fighting."* -- Sun Tzu, Chapter 3 [30]
 
 Because Chinese military posture relies heavily on deception, public displays of military strength, state media threats, and border incursions are calculated psychological maneuvers designed to intimidate adversaries into submission without entering combat [30, 31]. When confronted with resolute, unyielding military resistance (such as Doklam in 2017 or Galwan in 2020), Beijing routinely steps back [31].
 
@@ -254,4 +254,4 @@ A data-driven assessment reveals that China's military strength is constrained b
 
 Should the Chinese Communist Party launch an unprovoked military aggression against India, it would confront a battle-tested, high-altitude-trained military backed by a united democratic population and a global network of alliances [2, 8, 16, 28, 31]. Such a conflict would risk triggering internal economic disruption within China, shattering the CCP's unwritten contract with its citizens and potentially precipitating the internal collapse of the regime [31, 32, 56]. 
 
-China’s military aura resembles an imaginary, ferocious dragon designed to intimidate through deception; India represents a real, sure-footed, intelligent, and formidable elephant capable of defending its sovereignty [32].
+China's military aura resembles an imaginary, ferocious dragon designed to intimidate through deception; India represents a real, sure-footed, intelligent, and formidable elephant capable of defending its sovereignty [32].

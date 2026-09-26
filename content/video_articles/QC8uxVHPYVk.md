@@ -3,7 +3,7 @@ title: "Deep Diver into US-India Rift: Why Washington Is Quietly Strangling Its 
 description: "A comprehensive geopolitical analysis examining trade double standards, Russian oil rhetoric, immigration facts, de-dollarization, and Washington's historical Pakistan alliance."
 date: "2026-09-21"
 author: "Mohan Sonti"
-videoId: "QC8uxVHPYVk"
+videoId: "USIndiaRiftDeepDive"
 category: "Videos"
 ---
 
@@ -38,14 +38,14 @@ Washington frequently accuses India of imposing unfair trade barriers and runnin
 
 *   **Quantitative Reality**: As of late 2025, the US trade deficit with India stood at **$50 billion**, placing India 9th among US trade deficit partners [86, 87]. In contrast, the US runs a **$190 billion deficit with the European Union** and a **$175 billion deficit with China** [86, 87].
 *   **Tariff Discrimination**: Despite the EU holding nearly four times India's trade deficit, Washington imposes **0% to 15% tariffs** on European goods while levying **50% tariffs** on Indian exports [90]. 
-*   **Taxpayer Subsidies for Europe**: European nations benefit from US trade deficits while US taxpayers fund European security through NATO guarantees—a cushion never afforded to India [89, 90].
+*   **Taxpayer Subsidies for Europe**: European nations benefit from US trade deficits while US taxpayers fund European security through NATO guarantees--a cushion never afforded to India [89, 90].
 
 ---
 
 ## 2. Russian Crude Oil: Facts vs. Western Rhetoric
 Western media and officials accuse India of funding the Russia-Ukraine conflict by purchasing Russian crude oil [92, 94]:
 
-*   **Price-Cap Compliance**: India purchases Russian crude under strict G7 and NATO-mandated price cap mechanisms ($60/barrel) [92, 94]. This pricing structure deprives Moscow of supernormal war profits while preventing global oil prices from spiking to $150–$200/barrel [92, 94, 164].
+*   **Price-Cap Compliance**: India purchases Russian crude under strict G7 and NATO-mandated price cap mechanisms ($60/barrel) [92, 94]. This pricing structure deprives Moscow of supernormal war profits while preventing global oil prices from spiking to $150-$200/barrel [92, 94, 164].
 *   **European Hypocrisy**: While criticising India, European Union member states and NATO member Turkey continue purchasing Russian Liquefied Natural Gas (LNG) and pipeline gas at full market prices [93, 94]. These un-capped European gas purchases directly fund Russian state revenues at a scale vastly exceeding India's crude purchases [93, 94, 96].
 
 ---
@@ -55,7 +55,7 @@ Anti-immigrant rhetoric routinely targets Indian professionals and H-1B visa hol
 
 *   **Workforce Share**: Indian-born citizens and residents constitute **3.2 to 3.5 million people** (~1% of the US population) and **1.1% of the total labor force** [103, 104].
 *   **H-1B Impact**: Unique H-1B visas issued to Indian citizens are capped at **50,000 per year**, impacting just **0.028% of the US labor force** [104, 105]. Media claims that H-1B professionals "steal American jobs" are mathematically absurd [104, 105].
-*   **Economic Contribution**: The Indian diaspora pays **6% to 8% of all US personal income taxes**, boasts a **75% higher-education rate**, and has founded **66 billion-dollar tech companies** in the US—generating over 800,000 direct jobs [106, 107].
+*   **Economic Contribution**: The Indian diaspora pays **6% to 8% of all US personal income taxes**, boasts a **75% higher-education rate**, and has founded **66 billion-dollar tech companies** in the US--generating over 800,000 direct jobs [106, 107].
 
 ---
 

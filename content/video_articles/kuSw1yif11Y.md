@@ -1,6 +1,6 @@
 ---
-title: "Election Analysis Part 2: MH, AP, TN, WB • Mohan Sonti"
-description: "A comprehensive 4-5 page strategic analysis of four major Indian states—Maharashtra, Andhra Pradesh, Tamil Nadu, and West Bengal—evaluating regional voter dynamics, political fidelity, kingdom dissolution, poll math, and civilizational political roadmaps."
+title: "Election Analysis Part 2: MH, AP, TN, WB * Mohan Sonti"
+description: "A comprehensive 4-5 page strategic analysis of four major Indian states--Maharashtra, Andhra Pradesh, Tamil Nadu, and West Bengal--evaluating regional voter dynamics, political fidelity, kingdom dissolution, poll math, and civilizational political roadmaps."
 date: "2026-09-26"
 author: "Mohan Sonti"
 videoId: "kuSw1yif11Y"
@@ -174,9 +174,9 @@ Tamil Nadu presents one of the most fascinating cultural paradoxes in Bharat [24
     +----------------------------------+     +----------------------------------+
     |   PRISTINE DHARMIC HERITAGE      |     |   ENTRENCHED POLITICAL SYSTEM    |
     +----------------------------------+     +----------------------------------+
-    | • Sri Ranganathaswamy Temple     |     | • 50-Year Film Industry Rule     |
-    | • Classical Arts & Language      |     | • Dravidian Anti-North Narrative |
-    | • Deep Personal Faith & Rituals  |     | • High Party Fidelity (DMK/AIADMK)|
+    | * Sri Ranganathaswamy Temple     |     | * 50-Year Film Industry Rule     |
+    | * Classical Arts & Language      |     | * Dravidian Anti-North Narrative |
+    | * Deep Personal Faith & Rituals  |     | * High Party Fidelity (DMK/AIADMK)|
     +-----------------+----------------+     +-----------------+----------------+
                       |                                        |
                       +-------------------+--------------------+
@@ -248,9 +248,9 @@ Under the leadership of **K. Annamalai**, the BJP demonstrated significant growt
 
 ### A. The Tradition of Uninterrupted Rule
 West Bengal's political history is defined by extreme political continuity and institutional ecosystem control [36, 37]. Unlike states that alternate governments every five years, West Bengal voters maintain a government for decades before making a complete, irreversible transition [37, 41]:
-1. **Congress Rule (1947–1977)**: Governed for nearly 30 years [37].
-2. **Left Front / CPIM Rule (1977–2011)**: Held power for **34 uninterrupted years**, making it the longest democratically elected Communist government in world history [37].
-3. **Trinamool Congress / TMC (2011–Present)**: Governed for 13+ years [37].
+1. **Congress Rule (1947-1977)**: Governed for nearly 30 years [37].
+2. **Left Front / CPIM Rule (1977-2011)**: Held power for **34 uninterrupted years**, making it the longest democratically elected Communist government in world history [37].
+3. **Trinamool Congress / TMC (2011-Present)**: Governed for 13+ years [37].
 
 ```
 +-----------------------------------------------------------------------------------+
@@ -258,12 +258,12 @@ West Bengal's political history is defined by extreme political continuity and i
 +-----------------------+-----------------------+-----------------------------------+
 | Era / Party           | Duration              | Nature of Governance / Ecosystem  |
 +-----------------------+-----------------------+-----------------------------------+
-| **Congress**          | 1947 – 1977 (30 Yrs)  | Post-independence baseline [37]   |
+| **Congress**          | 1947 - 1977 (30 Yrs)  | Post-independence baseline [37]   |
 +-----------------------+-----------------------+-----------------------------------+
-| **Left Front (CPIM)** | 1977 – 2011 (34 Yrs)  | Longest elected Communist govt in |
+| **Left Front (CPIM)** | 1977 - 2011 (34 Yrs)  | Longest elected Communist govt in |
 |                       |                       | world history; Cadre control [37] |
 +-----------------------+-----------------------+-----------------------------------+
-| **TMC (Mamata)**      | 2011 – Present (13+Yrs)| Complete capture of cadre and     |
+| **TMC (Mamata)**      | 2011 - Present (13+Yrs)| Complete capture of cadre and     |
 |                       |                       | local administrative machinery [37]|
 +-----------------------+-----------------------+-----------------------------------+
 ```
@@ -272,7 +272,7 @@ West Bengal's political history is defined by extreme political continuity and i
 Mohan Sonti highlights critical demographic factors impacting West Bengal's political future [38, 39]:
 * **Demographic Composition**: Over 70% of the global Bengali-speaking population (combining Bangladesh and West Bengal) has converted to Islam over historical periods [38].
 * **TMC's Isolation and Alienation**: As Hindu voters shifted en masse from the Left and Congress toward the BJP (raising BJP's assembly vote share from 2% to 38% and Lok Sabha share to 40%), the TMC became increasingly reliant on a consolidated Muslim vote bank and illegal cross-border infiltrators [38, 39].
-* **Cadre Migration**: Because Hindu cadres are abandoning the TMC, the party's cadre base is increasingly dominated by minority interest groups—a sign that TMC has entered its final organizational phase [39, 41].
+* **Cadre Migration**: Because Hindu cadres are abandoning the TMC, the party's cadre base is increasingly dominated by minority interest groups--a sign that TMC has entered its final organizational phase [39, 41].
 
 ```
                   WEST BENGAL ELECTORAL & CADRE SHIFT DYNAMICS

@@ -3,14 +3,14 @@ title: "Aadhaar Anomaly in Bihar! 120% cards in 4 border districts... What about
 description: "An in-depth statistical investigation into Aadhaar over-saturation, illegal infiltration, demographic shifts, and voter roll manipulation across border districts in Bihar and West Bengal."
 date: "2026-09-21"
 author: "Mohan Sonti"
-videoId: "7aDLmV7WUI4"
+videoId: "AadhaarAnomalyBiharWB"
 category: "Videos"
 ---
 
 # Aadhaar Over-Saturation and Electoral Anomalies in Border Districts of Bihar and West Bengal
 
 ## Executive Summary & Core Premise
-A thorough statistical analysis presented by Mohan Krishna Sonti on PGurus reveals severe electoral and demographic anomalies along India's eastern border regions [1, 7]. The investigation highlights data where key border districts in Bihar and West Bengal exhibit Aadhaar saturation rates far exceeding 100% of their estimated populations—reaching as high as 126% in border areas [1, 7, 19]. This discrepancy exposes critical vulnerabilities in identity issuance, voter registration integrity, and national security [1, 3, 10].
+A thorough statistical analysis presented by Mohan Krishna Sonti on PGurus reveals severe electoral and demographic anomalies along India's eastern border regions [1, 7]. The investigation highlights data where key border districts in Bihar and West Bengal exhibit Aadhaar saturation rates far exceeding 100% of their estimated populations--reaching as high as 126% in border areas [1, 7, 19]. This discrepancy exposes critical vulnerabilities in identity issuance, voter registration integrity, and national security [1, 3, 10].
 
 The misuse of identity documentation, multi-district registration, and illegal cross-border migration undermines democratic processes [5, 8, 9]. By synthesizing government saturation figures, census trends, and electoral turnout anomalies, this report details the mechanism through which voter rolls are gamed, demographic balances are altered, and border security is compromised [7, 8, 18, 21].
 
@@ -18,7 +18,7 @@ The misuse of identity documentation, multi-district registration, and illegal c
 
 ## Statistical Breakdown of Aadhaar Over-Saturation in Bihar
 
-While the overall state average for Aadhaar saturation in Bihar stands at 94%—a high number in itself [6]—the figures in eastern border districts along Nepal and Bangladesh reach unprecedented levels [1, 7]:
+While the overall state average for Aadhaar saturation in Bihar stands at 94%--a high number in itself [6]--the figures in eastern border districts along Nepal and Bangladesh reach unprecedented levels [1, 7]:
 
 *   **Kishanganj District**: Featuring a 68% Muslim demographic, Kishanganj exhibits an extraordinary Aadhaar card saturation rate of **126%** relative to its total recorded population [7].
 *   **Katihar District**: With a 44% Muslim demographic, Katihar displays an Aadhaar saturation rate of **123%** [7].
@@ -57,8 +57,8 @@ The inflation of identity documentation feeds directly into electoral fraud [1, 
 
 *   **Phonetic Name Variations**: Individuals register under multiple phonetic variants of the same name (e.g., *MD Gaus*, *Muhammad D Gaus*, *M O H D Gaus*, or *Vinod Kumar Patel* / *VK Patel*) to secure duplicate voter cards [5].
 *   **Strategic Migration**: Syndicates register voters in multiple adjacent constituencies [8, 9]. Operatives then strategically transport voters across constituency borders to bridge winning deltas, systematically flipping tight elections [8, 9].
-*   **Anomalous Voter Turnouts**: High-density migrant pockets in Jharkhand, West Bengal, and Andhra Pradesh consistently register 80%+ turnout rates—a statistical anomaly compared to regional averages [2, 8, 18].
-*   **Zero-Vote Booth Anomalies**: In specific constituencies (such as Malegaon Central), opposition party candidates registered **zero votes** in polling booths where candidate booth agents and their families were physically deployed—pointing to booth compromise or intimidation [11].
+*   **Anomalous Voter Turnouts**: High-density migrant pockets in Jharkhand, West Bengal, and Andhra Pradesh consistently register 80%+ turnout rates--a statistical anomaly compared to regional averages [2, 8, 18].
+*   **Zero-Vote Booth Anomalies**: In specific constituencies (such as Malegaon Central), opposition party candidates registered **zero votes** in polling booths where candidate booth agents and their families were physically deployed--pointing to booth compromise or intimidation [11].
 
 ---
 

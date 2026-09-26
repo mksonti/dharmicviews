@@ -22,10 +22,10 @@ This document provides an exhaustive 5-page analytical report detailing the poll
 
 ---
 
-## Part 1: Maharashtra Assembly Elections — Deconstructing the "Kingdoms" & 2029 Roadmap
+## Part 1: Maharashtra Assembly Elections -- Deconstructing the "Kingdoms" & 2029 Roadmap
 
 ### 1. The "State of Heroes" & High Voter Fidelity
-Historically, Maharashtra's political landscape has been characterized as a "State of All Heroes" [5, 14]. From Chhatrapati Shivaji Maharaj and Veer Savarkar to regional icons, when every faction claims hero status, no single party dominates [5]. This created deeply entrenched regional fiefdoms—or "kingdoms"—where voters exhibited extraordinarily high fidelity to specific dynastic families rather than ideological frameworks [3, 4, 5].
+Historically, Maharashtra's political landscape has been characterized as a "State of All Heroes" [5, 14]. From Chhatrapati Shivaji Maharaj and Veer Savarkar to regional icons, when every faction claims hero status, no single party dominates [5]. This created deeply entrenched regional fiefdoms--or "kingdoms"--where voters exhibited extraordinarily high fidelity to specific dynastic families rather than ideological frameworks [3, 4, 5].
 
 To break this multi-decade stagnation and build a solo BJP majority by 2029, the strategic objective in 2024 was not merely gaining incremental vote share, but fracturing the stagnant dynastic kingdoms of Shiv Sena and the Nationalist Congress Party (NCP) [4, 5, 6].
 
@@ -95,7 +95,7 @@ To accurately evaluate regions like Jharkhand, Northeastern states, and Vanvasi 
 
 ---
 
-## Part 3: Jharkhand Assembly Elections — The Spatial Erasure Paradox
+## Part 3: Jharkhand Assembly Elections -- The Spatial Erasure Paradox
 
 ### 1. Institutional Layout & Administrative Divisions
 Jharkhand comprises 24 districts organized into 5 Administrative Divisions, housing 81 Assembly constituencies and 14 Lok Sabha constituencies [15, 16]:
@@ -144,7 +144,7 @@ A critical political error was re-appointing Babulal Marandi as Jharkhand BJP pr
 * **Historical Record**: Marandi split from BJP in 2006 to form Jharkhand Vikas Morcha (JVM) [26]. In subsequent elections, JVM drew votes primarily from RJD and JDU, pulling only ~3% from BJP [26].
 * **Outside UPA Support**: In 2012, Marandi openly extended outside support to the Congress-led UPA government [27, 28].
 * **Zero Transferable Value**: By 2019, JVM's vote share collapsed from 10% to 5.45% [26, 27]. When Marandi dissolved JVM in 2020 and returned to BJP, his former voter base transferred entirely to JMM, bringing zero net votes to BJP [27, 28, 29].
-* **Contrast with B.S. Yediyurappa**: Unlike Karnataka, where Yediyurappa left BJP with 10–15% of loyal voters and successfully brought them back upon his return, Marandi brought no transferable base [29, 30]. His appointment failed to strengthen BJP's ground math [28, 30].
+* **Contrast with B.S. Yediyurappa**: Unlike Karnataka, where Yediyurappa left BJP with 10-15% of loyal voters and successfully brought them back upon his return, Marandi brought no transferable base [29, 30]. His appointment failed to strengthen BJP's ground math [28, 30].
 
 ---
 
@@ -210,4 +210,4 @@ To prevent the permanent geopolitical loss of Jharkhand and safeguard state inte
 2. **Election Commission Voter Roll Cleanup**: The Election Commission of India (ECI) must conduct a forensic white-paper audit of Jharkhand's voter rolls to eliminate duplicate cards, cross-border registrations, and virtual migration tactics [39, 40, 43].
 
 ### Conclusion
-The 2024 Assembly elections offer a stark lesson: where political strategy aligns with civilizational restructuring—as in Maharashtra—nationalist forces can dismantle entrenched dynastic kingdoms [4, 5, 11]. But where demographic subversion and voter roll manipulation go unchecked—as in Jharkhand—even a healthy 33% vote share cannot prevent total electoral erasure [20, 21, 39]. Data and facts must replace wishful rhetoric if the nation is to be secured [2, 44, 45].
+The 2024 Assembly elections offer a stark lesson: where political strategy aligns with civilizational restructuring--as in Maharashtra--nationalist forces can dismantle entrenched dynastic kingdoms [4, 5, 11]. But where demographic subversion and voter roll manipulation go unchecked--as in Jharkhand--even a healthy 33% vote share cannot prevent total electoral erasure [20, 21, 39]. Data and facts must replace wishful rhetoric if the nation is to be secured [2, 44, 45].

@@ -53,7 +53,7 @@ Once demographic concentration reaches a sufficient threshold in a home base, po
 * **Constituency Flipping**: In first-past-the-post electoral systems, a party does not need an 80% majority in a single constituency; 50% plus one vote is sufficient [3]. By redistributing population into neighboring districts where non-BJP candidates require marginal boosts, migrating blocks can flip dozens of parliamentary and assembly seats [3, 10].
 
 ### 4. Native Extirpation and Tipping Points
-When a specific demographic group crosses a critical threshold—typically **70% to 80%** of a local population—a tipping point occurs [2, 11].
+When a specific demographic group crosses a critical threshold--typically **70% to 80%** of a local population--a tipping point occurs [2, 11].
 * **Displacement Mechanism**: As seen historically in the Kashmir Valley, as well as specific border districts in West Bengal and Kerala, native minority populations face severe socio-cultural pressure, ultimately leading to forced emigration, conversion, or complete extirpation [2, 11].
 
 ### 5. Institutional Conversions
@@ -115,7 +115,7 @@ Beyond physical demographic shifts, Sonti addresses the psychological war waged 
 ### 1. The "Divide and Rule" Propaganda Playbook
 Historical precedence reveals that foreign or hostile powers consistently rely on psychological propaganda to defeat larger adversaries [32, 33]:
 * **The Panipat Precedent (Hemu Vikramaditya)**: During the Second Battle of Panipat, Samrat Hemu had virtually won the war against Akbar's forces until an accidental arrow struck his eye. Misleading rumors spread instantly across the battlefield that the commander was dead, causing a victorious army to panic, surrender, and collapse [32].
-* **The 1857 First War of Independence**: In 1857, over 6,000 to 10,000 British soldiers were killed, shaking colonial rule to its core [32, 33]. The British crushed the rebellion primarily by engaging in targeted disinformation—visiting isolated Indian factions and falsely convincing each group that all other allied groups had already surrendered [33].
+* **The 1857 First War of Independence**: In 1857, over 6,000 to 10,000 British soldiers were killed, shaking colonial rule to its core [32, 33]. The British crushed the rebellion primarily by engaging in targeted disinformation--visiting isolated Indian factions and falsely convincing each group that all other allied groups had already surrendered [33].
 
 ```
 +--------------------------------------------------------------------------+
@@ -169,7 +169,7 @@ A recurring criticism among dharmic voters is that the BJP government moves too 
 ### 1. Building the Foundation Before the Top Floor
 Sonti uses an architectural analogy: citizens naturally desire to live on the 5th or 10th floor (cultural and educational reforms), but attempting to build the top floor without first constructing a rock-solid basement and foundation will cause the entire structure to collapse [34, 35]:
 * **Macro Economic Security First**: If a nation does not first secure its financial stability, industrial base, and global economic standing, foreign powers can easily deploy economic sanctions or financial warfare to derail internal cultural reforms [34].
-* **Systematic Execution**: Governance must follow a strict order of priority—establishing economic strength and national security first, followed by institutional consolidation, and finally civilizational policy execution [34, 35].
+* **Systematic Execution**: Governance must follow a strict order of priority--establishing economic strength and national security first, followed by institutional consolidation, and finally civilizational policy execution [34, 35].
 
 ### 2. Moral Action vs. Vote Bank Cynicism (The Slavery Analogy)
 When the government enacted reforms such as banning *Triple Talaq* or granting rights to minority women, critics complained that the beneficiaries still did not vote for the BJP [36, 37]. Sonti strongly rejects this transactional view of governance [36, 37]:
@@ -197,7 +197,7 @@ Post-2024 election propaganda deploys a twin-track psychological strategy design
 ```
 
 1. **Subduction (Targeting the Mild/Passive)**: Voters prone to anxiety are subjected to relentless doomsday narratives claiming that Hindu civilization is doomed, the election was a total defeat, and effort is futile [38]. This induces depression, apathy, and political withdrawal [38, 40].
-2. **Instigation (Targeting the Aggressive)**: Energetic, passionate voters are manipulated into directing their anger inward—attacking Modi, Shah, Yogi, or the RSS [38, 39]. By convincing supporters that their own leaders have betrayed them, hostile actors induce destructive "friendly fire" [38, 39].
+2. **Instigation (Targeting the Aggressive)**: Energetic, passionate voters are manipulated into directing their anger inward--attacking Modi, Shah, Yogi, or the RSS [38, 39]. By convincing supporters that their own leaders have betrayed them, hostile actors induce destructive "friendly fire" [38, 39].
 
 ### Ancient Scriptural Wisdom for Modern Resilience
 To counter these psychological traps, Sonti invokes classical Indian philosophy from the *Ramayana* and the *Bhagavad Gita* [40, 41]:
@@ -207,7 +207,7 @@ To counter these psychological traps, Sonti invokes classical Indian philosophy 
 > *Shoko nashayate sarvam, Nasti shoka samo ripuh."* [40]
 
 * **Translation**: Grief destroys courage, grief destroys knowledge, grief destroys everything. There is no enemy like grief [40].
-* **Application**: Demoralized citizens post-2024 must recognize that emotional grief clouds factual analysis [40]. Looking at real numbers—such as the BJP maintaining its 36.56% national vote share—dispels false doom narratives [20, 40].
+* **Application**: Demoralized citizens post-2024 must recognize that emotional grief clouds factual analysis [40]. Looking at real numbers--such as the BJP maintaining its 36.56% national vote share--dispels false doom narratives [20, 40].
 
 #### 2. Controlling Anger (Bhagavad Gita, Chapter 2, Verse 63)
 > *"Krodhad bhavati sammohah, Sammohad smriti-vibhramah,*  

@@ -3,7 +3,7 @@ title: "Bizarre, Shocking Data from TN Polls! WB Polls throw up a surprise!"
 description: "A comprehensive statistical breakdown of voter registration discrepancies, turnout anomalies, demographic shifts, and political dynamics in West Bengal and Tamil Nadu as presented by Mohan Sonti."
 date: "2026-09-21"
 author: "Mohan Sonti"
-videoId: "xHxkAQYPpTM"
+videoId: "TN-WB-Electoral-Anomalies"
 category: "Videos"
 ---
 
@@ -13,7 +13,7 @@ category: "Videos"
 
 In a presentation hosted by **Shri Iyer** on the *PGurus* channel, **Mohan Krishna Sonti** delivers an in-depth, data-driven audit of election numbers in West Bengal and Tamil Nadu [1, 2]. Moving beyond political rhetoric and emotional narratives, Sonti emphasizes that empirical polling data reveals underlying truths about voter behavior, electoral system integrity, and state-level governance [1, 2, 49, 50].
 
-The analysis highlights severe statistical anomalies—including disproportionate voter registration growth compared to population growth, unexpected surges in voting turnout following registration cleanups, and disproportionate seat-to-vote-share ratios [3, 6, 28, 31]. Sonti urges citizens across Bharat to conduct similar rigorous statistical evaluations in their respective states [2, 49, 50].
+The analysis highlights severe statistical anomalies--including disproportionate voter registration growth compared to population growth, unexpected surges in voting turnout following registration cleanups, and disproportionate seat-to-vote-share ratios [3, 6, 28, 31]. Sonti urges citizens across Bharat to conduct similar rigorous statistical evaluations in their respective states [2, 49, 50].
 
 ---
 
@@ -24,9 +24,9 @@ West Bengal consistently records exceptionally high voting turnouts averaging ar
 
 | Metric | West Bengal Statistical Trajectory | Source / Context |
 | :--- | :--- | :--- |
-| **Average Turnout** | ~80% (Touches up to 92.5% in specific elections) | Unusually high compared to 65–75% national norms [3, 8, 29] |
-| **Population Growth (2006–2025)** | 85 Million to 100 Million (+17.7%) | Slower growth rate than national average (+22.9%) [5, 6] |
-| **Registered Voters (2006–2024)** | 48 Million to 76 Million (+58.3%) | Severe growth disparity vs. population growth [6] |
+| **Average Turnout** | ~80% (Touches up to 92.5% in specific elections) | Unusually high compared to 65-75% national norms [3, 8, 29] |
+| **Population Growth (2006-2025)** | 85 Million to 100 Million (+17.7%) | Slower growth rate than national average (+22.9%) [5, 6] |
+| **Registered Voters (2006-2024)** | 48 Million to 76 Million (+58.3%) | Severe growth disparity vs. population growth [6] |
 | **Expected Registered Voters** | ~56 Million | Based on standard 17.7% population growth [6, 7] |
 | **Registration Deficit/Excess** | ~20 Million Extra Voters | Unexplained voter registration inflation [7] |
 
@@ -34,7 +34,7 @@ West Bengal consistently records exceptionally high voting turnouts averaging ar
 To address voter list inflation, the Special Intensive Revision (SIR) was initiated [7, 8]:
 * **Purged Registrations:** The government identified and removed **8 million fraudulent voter entries**, bringing total registered voters down from 76 million to 68 million [7, 8].
 * **Remaining Unverified Registrations:** Approximately **12 million excess voter registrations** remain on the rolls [7, 8].
-* **Impact on True Turnout:** Removing the remaining 12 million unverified entries would normalize West Bengal’s true voting turnout to a standard 65%–70% range [8].
+* **Impact on True Turnout:** Removing the remaining 12 million unverified entries would normalize West Bengal's true voting turnout to a standard 65%-70% range [8].
 
 Sonti outlines three primary causes for these fraudulent registrations:
 1. **Illegal Immigration:** Infiltration across border regions where non-citizens obtain Aadhaar and Voter ID cards [9, 18].
@@ -42,12 +42,12 @@ Sonti outlines three primary causes for these fraudulent registrations:
 3. **Duplicate Voter IDs:** Single individuals registered across multiple constituencies or states [10].
 
 ### Political Shifts and Strategic Corridors
-* **BJP Growth Trajectory:** The Bharatiya Janata Party (BJP) expanded from ~2% in 2006 to 10% in 2014–16, surging to 40% in the 2019 Lok Sabha elections, and stabilizing around 38%–39% [4, 10].
+* **BJP Growth Trajectory:** The Bharatiya Janata Party (BJP) expanded from ~2% in 2006 to 10% in 2014-16, surging to 40% in the 2019 Lok Sabha elections, and stabilizing around 38%-39% [4, 10].
 * **Opposition Breakdown:** CPIM and Congress combined vote shares collapsed to ~3% [4].
 * **Siliguri Corridor ("Chicken's Neck"):** Recognizing the national security vitalness of the 20-kilometer Siliguri Corridor, BJP maintained concentrated organizational focus, retaining vote share across northern Bengal constituencies [11].
 
 ```
-West Bengal Political Rule (1950–Present):
+West Bengal Political Rule (1950-Present):
 +-----------------------+-----------------------+-----------------------+
 |  Congress (1950-1977) |    CPIM (1977-2011)   |     TMC (2011-2026)   |
 |       27 Years        | 34 Years (World Rec.) |       15 Years        |
@@ -55,7 +55,7 @@ West Bengal Political Rule (1950–Present):
 ```
 
 ### Economic Decline Over 75 Years
-Despite political continuity—where ruling parties historically maintain extended multi-decade tenures—West Bengal has suffered significant economic decline [12, 14]:
+Despite political continuity--where ruling parties historically maintain extended multi-decade tenures--West Bengal has suffered significant economic decline [12, 14]:
 * **Industrial Output:** Plunged from **30% of India's total output in 1950** down to **3% today** [14].
 * **Per Capita Income Ranking:** Dropped from **3rd nationally in 1950** to **24th (out of 28 states) today** [14, 15].
 
@@ -81,8 +81,8 @@ When considering the broader Bengali linguistic population across West Bengal an
 
 ### Registration vs. Turnout Contradiction
 Tamil Nadu's recent election data presented a sharp statistical contradiction [27, 28, 29]:
-* **Voter Roll Inflation (2016–2021):** Registered voters jumped by **23%** (from 47 million to 58 million) [27, 29].
-* **SIR Purge:** Voter rolls were cleaned, removing 5–6 million entries (~9% reduction) [27, 28].
+* **Voter Roll Inflation (2016-2021):** Registered voters jumped by **23%** (from 47 million to 58 million) [27, 29].
+* **SIR Purge:** Voter rolls were cleaned, removing 5-6 million entries (~9% reduction) [27, 28].
 * **Turnout Spike:** Despite a 9% reduction in registered voters, actual voting turnout **increased by 11.5%, reaching 85%** [28, 29].
 * **Statistical Improbability:** A simultaneous decline in registered voters and an 11.5% spike in voter turnout is an extreme statistical anomaly requiring formal investigation [28, 29].
 
@@ -104,7 +104,7 @@ Tamil Nadu Seat-to-Vote Share Disparities:
 
 * **IUML Anomaly:** The Indian Union Muslim League (IUML) gathered a state-wide total of only **0.29% vote share** (less than the 0.427% single-seat average) yet secured **2 seats** (Papanasam in Thanjavur and Vaniyambadi/Ambur in Tirupattur) [31, 33].
 * **Waqf Board Property Disputes Correlation:** Sonti notes that constituencies with unusual voting patterns (such as Srirangam/Tiruchirappalli, Tiruchendur, Tenkasi, and Cuddalore) directly overlap with areas experiencing high-profile Waqf Board land claims and property disputes [32, 33, 34].
-* **TVK Influx:** Actor Vijay's TVK party captured a **35% vote share** almost instantly without an established ground organizational structure or booth agents—a phenomenon Sonti terms a massive statistical anomaly [37, 38, 39, 40].
+* **TVK Influx:** Actor Vijay's TVK party captured a **35% vote share** almost instantly without an established ground organizational structure or booth agents--a phenomenon Sonti terms a massive statistical anomaly [37, 38, 39, 40].
 * **BJP Drop:** BJP's vote share fell from 11% in the 2024 Lok Sabha elections to 3% in the assembly elections, winning a single seat by a narrow margin of 893 votes [35, 36].
 
 ### Post-Election Rumors and Political Developments
