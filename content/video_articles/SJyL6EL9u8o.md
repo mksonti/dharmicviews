@@ -61,7 +61,7 @@ Over the subsequent decade, the BJP's performance demonstrated both a positive s
 +--------------------------------------------------------------------------+
 |                  HARYANA VOTE SHARE GROWTH COMPARISON                    |
 +-------------------+--------------------+---------------------------------+
-| Party             | 2014 -> 2019 Delta | 2019 -> 2024 Delta              |
+| Party             | 2014 -> 2019 Delta  | 2019 -> 2024 Delta    |
 +-------------------+--------------------+---------------------------------+
 | BJP               | +3.3%              | +3.4%                           |
 | INC (Congress)    | +7.5%              | +11.0%                          |
@@ -108,7 +108,7 @@ The intense political agitation centered in Punjab and Haryana surrounding the 2
 ### 2. The Economics of the Minimum Support Price (MSP)
 The Minimum Support Price (MSP) was historically established as a government safety net to prevent farmers from suffering catastrophic losses on essential food crops [15, 17]. Under standard government procurement calculations, MSP is typically pegged at approximately **1.5 times the production cost** [15].
 
-	ext{MSP Procurement Price} pprox 	ext{Cost of Production} 	imes 1.5
+MSP Procurement Price = Cost of Production x 1.5
 
 For example, if the baseline production cost of a quintal of grain is Rs. 100, the government purchases it at Rs. 150, guaranteeing a Rs. 50 gross margin [15, 19, 20].
 
@@ -126,12 +126,12 @@ A central misconception during the farm protests was that small farmers were fig
 +--------------------------------------------------------------------------+
 |                     MSP MARGIN DISTRIBUTION BREAKDOWN                    |
 +------------------------------------+-------------------------------------+
-| Production Cost                    | Rs. 100                             |
-| Total Government Procurement (MSP) | Rs. 150                             |
-| Total Gross Margin                 | Rs. 50                              |
+| Production Cost                    | Rs. 100                                |
+| Total Government Procurement (MSP) | Rs. 150                                |
+| Total Gross Margin                 | Rs. 50                                 |
 +------------------------------------+-------------------------------------+
-| Estimated Middleman Share          | Rs. 40 (80% of margin)              |
-| Actual Farmer Retention            | Rs. 10 (20% of margin)              |
+| Estimated Middleman Share          | Rs. 40 (80% of margin)                 |
+| Actual Farmer Retention            | Rs. 10 (20% of margin)                 |
 +------------------------------------+-------------------------------------+
 ```
 
@@ -298,14 +298,14 @@ To understand the ideological drivers behind regional resistance, Mohan Sonti ci
 | Territory Category | Structural Definition & Operational Status                   |
 +--------------------+--------------------------------------------------------------+
 | 1. Dar al-Islam    | Land governed under full Islamic law (Sharia).               |
-|    (Dar al-Salam)  | Non-Muslims reside as Dhimmi (protected/subordinated).       |
+|    (Dar al-Salam)  | Non-Muslims reside as Dhimmi (protected/subordinated).      |
 +--------------------+--------------------------------------------------------------+
 | 2. Dar al-Ahd      | Land where non-Islamic sovereign rules, but grants full      |
 |    (Land of Truce) | autonomy to Islamic personal law, Waqf boards, and courts.   |
 |                    | Operates as a "state within a state" prior to expansion.     |
 +--------------------+--------------------------------------------------------------+
 | 3. Dar al-Harb     | Land of War. Territory where non-Islamic laws govern and     |
-|    (Land of War)   | Islamic autonomy is restricted; targeted for transformation. |
+|    (Land of War)   | Islamic autonomy is restricted; targeted for transformation.  |
 +--------------------+--------------------------------------------------------------+
 ```
 
