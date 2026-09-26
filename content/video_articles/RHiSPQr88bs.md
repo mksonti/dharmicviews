@@ -30,16 +30,16 @@ A pervasive myth in political commentary is that voter behavior in alliances is 
 
 ```
 +---------------------------------------------------------------------------------------------------+
-|                        THE FOUR STATISTICAL LAWS OF POLITICAL ALLIANCES                            |
+|                        THE FOUR STATISTICAL LAWS OF POLITICAL ALLIANCES                           |
 +---------------------------------------------------------------------------------------------------+
-| 1. High Fidelity & Low Attrition   | Voter alignment with established parties has <5% attrition. |
-| 2. Breaking Alliances & Fidelities | Splitting creates new loyalties; core remains in 'kingdoms'.  |
+| 1. High Fidelity & Low Attrition   | Voter alignment with established parties has <5% attrition.  |
+| 2. Breaking Alliances & Fidelities | Splitting creates new loyalties; core remains in 'kingdoms'. |
 | 3. The 30% Migration Retention Rule| Only ~30% of shifting voters are retained long-term.         |
 | 4. The Core Baseline Loyalty       | Major parties retain a stable core (e.g., Congress ~20%).    |
 +---------------------------------------------------------------------------------------------------+
 ```
 
-### 1. High Fidelity and Low Attrition (<5% Attrition Rate)
+### 1. High Fidelity and Low Attrition (&lt;5% Attrition Rate)
 When two or more political parties form an alliance, the vast majority of their respective voter bases transfer smoothly to the coalition candidate [6]. The attrition rate is typically under 5% [10]. Voters view political parties not merely as temporary platforms, but as **virtual kingdoms** led by established political leaders ("little kings") [8, 9, 19]. Once a voter identifies with a party kingdom, their loyalty is extraordinarily durable [6, 8, 9]. Consequently, simple summation of historical vote shares yields highly accurate predictions when evaluating alliance potential [10].
 
 ### 2. Breaking Alliances and the Creation of New Fidelities
@@ -63,15 +63,15 @@ Major political organizations possess an indelible voter core that survives seve
 An examination of national election data from 1998 through 2024 highlights the structural stability of major party vote shares alongside the growth trajectory of the BJP [12, 13, 16].
 
 ```
-+----------------------------------------------------------------------------------------------------+
-|                         NATIONAL VOTE SHARE TRAJECTORIES (1998 - 2024)                             |
-+-------------------+----------+----------+----------+----------+----------+----------+--------------+
-| Party / Coalition | 1998 (%) | 1999 (%) | 2004 (%) | 2009 (%) | 2014 (%) | 2019 (%) | 2024 (%)     |
-+-------------------+----------+----------+----------+----------+----------+----------+--------------+
-| BJP               | ~25.6%   | ~23.7%   | ~22.2%   | 18.80%   | 31.00%   | 37.35%   | 36.56%       |
-| INC (Congress)    | ~25.8%   | ~28.3%   | ~26.5%   | 28.55%   | 19.30%   | 19.50%   | 21.20%       |
-| SP / BSP / Regional| Stable   | Stable   | Stable   | Peak     | Realigned| Consolidated| Bipolar    |
-+-------------------+----------+----------+----------+----------+----------+----------+--------------+
++--------------------------------------------------------------------------------------------------------+
+|                         NATIONAL VOTE SHARE TRAJECTORIES (1998 - 2024)                                 |
++--------------------+----------+----------+----------+----------+----------+-------------+--------------+
+| Party / Coalition  | 1998 (%) | 1999 (%) | 2004 (%) | 2009 (%) | 2014 (%) | 2019 (%)    | 2024 (%)     |
++--------------------+----------+----------+----------+----------+----------+-------------+--------------+
+| BJP                | ~25.6%   | ~23.7%   | ~22.2%   | 18.80%   | 31.00%   | 37.35%      | 36.56%       |
+| INC (Congress)     | ~25.8%   | ~28.3%   | ~26.5%   | 28.55%   | 19.30%   | 19.50%      | 21.20%       |
+| SP / BSP / Regional| Stable   | Stable   | Stable   | Peak     | Realigned| Consolidated| Bipolar      |
++--------------------+----------+----------+----------+----------+----------+-------------+--------------+
 ```
 
 ### Key Analytical Takeaways from Historical Trends:
@@ -88,15 +88,15 @@ An examination of national election data from 1998 through 2024 highlights the s
 Building a political movement capable of taking executive office requires executing five distinct, sequential operational steps [4, 19, 33]. Each step demands a unique strategy, and attempting to skip stages inevitably leads to electoral failure [23, 26, 33].
 
 ```
-+---------------------------------------------------------------------------------------------------+
-|                         THE 5 STEPS TO FORMING A GOVERNMENT                                       |
-+---------------------------------------------------------------------------------------------------+
-| STEP 1: Identify Authentic Leaders   | Find leaders with high fidelity who align with party vision. |
-| STEP 2: Build Followers & Cadre Base | Mobilize grassroots cadre on real issues, not viral gimmicks. |
-| STEP 3: Translate Support to Votes   | Break the 0-5% "wasted vote" barrier to build credibility.  |
++-------------------------------------------------------------------------------------------------------+
+|                         THE 5 STEPS TO FORMING A GOVERNMENT                                           |
++-------------------------------------------------------------------------------------------------------+
+| STEP 1: Identify Authentic Leaders   | Find leaders with high fidelity who align with party vision.   |
+| STEP 2: Build Followers & Cadre Base | Mobilize grassroots cadre on real issues, not viral gimmicks.  |
+| STEP 3: Translate Support to Votes   | Break the 0-5% "wasted vote" barrier to build credibility.     |
 | STEP 4: Convert Votes to Seats       | Optimize poll math, seat distribution, and strategic alliances.|
-| STEP 5: Form Government / Denial     | Secure majority or execute "Denial Strategy" via kingmakers.|
-+---------------------------------------------------------------------------------------------------+
+| STEP 5: Form Government / Denial     | Secure majority or execute "Denial Strategy" via kingmakers.   |
++-------------------------------------------------------------------------------------------------------+
 ```
 
 ---
@@ -185,9 +185,9 @@ Polling a high vote percentage does not guarantee winning parliamentary or assem
 +---------------------------------------------------------------------------------------------------+
 |                        SEAT OPTIMIZATION & ALLIANCE SWAPPING MODEL                                |
 +---------------------------------------------------------------------------------------------------+
-| SCENARIO A: Four Separate Parties (No Alliance)                                                    |
-| Seat 1: Party Orange (20) | Party Green (10) | Party Gray (7) | Party Blue (7)  --> Orange Wins     |
-| Seat 2: Party Orange (20) | Party Green (10) | Party Gray (7) | Party Blue (7)  --> Orange Wins     |
+| SCENARIO A: Four Separate Parties (No Alliance)                                                   |
+| Seat 1: Party Orange (20) | Party Green (10) | Party Gray (7) | Party Blue (7)  --> Orange Wins   |
+| Seat 2: Party Orange (20) | Party Green (10) | Party Gray (7) | Party Blue (7)  --> Orange Wins   |
 | Result: Party Orange wins 4 out of 4 seats with 45% of total votes.                               |
 +---------------------------------------------------------------------------------------------------+
 | SCENARIO B: Coalition Alliance (Green + Gray + Blue = 24 Votes Total)                             |
@@ -231,7 +231,7 @@ Winning a plurality of seats is the final operational step, but executive power 
 
 Mohan Krishna Sonti's election framework demonstrates that electoral victories are neither accidental nor purely driven by media narratives [4, 6, 33]. They are the direct result of executing a structured 5-step strategic pipeline grounded in mathematical realities [4, 19, 33]:
 
-1.  **Respect Voter Fidelity**: Recognize that voters belong to party "kingdoms" with low attrition (<5%) [6, 8, 9]. Do not rely on emotional assumptions that alliances will fail naturally [6, 8].
+1.  **Respect Voter Fidelity**: Recognize that voters belong to party "kingdoms" with low attrition (&lt;5%) [6, 8, 9]. Do not rely on emotional assumptions that alliances will fail naturally [6, 8].
 2.  **Avoid Opportunistic Grafting**: Resist the temptation of inducting corrupt or unaligned leaders from rival parties [19, 20]. Protect the morale of grassroots *Karyakartas* and build authentic leadership [20, 21].
 3.  **Systematically Cross Vote Thresholds**: Focus on moving from 0-5% to 5-15% and ultimately 30%+ by building real credibility on the ground, as demonstrated in West Bengal and Telangana [23, 24, 26].
 4.  **Master Poll Math & Seat Optimization**: Combine vote shares through strategic alliances or actively break rival alliances to maximize seat yields [26, 27, 30].

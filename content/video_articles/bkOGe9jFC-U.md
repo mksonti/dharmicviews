@@ -307,7 +307,7 @@ As India's economic and geopolitical stature grows, foreign deep-state actors, f
 
 ### 3. Ending Political Expediency & Celebrity Culture
 * **The Defector Problem**: Absorbing corrupt or opportunistic defectors from Congress/JDS (as seen in Karnataka) alienates loyal grassroots *karyakartas* who spent decades fighting those exact leaders [62, 63].
-* **Celebrity Candidates**: Inducting movie stars and celebrities who exhibit abysmal parliamentary attendance (<15%) and zero political commitment weakens organizational discipline [63]. BJP must return to dedicated ideologues [63].
+* **Celebrity Candidates**: Inducting movie stars and celebrities who exhibit abysmal parliamentary attendance (&lt;15%) and zero political commitment weakens organizational discipline [63]. BJP must return to dedicated ideologues [63].
 
 ### 4. Strict Slogan Discipline
 Unclarified slogans like *"Abki Baar 400 Paar"* proved disastrous [64]. Without a clear explanation of *why* 400 seats were needed, the opposition successfully created hysteria, claiming 400 seats were meant to "change the Constitution and abolish reservations" [64, 65]. Slogans must always specify constructive nation-building goals [64, 65].
